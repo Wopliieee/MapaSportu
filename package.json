@@ -55,6 +55,7 @@
       "cordova-plugin-ionic": {},
       "cordova-plugin-statusbar": {},
       "ajv": {},
+      "ionic-img-viewer": {},
       "@angular/core": {},
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
