@@ -1,0 +1,17 @@
+{
+  "566|@ionic/app-scripts>node-sass>request>hawk>boom>hoek": {
+    "ignore": 1
+  },
+  "566|@ionic/app-scripts>node-sass>request>hawk>cryptiles>boom>hoek": {
+    "ignore": 1
+  },
+  "566|@ionic/app-scripts>node-sass>request>hawk>hoek": {
+    "ignore": 1
+  },
+  "566|@ionic/app-scripts>node-sass>request>hawk>sntp>hoek": {
+    "ignore": 1
+  },
+  "598|@ionic/app-scripts>node-sass>request>tunnel-agent": {
+    "ignore": 1
+  }
+}

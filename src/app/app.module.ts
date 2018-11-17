@@ -8,6 +8,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { KoszykowkaPage } from '../pages/koszykowka/koszykowka';
+import { BoiskoPage } from '../pages/koszykowka/boisko/boisko';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,11 +20,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    KoszykowkaPage
+    KoszykowkaPage,
+    BoiskoPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp)
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -32,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    KoszykowkaPage
+    KoszykowkaPage,
+    BoiskoPage
   ],
   providers: [
     StatusBar,
