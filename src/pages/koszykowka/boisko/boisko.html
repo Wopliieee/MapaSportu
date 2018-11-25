@@ -16,6 +16,23 @@
 
 <ion-content padding>
 
-    <button ion-button onclick="window.open('https://goo.gl/maps/4rLtpASJ3512', '_system', 'location=yes')">Nawiguj Mnie</button>
-      
+  <h1>Galeria</h1>
+    <div style="padding-top: 10%;">
+      <ion-slides class="image-slider" loop="false" slidesPerView="1.25">
+        <ion-slide *ngFor="let img of images">
+          <img (click)="openedPHOTO()" src="assets/imgs/Boisko do koszykowki przy restauracji/{{img}}" class="thumb-img"  imageViewer>
+        </ion-slide>
+      </ion-slides>
+    </div>
+
+    <div style="padding-top: 10%;">
+    <ion-buttons>
+
+        <button ion-button class="position" onclick="window.open('https://goo.gl/maps/4rLtpASJ3512', '_system', 'location=yes')">Nawiguj Mnie</button>
+    
+    </ion-buttons>
+    </div>
+    <button ion-button full (click)="openedPHOTO()">open</button>
+
 </ion-content>
+

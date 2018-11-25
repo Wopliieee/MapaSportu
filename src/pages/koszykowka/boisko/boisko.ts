@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { GalleryModal } from 'ionic-gallery-modal';
 
 /**
  * Generated class for the BoiskoPage page.
@@ -15,8 +16,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class BoiskoPage {
 
+  images = ['zdj1.jpg', 'zdj2.jpg', 'zdj3.jpg', 'zdj4.jpg', 'zdj5.jpg']
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BoiskoPage');
