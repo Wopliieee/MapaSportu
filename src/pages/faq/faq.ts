@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the BoiskoPage page.
+ * Generated class for the FaqPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-boisko',
-  templateUrl: 'boisko.html',
+  selector: 'page-faq',
+  templateUrl: 'faq.html',
 })
-export class BoiskoPage {
-  public x = 0;
-
-  images = ['zdj1.jpg', 'zdj2.jpg', 'zdj3.jpg', 'zdj4.jpg', 'zdj5.jpg']
+export class FaqPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad BoiskoPage');
   }
 
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad FaqPage');
+  }
 
 }

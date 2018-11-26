@@ -12,12 +12,14 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { KoszykowkaPage } from '../pages/koszykowka/koszykowka';
 import { BoiskoPage } from '../pages/koszykowka/boisko/boisko';
 import { ZnajdzWMojejOkolicyPage } from "../pages/about/znajdz-w-mojej-okolicy/znajdz-w-mojej-okolicy";
+import { FaqPage } from "../pages/faq/faq";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 import * as ionicGalleryModal from 'ionic-gallery-modal';
 import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser'
+import { ZoomAreaModule } from 'ionic2-zoom-area';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,17 @@ import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser'
     TabsPage,
     KoszykowkaPage,
     BoiskoPage,
-    ZnajdzWMojejOkolicyPage
+    ZnajdzWMojejOkolicyPage,
+    FaqPage
+    
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     IonicImageViewerModule,
-    ionicGalleryModal.GalleryModalModule
+    ionicGalleryModal.GalleryModalModule,
+    ZoomAreaModule.forRoot(),
+    ZoomAreaModule,
 
   ],
   bootstrap: [IonicApp],
@@ -46,7 +52,9 @@ import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser'
     TabsPage,
     KoszykowkaPage,
     BoiskoPage,
-    ZnajdzWMojejOkolicyPage
+    ZnajdzWMojejOkolicyPage,
+    FaqPage
+
   ],
   providers: [
     StatusBar,

@@ -39,7 +39,7 @@ export class ZnajdzWMojejOkolicyPage {
         this.geo.getCurrentPosition().then(resp => {
           console.log(resp.coords.latitude);
           console.log(resp.coords.longitude);
-          window.open('https://www.google.pl/maps/search/boisko+do+koszykówki/@'+(resp.coords.latitude)+(',')+(resp.coords.longitude)+(',')+('12.25z'), '_system', 'location=yes')
+          window.open('https://www.google.pl/maps/search/boisko+do+koszykówki/@'+(resp.coords.latitude)+(',')+(resp.coords.longitude)+(',')+('12.25z'))
         }).catch(() => {
           alert("Nie mogę zlokalizować twojego położenia :(")
           this.navCtrl.push(AboutPage);

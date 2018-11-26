@@ -19,8 +19,11 @@
   <h1>Galeria</h1>
     <div style="padding-top: 10%;">
       <ion-slides class="image-slider" loop="false" slidesPerView="1.25">
-        <ion-slide *ngFor="let img of images">
-          <img (click)="openedPHOTO()" src="assets/imgs/Boisko do koszykowki przy restauracji/{{img}}" class="thumb-img"  imageViewer>
+        <ion-slide>
+          <img (click)="Preview(1)" src="assets/imgs/Boisko do koszykowki przy restauracji/zdj1.jpg" class="thumb-img">
+        </ion-slide>
+        <ion-slide>
+          <img (click)="Preview(2)" src="assets/imgs/Boisko do koszykowki przy restauracji/zdj2.jpg" class="thumb-img">
         </ion-slide>
       </ion-slides>
     </div>
@@ -32,7 +35,6 @@
     
     </ion-buttons>
     </div>
-    <button ion-button full (click)="openedPHOTO()">open</button>
 
 </ion-content>
 
