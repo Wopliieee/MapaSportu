@@ -1,7 +1,9 @@
 import { ZnajdzWMojejOkolicyPage } from './../about/znajdz-w-mojej-okolicy/znajdz-w-mojej-okolicy';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 import { KoszykowkaPage } from '../koszykowka/koszykowka'
+import { Geolocation } from '@ionic-native/geolocation';
+
 
 
 @Component({
@@ -9,9 +11,9 @@ import { KoszykowkaPage } from '../koszykowka/koszykowka'
   templateUrl: 'about.html'
 })
 export class AboutPage {
+
   
-  constructor(public navCtrl: NavController) {
-    
+  constructor(public navCtrl: NavController, public navParams: NavParams, private geo: Geolocation, private platform: Platform) {
   }
 
   ZnajdzWMojejOkolicy(){

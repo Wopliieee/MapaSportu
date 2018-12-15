@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ModalController } from 'ionic-angular/components/modal/modal-controller';
+import { GalleryModal } from 'ionic-gallery-modal';
 
 /**
  * Generated class for the BoiskoPage page.
@@ -14,15 +16,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'boisko.html',
 })
 export class BoiskoPage {
-  public x = 0;
+  private images: any[] = [];
 
-  images = ['zdj1.jpg', 'zdj2.jpg', 'zdj3.jpg', 'zdj4.jpg', 'zdj5.jpg']
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private modalCtrl: ModalController) {
+    for (let i = 1; i < 6; i++) {
+      this.images.push({
+        url: `assets/imgs/Boisko do koszykowki przy restauracji/zdj${i}.jpg`
+      });
+    }
     }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BoiskoPage');
+  }
+
+  open(x) {
+    let modal = this.modalCtrl.create(GalleryModal, {
+      photos: this.images,
+      initialSlide: x,
+      closeIcon: 'back'
+    });
+    modal.present();
   }
 
 

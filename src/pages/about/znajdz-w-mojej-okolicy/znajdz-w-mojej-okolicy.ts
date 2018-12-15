@@ -1,9 +1,8 @@
-import { AboutPage } from './../about';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 
-
 import { Geolocation } from '@ionic-native/geolocation';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 /**
  * Generated class for the ZnajdzWMojejOkolicyPage page.
@@ -12,40 +11,56 @@ import { Geolocation } from '@ionic-native/geolocation';
  * Ionic pages and navigation.
  */
 
+declare let cordova: any;
+
 @IonicPage()
 @Component({
   selector: 'page-znajdz-w-mojej-okolicy',
   templateUrl: 'znajdz-w-mojej-okolicy.html',
 })
 export class ZnajdzWMojejOkolicyPage {
+  InAppBrowser: any;
+  location: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private geo: Geolocation, private platform: Platform) {
-    this.platform.ready().then(() => {
-      this.geo.getCurrentPosition().then(resp => {
-        alert("Pomyśle znalezionio twoją lokalizację! Pamiętaj że wyszukiwanie w okolicy nie jest do końca dokładne lecz pokazuje większość.")
-      }).catch(() => {
-        alert("Nie mogę zlokalizować twojego położenia :(")
-        this.navCtrl.push(AboutPage);
-      });
-    });
+  message: any;
+  lat: any;
+  lon: any;
+  wathID: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private platform: Platform, private inAppBrowser: InAppBrowser, public geo: Geolocation) {
+
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ZnajdzWMojejOkolicyPage');
   }
+  
 
-  koszykowkaOKOLICA() {
-      this.platform.ready().then(() => {
-        this.geo.getCurrentPosition().then(resp => {
-          console.log(resp.coords.latitude);
-          console.log(resp.coords.longitude);
-          window.open('https://www.google.pl/maps/search/boisko+do+koszykówki/@'+(resp.coords.latitude)+(',')+(resp.coords.longitude)+(',')+('12.25z'))
-        }).catch(() => {
-          alert("Nie mogę zlokalizować twojego położenia :(")
-          this.navCtrl.push(AboutPage);
-        });
-      });
-  }
+  koszykowkaOKOLICA(url) 
+  {  
+    let GeoOption = { enableHighAccuracy : true};
+    try
+    {
+      this.wathID = this.geo.watchPosition(GeoOption).subscribe(data =>
+        {
+          this.wathID.unsubscribe();
+          this.lat = data.coords.latitude;
+          this.lon = data.coords.longitude;
+          const browser = this.inAppBrowser.create('https://www.google.pl/maps/search/'+(url)+'/@'+(data.coords.latitude)+(',')+(data.coords.longitude)+(',')+('12.25z'), '_system', 'location=yes')
+        },
+        error =>
+        {
+          this.message = "GPS error " + error;
+        }
+      );
+      }catch(err)
+      {
+        alert("error " + err);
+        this.message = "error " + err;
+      }
+    }
+
 
 
 }

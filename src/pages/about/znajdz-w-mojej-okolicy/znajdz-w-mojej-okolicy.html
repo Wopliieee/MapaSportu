@@ -7,8 +7,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Nie mieszkam w Starogardzie Gdańskim</ion-title>
+  <ion-navbar transparent>
+    <h3 style="padding-left: 5%;" ion-text color="dark">Nie mieszkam w STG</h3>
   </ion-navbar>
 
 </ion-header>
@@ -16,6 +16,10 @@
 
 <ion-content padding>
   
-  <button ion-button (click)="koszykowkaOKOLICA()">kosz</button>
+  <button ion-button (click)="koszykowkaOKOLICA('boisko+do+koszykówki')">Koszykówka</button>
+  <h1> elo {{ location?.coords.latitude }} </h1>
+
+  <p>Lat : {{lat}}</p>
+  <p>Lon : {{lon}}</p>
 
 </ion-content>

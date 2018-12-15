@@ -17,9 +17,12 @@ import { FaqPage } from "../pages/faq/faq";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
+import { InAppBrowser } from '@ionic-native/in-app-browser'
+
 import * as ionicGalleryModal from 'ionic-gallery-modal';
 import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser'
 import { ZoomAreaModule } from 'ionic2-zoom-area';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +43,7 @@ import { ZoomAreaModule } from 'ionic2-zoom-area';
     IonicImageViewerModule,
     ionicGalleryModal.GalleryModalModule,
     ZoomAreaModule.forRoot(),
-    ZoomAreaModule,
+    ZoomAreaModule
 
   ],
   bootstrap: [IonicApp],
@@ -59,13 +62,13 @@ import { ZoomAreaModule } from 'ionic2-zoom-area';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
     Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     {
       provide: HAMMER_GESTURE_CONFIG,
       useClass: ionicGalleryModal.GalleryModalHammerConfig
-    }
+    },
+    InAppBrowser
   ]
 })
 export class AppModule {}

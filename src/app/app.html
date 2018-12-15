@@ -1,10 +1,24 @@
 <ion-menu [content]="content">
 
-<ion-content padding>
-    <ion-list>
-        <h2>Więcej</h2>
-        <button menuClose ion-button (click)="FAQ()" full>FAQ</button>
-    </ion-list>
+<ion-header transparent>
+  
+    <ion-navbar transparent>
+
+              
+        <h3 style="padding-left: 36%;" ion-text color="dark">Więcej</h3>
+              
+    </ion-navbar>
+              
+</ion-header>
+
+
+<ion-content padding class="bg-image">
+  
+        <ion-list>
+            <button menuClose ion-button (click)="FAQ()" full>FAQ</button>
+        </ion-list>
+      
+      
 </ion-content>
 
 </ion-menu>

@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Boisko do koszykówki przy restauracji</ion-title>
+  <ion-navbar transparent>
+      <h3 style="padding-left: 5%;" ion-text color="dark">Boisko do koszykówki</h3>
   </ion-navbar>
 
 </ion-header>
@@ -17,16 +17,27 @@
 <ion-content padding>
 
   <h1>Galeria</h1>
-    <div style="padding-top: 10%;">
+  <ion-card>
+    <div style="padding-top: 5%;padding-bottom: 5%;">
       <ion-slides class="image-slider" loop="false" slidesPerView="1.25">
         <ion-slide>
-          <img (click)="Preview(1)" src="assets/imgs/Boisko do koszykowki przy restauracji/zdj1.jpg" class="thumb-img">
+          <img (click)="open(0)" src="assets/imgs/Boisko do koszykowki przy restauracji/zdj1.jpg" class="thumb-img">
         </ion-slide>
         <ion-slide>
-          <img (click)="Preview(2)" src="assets/imgs/Boisko do koszykowki przy restauracji/zdj2.jpg" class="thumb-img">
+          <img (click)="open(1)" src="assets/imgs/Boisko do koszykowki przy restauracji/zdj2.jpg" class="thumb-img">
+        </ion-slide>
+        <ion-slide>
+          <img (click)="open(2)" src="assets/imgs/Boisko do koszykowki przy restauracji/zdj3.jpg" class="thumb-img">
+        </ion-slide>
+        <ion-slide>
+          <img (click)="open(3)" src="assets/imgs/Boisko do koszykowki przy restauracji/zdj4.jpg" class="thumb-img">
+        </ion-slide>
+        <ion-slide>
+          <img (click)="open(4)" src="assets/imgs/Boisko do koszykowki przy restauracji/zdj5.jpg" class="thumb-img">
         </ion-slide>
       </ion-slides>
     </div>
+  </ion-card>
 
     <div style="padding-top: 10%;">
     <ion-buttons>

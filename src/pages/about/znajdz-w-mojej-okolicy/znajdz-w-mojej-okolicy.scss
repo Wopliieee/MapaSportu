@@ -1,3 +1,18 @@
 page-znajdz-w-mojej-okolicy {
+    ion-content {
+        // background-color: aqua !important;
+        background-image: url('../../assets/layout/tlo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1000%
+        
+    }
+
+    ion-navbar {
+        background-image: url('../../assets/layout/pasek_gora.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1000%
+    }
 
 }

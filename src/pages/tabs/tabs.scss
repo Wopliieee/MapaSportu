@@ -1,0 +1,46 @@
+page-tabs {
+    .customBGdolny {
+        background-image: url('../../assets/layout/tlo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1000%
+    }
+
+
+    ion-icon {
+        &[class*="custom-"] {
+            margin: 0 5px 0 0;
+            vertical-align: middle;
+            $sz: 50px;
+            width: $sz;
+            height: $sz;
+        } // custom icons
+        &[class*="glownaZZT"][ng-reflect-is-active="true"] {
+            background: url('../../assets/layout/glowna.png') no-repeat 50% 50%;
+            background-size: contain;
+        }//in case of active
+        &[class*="glownaZZT"][ng-reflect-is-active="false"] {
+            background: url('../../assets/layout/glowna.png') no-repeat 50% 50%;
+            background-size: contain;
+        }//in case of inactive
+
+        &[class*="sportZZT"][ng-reflect-is-active="true"] {
+            background: url('../../assets/layout/sport.png') no-repeat 50% 50%;
+            background-size: contain;
+        }//in case of active
+        &[class*="sportZZT"][ng-reflect-is-active="false"] {
+            background: url('../../assets/layout/sport.png') no-repeat 50% 50%;
+            background-size: contain;
+        }//in case of inactive
+
+        &[class*="onasZZT"][ng-reflect-is-active="true"] {
+            background: url('../../assets/layout/o_nas.png') no-repeat 50% 50%;
+            background-size: contain;
+        }//in case of active
+        &[class*="onasZZT"][ng-reflect-is-active="false"] {
+            background: url('../../assets/layout/o_nas.png') no-repeat 50% 50%;
+            background-size: contain;
+        }//in case of inactive
+
+    }
+}
