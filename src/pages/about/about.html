@@ -6,16 +6,39 @@
           </button>
   
       <h3 style="padding-left: 5%;" ion-text color="dark">Sport!</h3>
-  
+      
+      
     </ion-navbar>
+    <ion-segment [(ngModel)]="page" color="pink">
+        <ion-segment-button value="page1">
+          Page 1
+        </ion-segment-button>
+        <ion-segment-button value="page2">
+          Page 2
+        </ion-segment-button>
+        <ion-segment-button value="page3">
+          Page 3
+        </ion-segment-button>
+      </ion-segment>
+    
   
   </ion-header>
 
 <ion-content padding>
 
-  <p>
+  <ion-segment [ngSwitch]="page">
+    <ion-list *ngSwitchCase="'page1'">
+        <h1>chuj</h1>
+    </ion-list>
+  </ion-segment>
+    
+
+
+  
+
+  <!-- <p>
     <button ion-button (click)="ZnajdzWMojejOkolicy()" full>Nie mieszkam w Starogardzie Gdańskim</button>
-  </p>
+  </p> -->
 
   <p>Kategoria:</p>
 

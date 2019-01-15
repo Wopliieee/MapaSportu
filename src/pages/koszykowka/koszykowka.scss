@@ -4,7 +4,7 @@ page-koszykowka {
         background-image: url('../../assets/layout/tlo.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 1000%
+        background-size: cover;
         
     }
 
@@ -12,14 +12,14 @@ page-koszykowka {
         background-image: url('../../assets/layout/pasek_gora.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 1000%
+        background-size: cover;
     }
 
     ion-card-content{
         background-image: url('../../assets/layout/pasek_gora.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 1000%
+        background-size: cover;
     }
 
     .card { border-radius : 10px; }

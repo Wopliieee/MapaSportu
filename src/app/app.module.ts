@@ -1,3 +1,4 @@
+import { GoogleMapComponent } from './../components/google-map/google-map';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -10,18 +11,20 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { KoszykowkaPage } from '../pages/koszykowka/koszykowka';
-import { BoiskoPage } from '../pages/koszykowka/boisko/boisko';
 import { ZnajdzWMojejOkolicyPage } from "../pages/about/znajdz-w-mojej-okolicy/znajdz-w-mojej-okolicy";
 import { FaqPage } from "../pages/faq/faq";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
-import { InAppBrowser } from '@ionic-native/in-app-browser'
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 import * as ionicGalleryModal from 'ionic-gallery-modal';
 import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser'
 import { ZoomAreaModule } from 'ionic2-zoom-area';
+import { PhotoViewer } from '@ionic-native/photo-viewer';
+import { OpisPage } from '../pages/opis/opis';
+
 
 
 @NgModule({
@@ -32,9 +35,10 @@ import { ZoomAreaModule } from 'ionic2-zoom-area';
     HomePage,
     TabsPage,
     KoszykowkaPage,
-    BoiskoPage,
     ZnajdzWMojejOkolicyPage,
-    FaqPage
+    FaqPage,
+    OpisPage,
+    GoogleMapComponent
     
   ],
   imports: [
@@ -44,6 +48,7 @@ import { ZoomAreaModule } from 'ionic2-zoom-area';
     ionicGalleryModal.GalleryModalModule,
     ZoomAreaModule.forRoot(),
     ZoomAreaModule
+    
 
   ],
   bootstrap: [IonicApp],
@@ -54,15 +59,16 @@ import { ZoomAreaModule } from 'ionic2-zoom-area';
     HomePage,
     TabsPage,
     KoszykowkaPage,
-    BoiskoPage,
     ZnajdzWMojejOkolicyPage,
-    FaqPage
+    FaqPage,
+    OpisPage
 
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Geolocation,
+    PhotoViewer,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     {
       provide: HAMMER_GESTURE_CONFIG,

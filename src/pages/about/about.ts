@@ -11,9 +11,40 @@ import { Geolocation } from '@ionic-native/geolocation';
   templateUrl: 'about.html'
 })
 export class AboutPage {
+  InAppBrowser: any;
+  location: any;
+
+  message: any;
+  lat: any;
+  lon: any;
+  wathID: any;
+  page = "page1";
+  
 
   
   constructor(public navCtrl: NavController, public navParams: NavParams, private geo: Geolocation, private platform: Platform) {
+    {  
+      let GeoOption = { enableHighAccuracy : true};
+      try
+      {
+        this.wathID = this.geo.watchPosition(GeoOption).subscribe(data =>
+          {
+            this.wathID.unsubscribe();
+            this.lat = data.coords.latitude;
+            this.lon = data.coords.longitude;
+            },
+          error =>
+          {
+            this.message = "GPS error " + error;
+          }
+        );
+        }catch(err)
+        {
+          alert("error " + err);
+          this.message = "error " + err;
+        }
+      }
+    
   }
 
   ZnajdzWMojejOkolicy(){
@@ -21,7 +52,7 @@ export class AboutPage {
   }
 
   koszykowkaNAV(){
-    this.navCtrl.push(KoszykowkaPage);
+    this.navCtrl.push(KoszykowkaPage, {data: this.lat, data2: this.lon});
   }
 
 }
