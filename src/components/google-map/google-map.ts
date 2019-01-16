@@ -23,7 +23,6 @@ export class GoogleMapComponent {
   }
 
   initMap(){
-    // JEŻELI WYWALA CI BŁĄD Z GOOGLE. TO WPISZ W TERMINALU "npm install @types/google-maps --save"
     let coords = new google.maps.LatLng(45,100)
     let mapOptions: google.maps.MapOptions = {
       center: coords,

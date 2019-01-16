@@ -4,7 +4,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { ImageViewerController } from 'ionic-img-viewer';
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
-import { OpisPage } from '../opis/opis';
+import { OpisPage } from '../../opis/opis';
 
 
 

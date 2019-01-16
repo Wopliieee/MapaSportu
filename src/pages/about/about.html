@@ -11,13 +11,10 @@
     </ion-navbar>
     <ion-segment [(ngModel)]="page" color="pink">
         <ion-segment-button value="page1">
-          Page 1
+          Sport
         </ion-segment-button>
         <ion-segment-button value="page2">
-          Page 2
-        </ion-segment-button>
-        <ion-segment-button value="page3">
-          Page 3
+          Miejsca
         </ion-segment-button>
       </ion-segment>
     
@@ -28,8 +25,28 @@
 
   <ion-segment [ngSwitch]="page">
     <ion-list *ngSwitchCase="'page1'">
-        <h1>chuj</h1>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+                <button ion-button (click)="koszykowkaNAV()">
+                    <ion-icon ios="ios-basketball" md="md-basketball"></ion-icon>
+                  Koszykówka</button>
+            </ion-col>
+            <ion-col>
+                <button ion-button (click)="pilkanoznaNAV()">
+                    <ion-icon ios="ios-football" md="md-football"></ion-icon>
+                  Piłka Nożna</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+          
     </ion-list>
+
+    <ion-list *ngSwitchCase="'page2'">
+        <button ion-button (click)="boiskoNAV()">
+            <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
+           Boisko</button>
+      </ion-list>
   </ion-segment>
     
 
@@ -39,11 +56,5 @@
   <!-- <p>
     <button ion-button (click)="ZnajdzWMojejOkolicy()" full>Nie mieszkam w Starogardzie Gdańskim</button>
   </p> -->
-
-  <p>Kategoria:</p>
-
-  <p>
-    <button ion-button (click)="koszykowkaNAV()">Koszykówka</button>
-  </p>
 
 </ion-content>

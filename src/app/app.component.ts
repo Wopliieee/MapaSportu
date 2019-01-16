@@ -1,3 +1,4 @@
+import { HomePage } from './../pages/home/home';
 import { Component, ViewChild } from '@angular/core';
 import { Platform, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -28,5 +29,8 @@ export class MyApp {
 
   FAQ() {
     this.nav.push(FaqPage);
+  }
+  Menu(){
+    this.nav.push(HomePage);
   }
 }

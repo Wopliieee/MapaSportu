@@ -1,7 +1,9 @@
+import { BoiskoPage } from './../pages/miejsca/boisko/boisko';
+import { PilkanoznaPage } from './../pages/sport/pilkanozna/pilkanozna';
 import { GoogleMapComponent } from './../components/google-map/google-map';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler, HideWhen } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { Geolocation } from '@ionic-native/geolocation';
@@ -10,7 +12,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { KoszykowkaPage } from '../pages/koszykowka/koszykowka';
+import { KoszykowkaPage } from '../pages/sport/koszykowka/koszykowka';
 import { ZnajdzWMojejOkolicyPage } from "../pages/about/znajdz-w-mojej-okolicy/znajdz-w-mojej-okolicy";
 import { FaqPage } from "../pages/faq/faq";
 
@@ -38,12 +40,18 @@ import { OpisPage } from '../pages/opis/opis';
     ZnajdzWMojejOkolicyPage,
     FaqPage,
     OpisPage,
-    GoogleMapComponent
+    GoogleMapComponent,
+    PilkanoznaPage,
+    BoiskoPage
     
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+
+      tabsHideOnSubPages: true,
+      
+      }),
     IonicImageViewerModule,
     ionicGalleryModal.GalleryModalModule,
     ZoomAreaModule.forRoot(),
@@ -61,7 +69,9 @@ import { OpisPage } from '../pages/opis/opis';
     KoszykowkaPage,
     ZnajdzWMojejOkolicyPage,
     FaqPage,
-    OpisPage
+    OpisPage,
+    PilkanoznaPage,
+    BoiskoPage
 
   ],
   providers: [
