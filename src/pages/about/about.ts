@@ -1,3 +1,4 @@
+import { PilkarecznaPage } from './../sport/pilkareczna/pilkareczna';
 import { BoiskoPage } from './../miejsca/boisko/boisko';
 import { PilkanoznaPage } from './../sport/pilkanozna/pilkanozna';
 import { ZnajdzWMojejOkolicyPage } from './../about/znajdz-w-mojej-okolicy/znajdz-w-mojej-okolicy';
@@ -14,6 +15,7 @@ import { Geolocation } from '@ionic-native/geolocation';
   templateUrl: 'about.html'
 })
 export class AboutPage {
+  galleryType = 'regular';
   InAppBrowser: any;
   location: any;
 
@@ -61,6 +63,10 @@ export class AboutPage {
   pilkanoznaNAV(){
    this.navCtrl.push(PilkanoznaPage, {data: this.lat, data2: this.lon}) 
   }
+
+  pilkarecznaNAV(){
+    this.navCtrl.push(PilkarecznaPage, {data: this.lat, data2: this.lon}) 
+   }
 
   boiskoNAV(){
     this.navCtrl.push(BoiskoPage, {data: this.lat, data2: this.lon}) 

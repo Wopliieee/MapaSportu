@@ -1,3 +1,35 @@
 page-boisko {
+    ion-content {
+        // background-color: aqua !important;
+        background-image: url('../../assets/layout/tlo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    ion-navbar {
+        background-image: url('../../assets/layout/pasek_gora.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    ion-card-content{
+        background-image: url('../../assets/layout/pasek_gora.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card { border-radius : 10px; }
+
+    ion-item{
+        background-image: url('../../assets/layout/pasek_gora.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius : 10px;
+    }
 
 }

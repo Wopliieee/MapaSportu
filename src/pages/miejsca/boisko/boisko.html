@@ -1,18 +1,41 @@
-<!--
-  Generated template for the BoiskoPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry"></script>
 
-  <ion-navbar>
-    <ion-title>Boisko</ion-title>
-  </ion-navbar>
+    <ion-navbar transparent>
+        <button ion-button menuToggle >
+            <img width="37" height="37" src='../../assets/layout/wiecej.png'>
+          </button>
+  
+      <h3 style="padding-left: 5%;" ion-text color="dark">Boisko!</h3>
+      </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <button ion-button (click)="refresh()">refresh</button>
+
+<ion-list>
+  <ion-item *ngFor="let result of results">
+    <ion-slides loop="true">
+      <ion-slide>
+        <img [src]="result.zdjecie">
+      </ion-slide>
+      <ion-slide>
+        <img [src]="result.zdjecie2">
+      </ion-slide>
+      <ion-slide>
+        <img [src]="result.zdjecie3">
+      </ion-slide>
+    </ion-slides>
+
+    <h1 [innerText]="result.nazwa"></h1>
+    <h2>Kilometry: {{result.odleglosc}} km</h2>
+    <button full ion-button (click)="OPIS(result.Nazwa_Miejsca, result.Kategoria_Sportu, result.Kategoria_Miejsca, result.Ulica, result.Krotki_Opis, result.Ocena, result.Godzina_Otwarcia, result.Koszt)">OPIS</button>
+    <button full ion-button class="position" (click)="OpenUrl(result.Nawigacja)"><ion-icon name="navigate"></ion-icon>Nawiguj</button>
+  </ion-item>
+</ion-list>
+
 
 </ion-content>

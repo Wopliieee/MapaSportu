@@ -26,6 +26,7 @@ import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser'
 import { ZoomAreaModule } from 'ionic2-zoom-area';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
 import { OpisPage } from '../pages/opis/opis';
+import { PilkarecznaPage } from '../pages/sport/pilkareczna/pilkareczna';
 
 
 
@@ -42,14 +43,15 @@ import { OpisPage } from '../pages/opis/opis';
     OpisPage,
     GoogleMapComponent,
     PilkanoznaPage,
-    BoiskoPage
+    BoiskoPage,
+    PilkarecznaPage
     
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp, {
 
-      tabsHideOnSubPages: true,
+      tabsHideOnSubPages: false,
       
       }),
     IonicImageViewerModule,
@@ -71,7 +73,8 @@ import { OpisPage } from '../pages/opis/opis';
     FaqPage,
     OpisPage,
     PilkanoznaPage,
-    BoiskoPage
+    BoiskoPage,
+    PilkarecznaPage
 
   ],
   providers: [

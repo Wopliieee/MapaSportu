@@ -26,26 +26,23 @@
   <ion-segment [ngSwitch]="page">
     <ion-list *ngSwitchCase="'page1'">
         <ion-grid>
-          <ion-row>
-            <ion-col>
-                <button ion-button (click)="koszykowkaNAV()">
-                    <ion-icon ios="ios-basketball" md="md-basketball"></ion-icon>
-                  Koszykówka</button>
-            </ion-col>
-            <ion-col>
-                <button ion-button (click)="pilkanoznaNAV()">
-                    <ion-icon ios="ios-football" md="md-football"></ion-icon>
-                  Piłka Nożna</button>
-            </ion-col>
+          <ion-row align-items-start>
+              <img id="sport" (click)="koszykowkaNAV()" width=150 height=150 src="../../assets/layout/sport/koszykowka.png"/>
+              <img id="sport" (click)="pilkanoznaNAV()" width=150 height=150 src="../../assets/layout/sport/pilkanozna.png"/>
+              <img id="sport" (click)="pilkarecznaNAV()" width=150 height=150 src="../../assets/layout/sport/pilkareczna.png"/>
           </ion-row>
         </ion-grid>
           
     </ion-list>
 
     <ion-list *ngSwitchCase="'page2'">
-        <button ion-button (click)="boiskoNAV()">
-            <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
-           Boisko</button>
+        <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <img id="sport" (click)="boiskoNAV()" width=150 height=150 src="../../assets/layout/miejsca/boisko.png"/>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
       </ion-list>
   </ion-segment>
     
