@@ -18,3 +18,28 @@ ion-nav{
     top: 0px;
 
 }
+
+ion-icon {
+    &[class*="custom-"] {
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+        $sz: 50px;
+        width: $sz;
+        height: $sz;
+    } // custom icons
+
+    &[class*="MapaSportu"]{
+        background: url('../../assets/layout/logo.png') no-repeat 80% 100%;
+        background-size: contain;
+        background-size: 30%;
+    }
+}
+.fab {
+    // background-color: white;
+    border-style: solid;
+    // border-radius: 50%;
+    // border-width: 2px;
+    // border-color: white;
+    background-color: rgba(255, 255, 255, 0);
+    
+}

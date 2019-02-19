@@ -1,17 +1,13 @@
 import { Component, NgModule } from '@angular/core';
-import { NavController, NavParams, Platform } from 'ionic-angular';
+import { NavController, NavParams, Platform, Refresher } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { ImageViewerController } from 'ionic-img-viewer';
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { OpisPage } from '../../opis/opis';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
-/**
- * Generated class for the BoiskoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Observable } from 'rxjs';
+
 
 @NgModule()
 @Component({
@@ -20,6 +16,11 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 })
 export class BoiskoPage {
   @ViewChild(Slides) slides: Slides;
+  data: Observable<any>;
+  items: any;
+  _imageViewerCtrl: ImageViewerController;
+  test: any;
+
   kilometry: any;
   x1: any;
   y1: any;
@@ -36,8 +37,6 @@ export class BoiskoPage {
   lon5: any;
   lat5: any;
 
-  _imageViewerCtrl: ImageViewerController;
-  BoiskoDoKoszykowkiPrzyRestauracji: any;
   NazwaMiejsca: any;
   KategoriaSportu: any;
   KategoriaMiejsca: any;
@@ -46,8 +45,11 @@ export class BoiskoPage {
   Ocena: any;
   GodzinaOtwarcia: any;
   Koszt: any;
-  BoiskoNaOsiedluKonstytucji3Maja: any;
   results: any;
+
+
+  BoiskoNaPiekiełkach: any;
+  BoiskoNaOsiedluKonstytucji3Maja: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
     
@@ -58,6 +60,12 @@ export class BoiskoPage {
         
     this.refresh()
   } 
+
+  doRefresh(refresher) {
+    this.test = Math.floor(Math.random() * 6) + 1  
+    this.refresh()
+    refresher.complete();
+  }
   
 
   refresh(){
@@ -84,7 +92,7 @@ export class BoiskoPage {
       }
 
     this.ObliczKilometry(53.963750, 18.510056, "BoiskoNaOsiedluKonstytucji3Maja")
-    this.ObliczKilometry(53.970762, 18.515613, "BoiskoDoKoszykowkiPrzyRestauracji")
+    this.ObliczKilometry(53.970762, 18.515613, "BoiskoNaPiekiełkach")
 
 
     interface Miejsce {
@@ -108,12 +116,12 @@ export class BoiskoPage {
 
 
     const miejsca: Miejsce[] =[
-      { nazwa: 'Boisko do koszykówki przy restauracji',
-          odleglosc: this.BoiskoDoKoszykowkiPrzyRestauracji,
-          zdjecie: "https://swidnica24.pl/wp-content/uploads/2016/10/koty-2.jpg",
-          zdjecie2: "https://i.imged.pl/kotka-mamcia-szuka-domu.jpg",
-          zdjecie3: "https://i.imged.pl/kotka-mamcia-szuka-domu.jpg",
-          Nazwa_Miejsca: "Boisko do koszykówki przy restauracji.",
+      { nazwa: 'Boisko na Piekiełkach',
+          odleglosc: this.BoiskoNaPiekiełkach,
+          zdjecie: "../../assets/imgs/Boisko na Piekielkach/1.png",
+          zdjecie2: "../../assets/imgs/Boisko na Piekielkach/2.png",
+          zdjecie3: "../../assets/imgs/Boisko na Piekielkach/3.png",
+          Nazwa_Miejsca: "Piekiełki.",
           Kategoria_Sportu: "Koszykówka.",
           Kategoria_Miejsca: "Boisko.",
           Ulica: "ul. Księdza Piotra Ściegiennego",
@@ -123,11 +131,11 @@ export class BoiskoPage {
           Koszt: "Darmowe wejście.",
           Nawigacja: "https://goo.gl/maps/4rLtpASJ3512"},
 
-      { nazwa: 'Boisko na osiedlu Konstytucji 3 Maja',
+      { nazwa: 'Osiedle Konstytucji 3 Maja',
           odleglosc: this.BoiskoNaOsiedluKonstytucji3Maja,
-          zdjecie: "https://i.ytimg.com/vi/T3arcT2ntsE/maxresdefault.jpg",
-          zdjecie2: "https://pikio.pl/wp-content/uploads/2017/11/pies.jpg",
-          zdjecie3: "https://pikio.pl/wp-content/uploads/2017/11/pies.jpg",
+          zdjecie: "../../assets/imgs/Osiedle Konstytucji 3 Maja/1.png",
+          zdjecie2: "../../assets/imgs/Osiedle Konstytucji 3 Maja/2.png",
+          zdjecie3: "../../assets/imgs/Osiedle Konstytucji 3 Maja/3.png",
           Nazwa_Miejsca: "Boisko na Osiedlu Konstytucji 3 maja.",
           Kategoria_Sportu: "Koszykówka.",
           Kategoria_Miejsca: "Boisko wielofunkcyjne.",
@@ -184,8 +192,8 @@ export class BoiskoPage {
     this.kilometry = Math.round(this.odległość*100)/100;
     if(WYNIK == "BoiskoNaOsiedluKonstytucji3Maja")
       this.BoiskoNaOsiedluKonstytucji3Maja = this.kilometry
-    if(WYNIK == "BoiskoDoKoszykowkiPrzyRestauracji")
-      this.BoiskoDoKoszykowkiPrzyRestauracji = this.kilometry
+    if(WYNIK == "BoiskoNaPiekiełkach")
+      this.BoiskoNaPiekiełkach = this.kilometry
 
   }
 
@@ -214,5 +222,3 @@ export class BoiskoPage {
   }
 
 }
-
-

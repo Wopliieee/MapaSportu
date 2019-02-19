@@ -16,7 +16,7 @@ page-tabs {
             height: $sz;
         } // custom icons
         &[class*="glownaZZT"][ng-reflect-is-active="true"] {
-            background: url('../../assets/layout/glowna.png') no-repeat 50% 50%;
+            background: url('../../assets/layout/glowna_ACTIVATED.png') no-repeat 50% 50%;
             background-size: contain;
         }//in case of active
         &[class*="glownaZZT"][ng-reflect-is-active="false"] {
@@ -25,7 +25,7 @@ page-tabs {
         }//in case of inactive
 
         &[class*="sportZZT"][ng-reflect-is-active="true"] {
-            background: url('../../assets/layout/sport.png') no-repeat 50% 50%;
+            background: url('../../assets/layout/sport_ACTIVATED.png') no-repeat 50% 50%;
             background-size: contain;
         }//in case of active
         &[class*="sportZZT"][ng-reflect-is-active="false"] {
@@ -34,7 +34,7 @@ page-tabs {
         }//in case of inactive
 
         &[class*="onasZZT"][ng-reflect-is-active="true"] {
-            background: url('../../assets/layout/o_nas.png') no-repeat 50% 50%;
+            background: url('../../assets/layout/o_nas_ACTIVATED.png') no-repeat 50% 50%;
             background-size: contain;
         }//in case of active
         &[class*="onasZZT"][ng-reflect-is-active="false"] {

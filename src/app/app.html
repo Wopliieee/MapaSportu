@@ -6,8 +6,11 @@
 
               
         <h3 style="padding-left: 36%;" ion-text color="dark">Więcej</h3>
+
               
     </ion-navbar>
+
+    
               
 </ion-header>
 
@@ -25,3 +28,16 @@
 
 
 <ion-nav [root]="rootPage" #content></ion-nav>
+
+<!-- "../../assets/layout/logo.png" -->
+
+
+
+<ion-fab style="padding-top: 30px; padding-right: 5px;" right top edge>
+    <img (click)="SocialMedia()" ion-fab width="100" height="47" src={{change}}>
+    <ion-fab-list style="padding-top: 30px;" >
+      <img (click)="OpenUrl('https://www.facebook.com/Mapa-Sportu-Starogard-Gda%C5%84ski-317553492174494/')" ion-fab width="100" height="100" src="../assets/layout/facebook.png">
+      <img (click)="OpenUrl('https://www.instagram.com/mapa.sportu/')" ion-fab width="100" height="47" src="../assets/layout/instagram.png">
+      <img ion-fab width="100" height="47" src="../assets/layout/logoS.png">
+    </ion-fab-list>
+  </ion-fab>

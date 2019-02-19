@@ -1,7 +1,7 @@
 page-boisko {
     ion-content {
-        // background-color: aqua !important;
-        background-image: url('../../assets/layout/tlo.png');
+        background-color: gainsboro !important;
+        background-image: url('../../assets/layout/tlo.png') !important;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -23,6 +23,7 @@ page-boisko {
     }
 
     .card { border-radius : 10px; }
+    img { border-radius : 10px; }
 
     ion-item{
         background-image: url('../../assets/layout/pasek_gora.png');
@@ -30,6 +31,32 @@ page-boisko {
         background-position: center;
         background-size: cover;
         border-radius : 10px;
+    }
+
+    ion-icon {
+        &[class*="custom-"] {
+            margin: 0 5px 0 0;
+            vertical-align: middle;
+            $sz: 50px;
+            width: $sz;
+            height: $sz;
+        } // custom icons
+        &[class*="glownaZZT"]{
+            background: url('../../assets/layout/logo.png') no-repeat 30% 30%;
+            background-size: contain;
+            background-size: 80%;
+        }
+    }
+
+    #lower {
+        padding-top: 10px;
+    }
+
+    text-wrap {
+        font-size: 25px;
+    }
+    .app-font-25 {
+        font-size: 25px;
     }
 
 }

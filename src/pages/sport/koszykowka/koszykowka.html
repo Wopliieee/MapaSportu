@@ -1,107 +1,75 @@
 <ion-header>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry"></script>
+
   <ion-navbar transparent>
-    <h3 style="padding-left: 5%;" ion-text color="dark">Koszykówka</h3>
-  </ion-navbar>
+      <button ion-button menuToggle >
+          <img width="37" height="37" src='../../assets/layout/wiecej.png'>
+        </button>
+        
+    <h3 style="padding-left: 15px;" ion-text color="dark">Koszykówka!</h3>
+    </ion-navbar>
+    
+
 </ion-header>
 
+
 <ion-content padding>
-  <button ion-button (click)="refresh()">refresh</button>
-  
-<!--------------------------------------- BOISKO DO KOSZYKÓWKI PRZY RESTAURACJI -------------------------------------------->
-<!--------- KARTA ZE ZDJĘCIAMI ----------->
-  <ion-card>
-    <ion-slides pager="true" loop="true">
-      <ion-slide>
-        <img src="../../assets/imgs/Boisko do koszykowki przy restauracji/zdj1.png" imageViewer />
-      </ion-slide>
-      <ion-slide>
-        <img src="../../assets/imgs/Boisko do koszykowki przy restauracji/zdj2.png" imageViewer/>
-      </ion-slide>
-      <ion-slide>
-        <img src="../../assets/imgs/Boisko do koszykowki przy restauracji/zdj3.png" imageViewer/>
-      </ion-slide>
-    </ion-slides>   
-<!--------- TYTUŁ KARTY ----------->
-    <ion-card-content>
-      <ion-card-title>
-        Boisko do koszykówki przy restauracji
-        </ion-card-title>
-        <!--------- OPIS KARTY ----------->
-        <h3>
-          Opinia:
-        <ion-icon name="star" round></ion-icon><ion-icon name="star" round></ion-icon><ion-icon name="star-half" round></ion-icon><ion-icon name="star-outline" round></ion-icon><ion-icon name="star-outline" round></ion-icon>
-        <p></p>
-          Kilometry w linii prostej: {{BoiskoDoKoszykowkiPrzyRestauracji}}
-        </h3>
-        <p></p>
-          <!--------- OPIS MIEJSCA ----------->
-        <button ion-button icon-start (click)='OPIS(
-            "Boisko do koszykówki przy restauracji.",
-            "Koszykówka.",
-            "Boisko.",
-            "ul. Księdza Piotra Ściegiennego",
-            "Asfaltowa nawierzchnia, miejsce na dworzu, kosze są zrobione z aluminium(?).",
-            "2,5/5",
-            "24/7",
-            "Darmowe wejście.")'>
-          <ion-icon name="star"></ion-icon>
-            Opis
-          </button>
-          <!--------- NAWIGACJA ----------->
-        <button ion-button class="position" onclick="window.open('https://goo.gl/maps/4rLtpASJ3512', '_system', 'location=yes')">
-          <ion-icon name="navigate"></ion-icon>Nawiguj</button>
-      </ion-card-content>
-    </ion-card>
-    <!--------------------------------------------------- KONIEC --------------------------------------------------------->
 
 
+<ion-refresher id="lower" slot="fixed" (ionRefresh)="doRefresh($event)">
+  <ion-refresher-content id="lower"
+  pullingIcon="custom-glownaZZT"
+  pullingText="Puść aby odświeżyć"
+  refreshingSpinner="circles"
+  refreshingText="Odświeżanie...">
+  </ion-refresher-content>
+</ion-refresher>
 
-    <!--------------------------------------- BOISKO DO KOSZYKÓWKI PRZY RESTAURACJI -------------------------------------------->
-<!--------- KARTA ZE ZDJĘCIAMI ----------->
-  <ion-card>
-    <ion-slides pager="true" loop="true">
-      <ion-slide>
-        <img src="../../assets/imgs/Boisko na Osiedlu Konstytucji 3 maja/zdj1.jpg" imageViewer />
-      </ion-slide>
-      <ion-slide>
-        <img src="../../assets/imgs/Boisko na Osiedlu Konstytucji 3 maja/zdj2.jpg" imageViewer/>
-      </ion-slide>
-      <ion-slide>
-        <img src="../../assets/imgs/Boisko na Osiedlu Konstytucji 3 maja/zdj3.jpg" imageViewer/>
-      </ion-slide>
-    </ion-slides>   
-<!--------- TYTUŁ KARTY ----------->
-    <ion-card-content>
-      <ion-card-title>
-        Boisko na Osiedlu Konstytucji 3 maja
-        </ion-card-title>
-        <!--------- OPIS KARTY ----------->
-        <h3>
-          Opinia:
-        <ion-icon name="star" round></ion-icon><ion-icon name="star" round></ion-icon><ion-icon name="star" round></ion-icon><ion-icon name="star" round></ion-icon><ion-icon name="star-half" round></ion-icon>
-        <p></p>
-          Kilometry w linii prostej: {{BoiskoNaOsiedluKonstytucji3Maja}}
-        </h3>
-        <p></p>
-          <!--------- OPIS MIEJSCA ----------->
-        <button ion-button icon-start (click)='OPIS(
-            "Boisko na Osiedlu Konstytucji 3 maja.",
-            "Koszykówka.",
-            "Boisko wielofunkcyjne.",
-            "Osiedle Konstytucji 3 maja.",
-            "Boisko zapewnia możliwości rozwoju w wielu dyscyplinach. Nawierzchnia w bardzo dobrym stanie - tartan.",
-            "4.5/5",
-            "6:00-22:00.",
-            "Darmowe wejście.")'>
-          <ion-icon name="star"></ion-icon>
-            Opis
-          </button>
-          <!--------- NAWIGACJA ----------->
-        <button ion-button class="position" onclick="window.open('https://tinyurl.com/Boisko-na-Osiedlu-Konstytucji', '_system', 'location=yes')">
-          <ion-icon name="navigate"></ion-icon>Nawiguj</button>
-      </ion-card-content>
-    </ion-card>
-    <!--------------------------------------------------- KONIEC --------------------------------------------------------->
 
-    
-</ion-content>
+<ion-list text-wrap>
+<ion-item *ngFor="let result of results">
+
+
+              <ion-slides autoplay="4000" pager="true" loop="true">
+                  <ion-slide>
+                    <img [src]="result.zdjecie" imageViewer>
+                  </ion-slide>
+                  <ion-slide>
+                    <img [src]="result.zdjecie2" imageViewer>
+                  </ion-slide>
+                  <ion-slide>
+                    <img [src]="result.zdjecie3" imageViewer>
+                  </ion-slide>
+                </ion-slides>
+          
+
+            <h1 [innerText]="result.nazwa" class="app-font-25"></h1>
+            <h2>Odległość: {{result.odleglosc}} km</h2>
+            <ion-row>
+              <button ion-button (click)="OPIS(result.Nazwa_Miejsca, result.Kategoria_Sportu, result.Kategoria_Miejsca, result.Ulica, result.Krotki_Opis, result.Ocena, result.Godzina_Otwarcia, result.Koszt)">OPIS</button>
+              <button ion-button class="position" (click)="OpenUrl(result.Nawigacja)"><ion-icon name="navigate"></ion-icon>Nawiguj</button>
+              <p style="padding-right: 50px"></p>
+              <img width="47" height="47" src='../../assets/layout/FAB_logo.png'>
+            </ion-row>
+
+      <!-- <ion-slides autoplay="4000" pager="true" loop="true">
+          <ion-slide>
+            <img [src]="result.zdjecie" imageViewer>
+          </ion-slide>
+          <ion-slide>
+            <img [src]="result.zdjecie2" imageViewer>
+          </ion-slide>
+          <ion-slide>
+            <img [src]="result.zdjecie3" imageViewer>
+          </ion-slide>
+        </ion-slides>
+      </ion-thumbnail> -->
+
+      <!-- <h1 [innerText]="result.nazwa" class="app-font-25"></h1> -->
+  <!-- <h1 style="padding-left: 30%; top: 50px" [innerText]="result.nazwa" class="app-font-25"></h1> -->
+  <!-- <h2>Odległość: {{result.odleglosc}} km</h2> -->
+  <!-- <button ion-button (click)="OPIS(result.Nazwa_Miejsca, result.Kategoria_Sportu, result.Kategoria_Miejsca, result.Ulica, result.Krotki_Opis, result.Ocena, result.Godzina_Otwarcia, result.Koszt)">OPIS</button> -->
+  <!-- <button ion-button class="position" (click)="OpenUrl(result.Nawigacja)"><ion-icon name="navigate"></ion-icon>Nawiguj</button> -->
+
+</ion-item>
+</ion-list>

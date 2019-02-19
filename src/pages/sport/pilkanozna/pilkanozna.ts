@@ -1,18 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { NavController, NavParams, Platform } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { ImageViewerController } from 'ionic-img-viewer';
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { OpisPage } from '../../opis/opis';
+import { Observable } from 'rxjs';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
-
+@NgModule()
 @Component({
   selector: 'page-pilkanozna',
   templateUrl: 'pilkanozna.html',
 })
 export class PilkanoznaPage {
   @ViewChild(Slides) slides: Slides;
+  data: Observable<any>;
+  items: any;
+  _imageViewerCtrl: ImageViewerController;
+  test: any;
+
   kilometry: any;
   x1: any;
   y1: any;
@@ -20,32 +27,15 @@ export class PilkanoznaPage {
   y2: any;
   radian: any;
   odległość: any;
-  lat: string;
-  lon: string;
 
-  location: any;
   message: any;
   wathID: any;
-  latREFRESH: any;
-  lonREFRESH: any;
-  latREFRESHED: any;
-  lonREFRESHED: any;
-
-  lat1: number;
-  lon1: number;
+  
   lat2: number;
   lon2: number;
   lon5: any;
   lat5: any;
-  x: any;
-  WYNIK: any;
-  marian: any;
 
-  _imageViewerCtrl: ImageViewerController;
-  currentIndex: any;
-  link: string;
-  stefan: any;
-  BoiskoDoKoszykowkiPrzyRestauracji: any;
   NazwaMiejsca: any;
   KategoriaSportu: any;
   KategoriaMiejsca: any;
@@ -54,22 +44,106 @@ export class PilkanoznaPage {
   Ocena: any;
   GodzinaOtwarcia: any;
   Koszt: any;
-  BoiskoNaOsiedluKonstytucji3Maja: any;
+  results: any;
+
   
-  constructor(public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController) {
+  BoiskoNaOsiedluKonstytucji3Maja: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
     
     this._imageViewerCtrl = imageViewerCtrl;
     
     this.lat5 = navParams.get('data');
     this.lon5 = navParams.get('data2');
-    
+        
     this.refresh()
-  }
+  } 
 
+  doRefresh(refresher) {
+    this.test = Math.floor(Math.random() * 6) + 1  
+    this.refresh()
+    refresher.complete();
+  }
+  
 
   refresh(){
+    {  
+      let GeoOption = { enableHighAccuracy : true};
+      try
+      {
+        this.wathID = this.geo.watchPosition(GeoOption).subscribe(data =>
+          {
+            this.wathID.unsubscribe();
+            this.lat5 = data.coords.latitude;
+            this.lon5 = data.coords.longitude; 
+            },
+          error =>
+          {
+            this.message = "GPS error " + error;
+          }
+        );
+        }catch(err)
+        {
+          alert("error " + err);
+          this.message = "error " + err;
+        }
+      }
+
     this.ObliczKilometry(53.963750, 18.510056, "BoiskoNaOsiedluKonstytucji3Maja")
+
+
+    interface Miejsce {
+      nazwa: string;
+      odleglosc: any;
+      zdjecie: string;
+      zdjecie2: string;
+      zdjecie3: string;
+
+      Nazwa_Miejsca: string,
+      Kategoria_Sportu: string,
+      Kategoria_Miejsca: string,
+      Ulica: string,
+      Krotki_Opis: string,
+      Ocena: string,
+      Godzina_Otwarcia: string,
+      Koszt: string,
+      
+      Nawigacja: string,
+    }
+
+
+    const miejsca: Miejsce[] =[
+      { nazwa: 'Osiedle Konstytucji 3 Maja',
+          odleglosc: this.BoiskoNaOsiedluKonstytucji3Maja,
+          zdjecie: "../../assets/imgs/Osiedle Konstytucji 3 Maja/1.png",
+          zdjecie2: "../../assets/imgs/Osiedle Konstytucji 3 Maja/2.png",
+          zdjecie3: "../../assets/imgs/Osiedle Konstytucji 3 Maja/3.png",
+          Nazwa_Miejsca: "Boisko na Osiedlu Konstytucji 3 maja.",
+          Kategoria_Sportu: "Piłka nożna.",
+          Kategoria_Miejsca: "Boisko wielofunkcyjne.",
+          Ulica: "Osiedle Konstytucji 3 maja.",
+          Krotki_Opis: "Boisko zapewnia możliwości rozwoju w wielu dyscyplinach. Nawierzchnia w bardzo dobrym stanie - tartan.",
+          Ocena: "4.5/5",
+          Godzina_Otwarcia: "6:00-22:00.",
+          Koszt: "Darmowe wejście.",
+          Nawigacja: "https://tinyurl.com/Boisko-na-Osiedlu-Konstytucji"},  
+    ];
+
+
+    const sortedByOdleglosc = miejsca.sort((a, b) => {
+      // 1st property, sort by count
+      if (a.odleglosc > b.odleglosc)
+          return -1;
+      if (a.odleglosc < b.odleglosc)
+          return 1;
+      return 0;
+  });
+  
+    console.log(sortedByOdleglosc.reverse())
+    this.results = sortedByOdleglosc
   }
+
+
 
   ObliczKilometry(x2DATA, y2DATA, WYNIK){
 
@@ -95,7 +169,7 @@ export class PilkanoznaPage {
     
 
     //ostateczny wynik w kilometrach
-    this.kilometry = Math.round(this.odległość*100)/100+"km";
+    this.kilometry = Math.round(this.odległość*100)/100;
     if(WYNIK == "BoiskoNaOsiedluKonstytucji3Maja")
       this.BoiskoNaOsiedluKonstytucji3Maja = this.kilometry
 
@@ -106,7 +180,7 @@ export class PilkanoznaPage {
       Kategoria_Miejsca: this.KategoriaMiejsca, Ulica_Ulica: this.Ulica,
       Krótki_Opis: this.KrótkiOpis, Ocena_Ocena: this.Ocena,
       Godzina_Otwarcia: this.GodzinaOtwarcia, Koszt_Koszt: this.Koszt});
-  }
+    }
 
   OPIS(NM, KS, KM, U, KO, O, GO, K){
     this.NazwaMiejsca = NM
@@ -118,9 +192,11 @@ export class PilkanoznaPage {
     this.GodzinaOtwarcia = GO
     this.Koszt = K
     this.PUSHOPIS()
-    // if(SPORT == "BoiskoDoKoszykowkiPrzyRestauracji")
-    //   this.NazwaMiejsca = "Boisko do koszykówki przy restauracji.";
-    //   this.navCtrl.push(OpisPage, {data: this.NazwaMiejsca});
+  }
+
+  OpenUrl(url){
+  const browser = this.iab.create(url);
+  browser.show()
   }
 
 }

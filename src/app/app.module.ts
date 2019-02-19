@@ -51,7 +51,7 @@ import { PilkarecznaPage } from '../pages/sport/pilkareczna/pilkareczna';
     BrowserModule,
     IonicModule.forRoot(MyApp, {
 
-      tabsHideOnSubPages: false,
+      tabsHideOnSubPages: true,
       
       }),
     IonicImageViewerModule,
