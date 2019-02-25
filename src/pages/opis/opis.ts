@@ -15,26 +15,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class OpisPage {
   NazwaMiejsca: any;
-  KategoriaSportu: any;
+  Dyscyplina: any;
   KategoriaMiejsca: any;
-  Ulica: any;
-  GodzinaOtwarcia: any;
+  Adres: any;
+  GodzinyOtwarcia: any;
   Koszt: any;
-  KrotkiOpis: any;
-  Ocena: any;
+  Nawierzchnia: any;
+  StronaInternetowa: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.NazwaMiejsca = navParams.get('Nazwa_Miejsca');
-    this.KategoriaSportu = navParams.get('Kategoria_Sportu');
+    this.Dyscyplina = navParams.get('Dyscyplina');
 
     this.KategoriaMiejsca = navParams.get('Kategoria_Miejsca');
-    this.Ulica = navParams.get('Ulica_Ulica');
+    this.Adres = navParams.get('Adres_Adres');
 
-    this.KrotkiOpis = navParams.get('Krótki_Opis');
-    this.Ocena = navParams.get('Ocena_Ocena');
+    this.Nawierzchnia = navParams.get('Nawierzchnia');
+    this.GodzinyOtwarcia = navParams.get('Godziny_Otwarcia');
 
-    this.GodzinaOtwarcia = navParams.get('Godzina_Otwarcia');
     this.Koszt = navParams.get('Koszt_Koszt');
+    this.StronaInternetowa = navParams.get("Strona_Internetowa")
   }
 
   ionViewDidLoad() {

@@ -1,3 +1,5 @@
+.ios, .md {
+
 page-koszykowka {
     ion-content {
         background-color: gainsboro !important;
@@ -28,15 +30,17 @@ page-koszykowka {
 
     ion-item{
         background-image: url("../../assets/layout/tlo_pasek1.png");
+        // background-image: url("../../assets/layout/test.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         border-radius : 10px;
         padding-bottom: 10px;
     }
+    
 
     ion-item .item-inner {
-        border-bottom: 0px!important;
+        border-bottom-left-radius: 10px!important;
      }
      
     //  ion-item {
@@ -75,8 +79,11 @@ page-koszykowka {
     text-wrap {
         font-size: 25px;
     }
-    .app-font-25 {
-        font-size: 25px;
+    .app-font {
+        font-size: 15px;
+    }
+    .app-font-km {
+        font-size: 13px;
     }
 
     ion-slides{
@@ -85,6 +92,23 @@ page-koszykowka {
 
     }
 
+    button{
+        // height: 1px;
+        transform: scale(0.8) !important;
+        // background-color: black;
+    }
+
+    .my-width{
+        width:80px;
+        border-radius : 100px;
+    }
+
+    .opis{
+        padding-top: 10%;
+        transform: scale(1) !important;
+    }
+    
 
 
+}
 }

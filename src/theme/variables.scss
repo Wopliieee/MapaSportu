@@ -39,7 +39,8 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  gray:       rgba(214, 213, 213, 0),
+  gray:       rgba(88, 88, 88, 0),
+  grayGRAY:       rgb(59, 59, 59),
   pink:       rgb(255, 20, 145)
 );
 
@@ -90,3 +91,21 @@ $colors: (
 @import "noto-sans";
 
 $fab-size: 50px;
+
+
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Roboto-Thin.ttf')
+}
+
+$font-family-base: "Open Sans";
+body{
+  font-family: "Open Sans" !important;
+  font-weight: 400 !important;
+}
+
+h1, h2, h3, h4, p, button{
+  font-family: "Open Sans" !important;
+}

@@ -37,13 +37,14 @@ export class KoszykowkaPage {
   lat5: any;
 
   NazwaMiejsca: any;
-  KategoriaSportu: any;
+  Dyscyplina: any;
   KategoriaMiejsca: any;
-  Ulica: any;
-  KrótkiOpis: any;
-  Ocena: any;
-  GodzinaOtwarcia: any;
+  Adres: any;
+  Nawierzchnia: any;
+  GodzinyOtwarcia: any;
   Koszt: any;
+  StronaInternetowa: any;
+
   results: any;
 
   
@@ -95,55 +96,54 @@ export class KoszykowkaPage {
 
 
     interface Miejsce {
-      nazwa: string;
       odleglosc: any;
       zdjecie: string;
       zdjecie2: string;
       zdjecie3: string;
 
       Nazwa_Miejsca: string,
-      Kategoria_Sportu: string,
+      Dyscyplina: string,
       Kategoria_Miejsca: string,
-      Ulica: string,
-      Krotki_Opis: string,
-      Ocena: string,
-      Godzina_Otwarcia: string,
+      Adres: string,
+      Nawierzchnia: string,
+      Godziny_Otwarcia: string,
       Koszt: string,
+      Strona_Internetowa: string,
       
       Nawigacja: string,
     }
 
 
     const miejsca: Miejsce[] =[
-      { nazwa: 'Boisko na Piekiełkach',
-          odleglosc: this.BoiskoNaPiekiełkach,
+      { odleglosc: this.BoiskoNaPiekiełkach,
           zdjecie: "../../assets/imgs/Boisko na Piekielkach/1.png",
           zdjecie2: "../../assets/imgs/Boisko na Piekielkach/2.png",
           zdjecie3: "../../assets/imgs/Boisko na Piekielkach/3.png",
+        
           Nazwa_Miejsca: "Piekiełki.",
-          Kategoria_Sportu: "Koszykówka.",
+          Adres: "ul. Księdza Piotra Ściegiennego",
           Kategoria_Miejsca: "Boisko.",
-          Ulica: "ul. Księdza Piotra Ściegiennego",
-          Krotki_Opis: "Asfaltowa nawierzchnia, miejsce na dworzu, kosze są zrobione z aluminium(?).",
-          Ocena: "2,5/5",
-          Godzina_Otwarcia: "24/7",
-          Koszt: "Darmowe wejście.",
+          Dyscyplina: "Koszykówka.",
+          Nawierzchnia: "Asfaltowa.",
+          Godziny_Otwarcia: "24/7",
+          Koszt: "Bezpłatne.",
+          Strona_Internetowa: "-",
           Nawigacja: "https://goo.gl/maps/4rLtpASJ3512"},
-
-      { nazwa: 'Osiedle Konstytucji 3 Maja',
-          odleglosc: this.BoiskoNaOsiedluKonstytucji3Maja,
+      
+      { odleglosc: this.BoiskoNaOsiedluKonstytucji3Maja,
           zdjecie: "../../assets/imgs/Osiedle Konstytucji 3 Maja/1.png",
           zdjecie2: "../../assets/imgs/Osiedle Konstytucji 3 Maja/2.png",
           zdjecie3: "../../assets/imgs/Osiedle Konstytucji 3 Maja/3.png",
+        
           Nazwa_Miejsca: "Boisko na Osiedlu Konstytucji 3 maja.",
-          Kategoria_Sportu: "Koszykówka.",
+          Adres: "Osiedle Konstytucji 3 maja.",
           Kategoria_Miejsca: "Boisko wielofunkcyjne.",
-          Ulica: "Osiedle Konstytucji 3 maja.",
-          Krotki_Opis: "Boisko zapewnia możliwości rozwoju w wielu dyscyplinach. Nawierzchnia w bardzo dobrym stanie - tartan.",
-          Ocena: "4.5/5",
-          Godzina_Otwarcia: "6:00-22:00.",
-          Koszt: "Darmowe wejście.",
-          Nawigacja: "https://tinyurl.com/Boisko-na-Osiedlu-Konstytucji"},
+          Dyscyplina: "Koszykówka.",
+          Nawierzchnia: "Tartan",
+          Godziny_Otwarcia: "6:00-22:00.",
+          Koszt: "Bezpłatne.",
+          Strona_Internetowa: "-",
+          Nawigacja: "https://www.google.com/maps/place/53%C2%B057'49.5%22N+18%C2%B030'36.2%22E/@53.9637468,18.5095028,19z/data=!3m1!4b1!4m14!1m7!4m6!1m0!1m3!2m2!1d18.5100513!2d53.9637463!3e0!3m5!1s0x0:0x0!7e2!8m2!3d53.9637464!4d18.5100499",},
           
     ];
 
@@ -196,21 +196,21 @@ export class KoszykowkaPage {
   }
 
   PUSHOPIS(){
-    this.navCtrl.push(OpisPage, {Nazwa_Miejsca: this.NazwaMiejsca, Kategoria_Sportu: this.KategoriaSportu,
-      Kategoria_Miejsca: this.KategoriaMiejsca, Ulica_Ulica: this.Ulica,
-      Krótki_Opis: this.KrótkiOpis, Ocena_Ocena: this.Ocena,
-      Godzina_Otwarcia: this.GodzinaOtwarcia, Koszt_Koszt: this.Koszt});
+    this.navCtrl.push(OpisPage, {Nazwa_Miejsca: this.NazwaMiejsca, Dyscyplina: this.Dyscyplina,
+      Kategoria_Miejsca: this.KategoriaMiejsca, Adres_Adres: this.Adres,
+      Nawierzchnia: this.Nawierzchnia,
+      Godziny_Otwarcia: this.GodzinyOtwarcia, Koszt_Koszt: this.Koszt, Strona_Internetowa: this.StronaInternetowa});
     }
 
-  OPIS(NM, KS, KM, U, KO, O, GO, K){
+  OPIS(NM, D, KM, A, N, GO, K, SI){
     this.NazwaMiejsca = NM
-    this.KategoriaSportu = KS
+    this.Dyscyplina = D
     this.KategoriaMiejsca = KM
-    this.Ulica = U
-    this.KrótkiOpis = KO
-    this.Ocena = O
-    this.GodzinaOtwarcia = GO
+    this.Adres = A
+    this.Nawierzchnia = N
+    this.GodzinyOtwarcia = GO
     this.Koszt = K
+    this.StronaInternetowa = SI
     this.PUSHOPIS()
   }
 
