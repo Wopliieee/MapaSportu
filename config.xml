@@ -93,5 +93,9 @@
     </plugin>
     <plugin name="com-sarriaroman-photoviewer" spec="^1.1.18" />
     <engine name="android" spec="^7.1.4" />
+<<<<<<< HEAD
     <engine name="ios" spec="^4.5.5" />
+=======
+    <engine name="ios" spec="4.5.5" />
+>>>>>>> de83169e79d7a97ad97d74f477a842093e8cdb59
 </widget>
