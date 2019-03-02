@@ -24,31 +24,27 @@ export class AboutPage {
   lon: any;
   wathID: any;
   page = "page1";
+
+  // this.lat = data.coords.latitude;
+  // this.lon = data.coords.longitude;
   
 
   
   constructor(public navCtrl: NavController, public navParams: NavParams, private geo: Geolocation, private platform: Platform) {
-    {  
-      let GeoOption = { enableHighAccuracy : true};
-      try
-      {
-        this.wathID = this.geo.watchPosition(GeoOption).subscribe(data =>
-          {
-            this.wathID.unsubscribe();
-            this.lat = data.coords.latitude;
-            this.lon = data.coords.longitude;
-            },
-          error =>
-          {
-            this.message = "GPS error " + error;
-          }
-        );
-        }catch(err)
-        {
-          alert("error " + err);
-          this.message = "error " + err;
-        }
-      }
+    this.platform.ready().then(() =>{
+      var options = {
+        timeout: 5000
+      };
+      this.geo.getCurrentPosition(options).then(resp => {
+        this.lat = resp.coords.latitude;
+        this.lon = resp.coords.longitude;
+        console.log(resp.coords.latitude);
+        console.log(resp.coords.longitude);
+      }).catch(() => {
+        console.log("Error to get location");
+      });
+
+    });
     
   }
 

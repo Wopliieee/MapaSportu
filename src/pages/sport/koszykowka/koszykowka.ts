@@ -69,27 +69,20 @@ export class KoszykowkaPage {
   
 
   refresh(){
-    {  
-      let GeoOption = { enableHighAccuracy : true};
-      try
-      {
-        this.wathID = this.geo.watchPosition(GeoOption).subscribe(data =>
-          {
-            this.wathID.unsubscribe();
-            this.lat5 = data.coords.latitude;
-            this.lon5 = data.coords.longitude; 
-            },
-          error =>
-          {
-            this.message = "GPS error " + error;
-          }
-        );
-        }catch(err)
-        {
-          alert("error " + err);
-          this.message = "error " + err;
-        }
-      }
+    this.platform.ready().then(() =>{
+      var options = {
+        timeout: 5000
+      };
+      this.geo.getCurrentPosition(options).then(resp => {
+        this.lat5 = resp.coords.latitude;
+        this.lon5 = resp.coords.longitude;
+        console.log(resp.coords.latitude);
+        console.log(resp.coords.longitude);
+      }).catch(() => {
+        console.log("Error to get location");
+      });
+
+    });
 
     this.ObliczKilometry(53.963750, 18.510056, "BoiskoNaOsiedluKonstytucji3Maja")
     this.ObliczKilometry(53.970762, 18.515613, "BoiskoNaPiekiełkach")
