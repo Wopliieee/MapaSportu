@@ -34,14 +34,16 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #9cb6e4b0,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
   gray:       rgba(88, 88, 88, 0),
   grayGRAY:       rgb(59, 59, 59),
-  pink:       rgb(255, 20, 145)
+  pink:       rgb(255, 20, 145),
+  przezroczysty: rgba(255, 20, 145, 0),
+  różowy: rgb(227, 175, 199),
 );
 
 
@@ -109,3 +111,4 @@ body{
 h1, h2, h3, h4, p, button{
   font-family: "Open Sans" !important;
 }
+

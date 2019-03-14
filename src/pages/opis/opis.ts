@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 /**
  * Generated class for the OpisPage page.
@@ -23,7 +24,7 @@ export class OpisPage {
   Nawierzchnia: any;
   StronaInternetowa: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private iab: InAppBrowser) {
     this.NazwaMiejsca = navParams.get('Nazwa_Miejsca');
     this.Dyscyplina = navParams.get('Dyscyplina');
 
@@ -35,10 +36,21 @@ export class OpisPage {
 
     this.Koszt = navParams.get('Koszt_Koszt');
     this.StronaInternetowa = navParams.get("Strona_Internetowa")
+
+    if(this.StronaInternetowa == "-")
+    this.StronaInternetowa = ""
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OpisPage');
   }
+
+
+  OpenUrl(url){
+    const browser = this.iab.create(url);
+    browser.show()
+
+    }
 
 }

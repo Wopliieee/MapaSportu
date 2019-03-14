@@ -1,6 +1,8 @@
 <ion-header>
   <ion-navbar transparent>
     <h3 style="padding-left: 5%;" ion-text color="dark">Opis</h3>
+
+    <img width="50" height="50" style="float: right; margin-top: -52px;" src="../assets/layout/FAB_logo.png">
   </ion-navbar>
 </ion-header>
 
@@ -12,9 +14,18 @@
   <p> <b>Kategoria miejsca: </b>{{KategoriaMiejsca}}</p>
   <p> <b>Dyscyplina: </b>{{Dyscyplina}}</p>
   <p> <b>Nawierzchnia: </b>{{Nawierzchnia}}</p>
+
+  <div class="multiline">
   <p> <b>Godziny otwarcia: </b>{{GodzinyOtwarcia}}</p>
+  </div>
+
+  <div class="multiline2">
   <p> <b>Koszt: </b>{{Koszt}}</p>
-  <p> <b>Strona internetowa: </b>{{StronaInternetowa}}</p>
+  </div>
+  
+  <div class="multiline3">
+  <p> <b>Strona internetowa: </b><a (click)="OpenUrl(this.StronaInternetowa)"> {{StronaInternetowa}} </a></p>
+  </div>
 
   <!-- <p> <ins> <b>Nazwa miejsca: </b></ins>{{NazwaMiejsca}}</p>
   <p> <ins> <b>Adres: </b></ins>{{Adres}}</p>

@@ -1,20 +1,20 @@
 <ion-header>
   
     <ion-navbar transparent>
-        <button ion-button menuToggle >
-            <img width="37" height="37" src='../../assets/layout/wiecej.png'>
-          </button>
+      <button ion-button menuToggle >
+        <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
+      </button>
   
       <h3 style="padding-left: 15px;" ion-text color="dark">Sport!</h3>
       
-      
+      <img width="50" height="50" style="float: right; margin-top: -52px;" src="../assets/layout/FAB_logo.png">
     </ion-navbar>
-    <ion-segment [(ngModel)]="page" color="pink">
+    <ion-segment mode="md" [(ngModel)]="page" color="pink">
         <ion-segment-button value="page1">
-          Sport
+          Dyscyplina
         </ion-segment-button>
         <ion-segment-button value="page2">
-          Miejsca
+          Miejsce
         </ion-segment-button>
       </ion-segment>
     
@@ -27,9 +27,9 @@
     <ion-list *ngSwitchCase="'page1'">
         <ion-grid>
           <ion-row align-items-start>
-              <img id="sport" (click)="koszykowkaNAV()" width=150 height=150 src="../../assets/layout/sport/koszykowka.png"/>
-              <img id="sport" (click)="pilkanoznaNAV()" width=150 height=150 src="../../assets/layout/sport/pilkanozna.png"/>
-              <img id="sport" (click)="pilkarecznaNAV()" width=150 height=150 src="../../assets/layout/sport/pilkareczna.png"/>
+              <img style="margin: auto;" id="sport" (click)="koszykowkaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/koszykowka.png"/>
+              <img style="margin: auto;" id="sport" (click)="pilkanoznaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/pilkanozna.png"/>
+              <img style="margin: auto;" id="sport" (click)="pilkarecznaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/pilkareczna.png"/>
           </ion-row>
         </ion-grid>
           
@@ -39,7 +39,7 @@
         <ion-grid>
             <ion-row>
               <ion-col>
-                  <img id="sport" (click)="boiskoNAV()" width=150 height=150 src="../../assets/layout/miejsca/boisko.png"/>
+                  <img style="margin: auto;" id="sport" (click)="boiskoNAV()" width=110 height=110 src="../../assets/layout/miejsce/boisko.png"/>
               </ion-col>
             </ion-row>
           </ion-grid>

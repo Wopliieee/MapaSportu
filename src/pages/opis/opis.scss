@@ -17,6 +17,7 @@ page-opis {
 
     b {
         font-size: 16px;
+        color: rgb(0, 0, 0);
     }
     // b{
     //     font-style: normal;
@@ -24,5 +25,23 @@ page-opis {
     // p{
     //     font-style: italic;
     // }
+
+    .multiline{
+        white-space: pre-wrap;
+        margin-top: -50px;
+        margin-left: -4px;
+    }
+    .multiline2{
+        white-space: pre-wrap;
+        margin-top: -85px;
+        margin-left: -4px;
+        }
+    .multiline3{
+        margin-top: -52px;
+        margin-left: -1px;
+        }
+    a{
+        color: rgb(245, 115, 201);
+    }
 
 }

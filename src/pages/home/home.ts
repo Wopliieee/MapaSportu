@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { NavController, Platform } from 'ionic-angular';
-
+import { Component} from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 
 @Component({
@@ -9,9 +9,10 @@ import { NavController, Platform } from 'ionic-angular';
 })
 export class HomePage {
   tabBarElement: any;
+  change: string;
 
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private iab: InAppBrowser) {
     
 
   }
