@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { Component, NgModule, Testability } from '@angular/core';
 import { NavController, NavParams, Platform } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { ImageViewerController } from 'ionic-img-viewer';
@@ -7,6 +7,7 @@ import { Slides } from 'ionic-angular';
 import { OpisPage } from '../../opis/opis';
 import { Observable } from 'rxjs';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import "rxjs/add/operator/map";
 
 @NgModule()
 @Component({
@@ -92,6 +93,8 @@ export class KoszykowkaPage {
   SalaGimnastycznaPSP4: any;
   SalaGimnastycznaPSP8: any;
   SalaGimnastycznaZSE: any;
+  lat555: any;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
     
@@ -99,9 +102,10 @@ export class KoszykowkaPage {
     
     this.lat5 = navParams.get('data');
     this.lon5 = navParams.get('data2');
-        
+
     this.refresh()
   } 
+
 
   doRefresh(refresher) {
     this.test = Math.floor(Math.random() * 6) + 1  
@@ -111,7 +115,7 @@ export class KoszykowkaPage {
   
 
   refresh(){
-    {  
+   {  
       let GeoOption = { enableHighAccuracy : true};
       try
       {
@@ -132,8 +136,6 @@ export class KoszykowkaPage {
           this.message = "error " + err;
         }
       }
-
-
 
     interface Miejsce {
       odleglosc: any;
