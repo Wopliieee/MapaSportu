@@ -102,19 +102,19 @@ export class KoszykowkaPage {
   ZDJECIE: any;
   ZDJECIE2: any;
   ZDJECIE3: any;
-  LiveRefreshX: number;
+  LiveRefreshX: any;
 
 
   constructor(private screenOrientation: ScreenOrientation, private photoViewer: PhotoViewer, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
     
     this.imageViewerCtrl = imageViewerCtrl;
     
-    
     this.lat5 = navParams.get('data');
     this.lon5 = navParams.get('data2');
 
     this.refresh()
     this.LiveRefresh()
+
 
     this.screenOrientation.onChange().subscribe(
       () => {
@@ -124,17 +124,30 @@ export class KoszykowkaPage {
     
   } 
 
-  LiveRefresh(){
+  ionViewWillEnter(){
     this.LiveRefreshX = 1
-    if(this.LiveRefreshX == 1)
+    console.log("wszedłem")
+    setTimeout(() => 
+    {
       this.refresh()
-      console.log("refreshed")
-      this.LiveRefreshX = 0
-      setTimeout(() => 
-      {
-        this.LiveRefresh()
-      },
-      10000); 
+    },
+    2000); 
+  }
+
+  ionViewWillLeave(){
+    this.LiveRefreshX = 0
+    console.log("wyszedłem")
+  }
+
+  LiveRefresh(){
+      if(this.LiveRefreshX == 1)
+        console.log("refreshed")
+        setTimeout(() => 
+        {
+          this.refresh()
+          this.LiveRefresh()
+        },
+        5000); 
   }
 
   ViewPhoto(photo){
@@ -150,6 +163,7 @@ export class KoszykowkaPage {
   
 
   refresh(){
+
    {  
       let GeoOption = { enableHighAccuracy : true};
       try
@@ -927,7 +941,7 @@ export class KoszykowkaPage {
       return 0;
   });
   
-    console.log(sortedByOdleglosc.reverse())
+    // console.log(sortedByOdleglosc.reverse())
     this.results = sortedByOdleglosc
   }
 
