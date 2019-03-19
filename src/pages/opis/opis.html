@@ -16,7 +16,7 @@
   <p> <b>Nawierzchnia: </b>{{Nawierzchnia}}</p>
 
   <div class="multiline">
-  <p> <b>Godziny otwarcia: </b>{{GodzinyOtwarcia}}</p>
+  <p class="interlinia"> <b>Godziny otwarcia: </b>{{GodzinyOtwarcia}}</p>
   </div>
 
   <div class="multiline2">
@@ -26,6 +26,21 @@
   <div class="multiline3">
   <p> <b>Strona internetowa: </b><a (click)="OpenUrl(this.StronaInternetowa)"> {{StronaInternetowa}} </a></p>
   </div>
+
+  <h1>Galeria Zdjęć</h1>
+
+  <ion-slides autoplay="3000" pager="true" loop="true" style="align-items: center;">
+      <ion-slide>
+        <img [src]="zdj" imageViewer>
+      </ion-slide>
+      <ion-slide>
+        <img [src]="zdj2" imageViewer>
+      </ion-slide>
+      <ion-slide>
+        <img [src]="zdj3" imageViewer>
+      </ion-slide>
+    </ion-slides>
+
 
   <!-- <p> <ins> <b>Nazwa miejsca: </b></ins>{{NazwaMiejsca}}</p>
   <p> <ins> <b>Adres: </b></ins>{{Adres}}</p>

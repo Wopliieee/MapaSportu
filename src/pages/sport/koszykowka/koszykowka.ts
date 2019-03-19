@@ -1,4 +1,5 @@
-import { Component, NgModule, Testability } from '@angular/core';
+import { PhotoPage } from './../../photo/photo';
+import { Component, NgModule } from '@angular/core';
 import { NavController, NavParams, Platform } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { ImageViewerController } from 'ionic-img-viewer';
@@ -8,6 +9,8 @@ import { OpisPage } from '../../opis/opis';
 import { Observable } from 'rxjs';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import "rxjs/add/operator/map";
+import { PhotoViewer } from '@ionic-native/photo-viewer';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 @NgModule()
 @Component({
@@ -94,18 +97,50 @@ export class KoszykowkaPage {
   SalaGimnastycznaPSP8: any;
   SalaGimnastycznaZSE: any;
   lat555: any;
+  imageViewerCtrl: ImageViewerController;
+  informationPHOTO: any;
+  ZDJECIE: any;
+  ZDJECIE2: any;
+  ZDJECIE3: any;
+  LiveRefreshX: number;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
+  constructor(private screenOrientation: ScreenOrientation, private photoViewer: PhotoViewer, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
     
-    this._imageViewerCtrl = imageViewerCtrl;
+    this.imageViewerCtrl = imageViewerCtrl;
+    
     
     this.lat5 = navParams.get('data');
     this.lon5 = navParams.get('data2');
 
     this.refresh()
+    this.LiveRefresh()
+
+    this.screenOrientation.onChange().subscribe(
+      () => {
+        this.refresh()
+      }
+   );
+    
   } 
 
+  LiveRefresh(){
+    this.LiveRefreshX = 1
+    if(this.LiveRefreshX == 1)
+      this.refresh()
+      console.log("refreshed")
+      this.LiveRefreshX = 0
+      setTimeout(() => 
+      {
+        this.LiveRefresh()
+      },
+      10000); 
+  }
+
+  ViewPhoto(photo){
+    this.informationPHOTO = photo
+    this.navCtrl.push(PhotoPage, {zdj: this.informationPHOTO});
+    }
 
   doRefresh(refresher) {
     this.test = Math.floor(Math.random() * 6) + 1  
@@ -468,17 +503,14 @@ export class KoszykowkaPage {
           Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
           Dyscyplina: "Koszykówka; Siatkówka",
           Nawierzchnia: "Tartan",
-          Godziny_Otwarcia: `
-              Marzec – Kwiecień
-              Pon. - Pt.: 17:00 – 20:00
-              Sob. - Ndz.: 14:00 – 21:30
-
-              Maj – Październik
-              Pon. - Pt.: 17:0 – 21:30
-              Sob.- Ndz.: 14:00 – 21:30
-
-              Listopad – Luty
-              Zamknięte`,
+          Godziny_Otwarcia: `Marzec – Kwiecień
+                                      Pon. - Pt.: 17:00 – 20:00
+                                      Sob. - Ndz.: 14:00 – 21:30
+                                      Maj – Październik
+                                      Pon. - Pt.: 17:0 – 21:30
+                                      Sob.- Ndz.: 14:00 – 21:30
+                                      Listopad – Luty
+                                      Zamknięte`,
           Koszt: "Bezpłatne",
           Strona_Internetowa: "-",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'57.5%22N+18%C2%B029'33.5%22E/@53.9826421,18.4904373,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.982639!4d18.492626"},
@@ -1060,10 +1092,11 @@ export class KoszykowkaPage {
     this.navCtrl.push(OpisPage, {Nazwa_Miejsca: this.NazwaMiejsca, Dyscyplina: this.Dyscyplina,
       Kategoria_Miejsca: this.KategoriaMiejsca, Adres_Adres: this.Adres,
       Nawierzchnia: this.Nawierzchnia,
-      Godziny_Otwarcia: this.GodzinyOtwarcia, Koszt_Koszt: this.Koszt, Strona_Internetowa: this.StronaInternetowa});
+      Godziny_Otwarcia: this.GodzinyOtwarcia, Koszt_Koszt: this.Koszt, Strona_Internetowa: this.StronaInternetowa,
+      zdjecie: this.ZDJECIE, zdjecie2: this.ZDJECIE2, zdjecie3: this.ZDJECIE3});
     }
 
-  OPIS(NM, D, KM, A, N, GO, K, SI){
+  OPIS(NM, D, KM, A, N, GO, K, SI, Z, Z2, Z3){
     this.NazwaMiejsca = NM
     this.Dyscyplina = D
     this.KategoriaMiejsca = KM
@@ -1072,6 +1105,9 @@ export class KoszykowkaPage {
     this.GodzinyOtwarcia = GO
     this.Koszt = K
     this.StronaInternetowa = SI
+    this.ZDJECIE = Z
+    this.ZDJECIE2 = Z2
+    this.ZDJECIE3 = Z3
     this.PUSHOPIS()
   }
 

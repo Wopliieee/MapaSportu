@@ -28,7 +28,7 @@ page-opis {
 
     .multiline{
         white-space: pre-wrap;
-        margin-top: -50px;
+        margin-top: -53px;
         margin-left: -4px;
     }
     .multiline2{
@@ -40,8 +40,31 @@ page-opis {
         margin-top: -52px;
         margin-left: -1px;
         }
+    .interlinia{
+        line-height: 1.6;
+    }
     a{
         color: rgb(245, 115, 201);
     }
+
+    h1{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    img{
+        border-radius: 10px;
+    }
+    ion-slide{
+        border-radius: 10px;
+    }
+    ion-slides{
+        height: 200px;
+        border-radius: 10px;
+    }
+    .swiper-pagination-bullet-active {
+        background: rgb(255, 255, 255);
+        opacity: 1;
+        }
 
 }

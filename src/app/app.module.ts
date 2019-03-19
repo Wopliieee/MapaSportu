@@ -27,9 +27,18 @@ import { ZoomAreaModule } from 'ionic2-zoom-area';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
 import { OpisPage } from '../pages/opis/opis';
 import { PilkarecznaPage } from '../pages/sport/pilkareczna/pilkareczna';
+import { PhotoPage } from '../pages/photo/photo';
+import {ImageZoomModule} from 'angular2-image-zoom';
+import { CommonModule } from '@angular/common';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
-
-
+class ScreenOrientationMock extends ScreenOrientation {
+  lock(type) {
+    return new Promise((resolve, reject) => {
+      resolve("locked");
+    })
+  }
+}
 @NgModule({
   declarations: [
     MyApp,
@@ -44,7 +53,8 @@ import { PilkarecznaPage } from '../pages/sport/pilkareczna/pilkareczna';
     GoogleMapComponent,
     PilkanoznaPage,
     BoiskoPage,
-    PilkarecznaPage
+    PilkarecznaPage,
+    PhotoPage
     
   ],
   imports: [
@@ -57,7 +67,9 @@ import { PilkarecznaPage } from '../pages/sport/pilkareczna/pilkareczna';
     IonicImageViewerModule,
     ionicGalleryModal.GalleryModalModule,
     ZoomAreaModule.forRoot(),
-    ZoomAreaModule
+    ZoomAreaModule,
+    ImageZoomModule,
+    CommonModule
     
 
   ],
@@ -74,7 +86,8 @@ import { PilkarecznaPage } from '../pages/sport/pilkareczna/pilkareczna';
     OpisPage,
     PilkanoznaPage,
     BoiskoPage,
-    PilkarecznaPage
+    PilkarecznaPage,
+    PhotoPage
 
   ],
   providers: [
@@ -83,11 +96,14 @@ import { PilkarecznaPage } from '../pages/sport/pilkareczna/pilkareczna';
     Geolocation,
     PhotoViewer,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ScreenOrientation, useClass: ScreenOrientationMock },
     {
       provide: HAMMER_GESTURE_CONFIG,
       useClass: ionicGalleryModal.GalleryModalHammerConfig
     },
-    InAppBrowser
+    InAppBrowser,
+    ScreenOrientation
   ]
 })
 export class AppModule {}
+

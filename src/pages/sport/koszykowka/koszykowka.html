@@ -19,7 +19,6 @@
   
   <ion-content padding>
   
-  
   <ion-refresher id="lower" slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content id="lower"
     pullingIcon="custom-glownaZZT"
@@ -29,27 +28,18 @@
     </ion-refresher-content>
   </ion-refresher>
   
-  <div [virtualScroll]="results">
+
+  <ion-list text-wrap [virtualScroll]="results" [approxItemHeight]=" '200px'" [bufferRatio]="30">
   <ion-grid *virtualItem="let result">
-  <ion-row>
-  <ion-col>
+  <ion-row >
+  <ion-col >
   
-  <ion-list text-wrap>
+
   <ion-item no-lines class="tlo">
       <ion-label class="zdjecia">
-        
-          <ion-slides pager="true" loop="true" style="align-items: center;">
-              <ion-slide >
-                <img [src]="result.zdjecie" imageViewer>
-              </ion-slide>
-              <ion-slide>
-                <img [src]="result.zdjecie2" imageViewer>
-              </ion-slide>
-              <ion-slide>
-                <img [src]="result.zdjecie3" imageViewer>
-              </ion-slide>
-            </ion-slides>
+          <!-- imageViewer -->
 
+                <img style="align-items: center;" [src]="result.zdjecie" imageViewer>
       </ion-label>
 
 
@@ -66,27 +56,30 @@
   <ion-item no-lines class="przezroczyste">
     <ion-toolbar color="gray" class="opactiy">
       <ion-row>
-          <ion-col col-3> 
-              <h2 ion-text style="left: -14px; float: left; margin-top: auto; bottom:5px; transform: scale(0.8); width:60px; height: 27px;" no-padding class="opisek" ion-button (click)="OPIS(result.Nazwa_Miejsca, result.Dyscyplina, result.Kategoria_Miejsca, result.Adres, result.Nawierzchnia, result.Godziny_Otwarcia, result.Koszt, result.Strona_Internetowa)">Opis</h2>
-          </ion-col>
-        
-          <ion-col col-3>
-              <h2 ion-text style="right: -10px; float: right; margin-top: auto; bottom:5px; transform: scale(0.8); width:88px; height: 27px;" no-padding class="opisek" ion-button (click)="OpenUrl(result.Nawigacja)">Nawiguj</h2>
+          <ion-col col-6 style="left: -5px; top: 13px; transform: scale(0.9)">
+              <h2 ion-text class="app-font-km">{{result.odleglosc}} km</h2>
           </ion-col>
 
-          <ion-col col-6 style="right: -6px; top: -2px; transform: scale(0.9)">
-              <h2 ion-text class="app-font-km">Odległość: {{result.odleglosc}} km</h2>
+          <ion-col col-3>
+              <h2 ion-text style="left: -10px; float: left; margin-top: auto; top:10px; transform: scale(0.8); width:83px; height: 27px;" no-padding class="opisek" ion-button (click)="OpenUrl(result.Nawigacja)">Nawiguj</h2>
           </ion-col>
+          
+          <ion-col col-3> 
+              <h2 ion-text style="right: -10px; float: right; margin-top: auto; top:10px; transform: scale(0.8); width:58px; height: 27px;" no-padding class="opisek" ion-button (click)="OPIS(result.Nazwa_Miejsca, result.Dyscyplina, result.Kategoria_Miejsca, result.Adres, result.Nawierzchnia, result.Godziny_Otwarcia, result.Koszt, result.Strona_Internetowa, result.zdjecie, result.zdjecie2, result.zdjecie3)">Opis</h2>
+          </ion-col>
+
+        
+          
       </ion-row>
     </ion-toolbar>
 </ion-item>
       
 
-  </ion-list>
+  
   </ion-col>
 
   </ion-row>
   </ion-grid>
-</div>
 
-  </ion-content>
+
+</ion-list>

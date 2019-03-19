@@ -1,0 +1,39 @@
+page-photo {
+
+    .flex-content {
+        margin: 0px auto;
+        width: 100%;
+        height: 100%;
+        display: flex; /* Magic begins */
+        justify-content: center; /* Center in main axis */
+        align-items: center; /* Center in cross axis */
+      }
+      #photo-fullscreen {
+        max-width: 100%;
+        max-height: 100%
+      }
+.zdjecie{
+    background-image: url({zdj});
+}
+      
+.close-fake {
+    --background: transparent;
+    ion-icon {
+        font-size: 2rem;
+    }
+    margin-top: 40px;
+}
+ 
+ion-content {
+    background-color: rgb(255, 0, 0);
+}
+ 
+ion-slides {
+    height: 80%;
+}
+
+// .rotate {
+//     transform: rotate(90deg);
+//   }
+
+}

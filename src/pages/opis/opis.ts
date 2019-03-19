@@ -23,6 +23,10 @@ export class OpisPage {
   Koszt: any;
   Nawierzchnia: any;
   StronaInternetowa: any;
+  zdj2: any;
+  zdj: any;
+  zdj3: any;
+  
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private iab: InAppBrowser) {
     this.NazwaMiejsca = navParams.get('Nazwa_Miejsca');
@@ -35,16 +39,26 @@ export class OpisPage {
     this.GodzinyOtwarcia = navParams.get('Godziny_Otwarcia');
 
     this.Koszt = navParams.get('Koszt_Koszt');
-    this.StronaInternetowa = navParams.get("Strona_Internetowa")
+    this.StronaInternetowa = navParams.get("Strona_Internetowa");
 
     if(this.StronaInternetowa == "-")
     this.StronaInternetowa = ""
 
+    this.zdj = navParams.get('zdjecie');
+    this.zdj2 = navParams.get("zdjecie2");
+    this.zdj3 = navParams.get("zdjecie3");
+
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad OpisPage');
+
+  ionViewWillEnter() {
+    console.log("wszedłeś")
   }
+
+  ionViewWillLeave() {
+    console.log('wyszedłeś');
+  }
+
 
 
   OpenUrl(url){

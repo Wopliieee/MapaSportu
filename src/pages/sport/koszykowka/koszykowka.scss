@@ -36,15 +36,32 @@ page-koszykowka {
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        border-radius : 10px;
         box-shadow: 22px 16px 65px -31px rgba(0,0,0,0.74);
-        padding-bottom: 65px;
+        border-radius : 15px;
+
     }
+    .wordwarp {
+        word-wrap: normal;
+        word-break: break-all;
+        white-space: normal;
+        display: block;
+        height: auto;
+        margin: 3px auto;
+        line-height: 1.4;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
     
 
     ion-item .item-inner {
-        border-bottom-left-radius: px!important;
-        margin-bottom: -20px;
+        // border-bottom-left-radius: px!important;
+        // margin-top: auto;
+        padding-bottom: 50px;
+        margin-top: auto;
+        
+        // margin-left: 1px;
+        // margin-right: 1px;
+        
      }
      
     //  ion-item {
@@ -130,11 +147,14 @@ page-koszykowka {
         color: rgb(255, 255, 255);
         margin-top: auto;
         border-radius: 50px;
+        margin-right:auto;
     }
 
     .opisek{
         width:80px;
         border-radius : 100px;
+        box-shadow:none;
+        font-size: 13px;
     }
 
     .nawigowanko{
@@ -144,7 +164,10 @@ page-koszykowka {
 
     .przezroczyste{
         background-color: rgba(255, 0, 0, 0);
-        margin-top: -59px;
+        margin-top: -74px;
+        // margin-top: auto;
+        // background: rgb(255, 255, 255);
+        height: 70px;
 
     }
 
