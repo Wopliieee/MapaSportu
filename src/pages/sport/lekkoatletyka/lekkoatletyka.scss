@@ -1,0 +1,195 @@
+    .ios, .md {
+
+        page-lekkoatletyka {
+            ion-content {
+                background-color: gainsboro !important;
+                background-image: url('../../assets/layout/tlo.png') !important;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                
+            }
+        
+            ion-navbar {
+                background-image: url('../../assets/layout/pasek_gora.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        
+            ion-card-content{
+                background-image: url('../../assets/layout/pasek_gora.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        
+            img{
+                border-radius : 10px;
+            }
+        
+            .tlo{
+                // background-image: url("../../assets/layout/tlo_pasek1.png");
+                // background-image: url("../../assets/layout/test.png");
+                background-color: rgb(227, 175, 199);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                box-shadow: 22px 16px 65px -31px rgba(0,0,0,0.74);
+                border-radius : 15px;
+        
+            }
+            .wordwarp {
+                word-wrap: normal;
+                word-break: break-all;
+                white-space: normal;
+                display: block;
+                height: auto;
+                margin: 3px auto;
+                line-height: 1.4;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+              }
+            
+        
+            ion-item .item-inner {
+                // border-bottom-left-radius: px!important;
+                // margin-top: auto;
+                padding-bottom: 15px;
+                margin-top: auto;
+                
+                // margin-left: 1px;
+                // margin-right: 1px;
+                
+             }
+             
+            //  ion-item {
+            //     border-bottom: 5px solid rgba(21, 255, 0, 0)!important;
+            //  }
+        
+            
+            ion-icon {
+                &[class*="custom-"] {
+                    margin: 0 5px 0 0;
+                    vertical-align: middle;
+                    $sz: 50px;
+                    width: $sz;
+                    height: $sz;
+                } // custom icons
+                &[class*="glownaZZT"]{
+                    background: url('../../assets/layout/logo.png') no-repeat 50% 50%;
+                    background-size: contain;
+                    background-size: 80%;
+                }
+        
+                &[class*="MapaSportu"]{
+                    background: url('../../assets/layout/logo.png') no-repeat 80% 100%;
+                    background-size: contain;
+                    background-size: 120%;
+                }
+            }
+            .fab {background-color: white;
+            }
+        
+        
+            #lower {
+                padding-top: 10px;
+            }
+        
+            text-wrap {
+                font-size: 25px;
+            }
+            .app-font {
+                font-size: 15px;
+                line-height: 1.7;
+                // background-color: aqua;
+                padding-top: 10px;
+            }
+            .app-font-km {
+                font-size: 13px;
+            }
+        
+            ion-slides{
+                // height: 110px;
+                transform: scale(1) !important;
+        
+            }
+        
+            button{
+                // height: 1px;
+                transform: scale(0.7) !important;
+                // background-color: black;
+                margin-top: -7px;
+            }
+        
+        
+            .opis{
+                padding-top: 10%;
+                transform: scale(1) !important;
+            }
+        
+            .zdjecia{
+                margin-bottom: auto;
+              }
+        
+            h4{
+                font-weight: 900;
+                
+                // margin-bottom: 5px;
+            }
+        
+        
+            h2{
+                font-weight: bold;
+                // margin-bottom: 5px;
+                background-color: rgb(53, 50, 56);
+                height: 26px;
+                text-align: center;
+                line-height: 28px;
+                color: rgb(255, 255, 255);
+                margin-top: auto;
+                border-radius: 50px;
+                margin-right:auto;
+            }
+        
+            .opisek{
+                width:80px;
+                border-radius : 100px;
+                box-shadow:none;
+                font-size: 13px;
+            }
+        
+            .nawigowanko{
+                width:80px;
+                border-radius : 100px;
+            }
+        
+            .przezroczyste{
+                background-color: rgba(255, 0, 0, 0);
+                margin-top: -74px;
+                // margin-top: auto;
+                // background: rgb(255, 255, 255);
+                height: 70px;
+        
+            }
+        
+            .opactiy{
+                background-color: rgba(255, 0, 0, 0);
+            }
+        
+            .swiper-pagination-bullet-active {
+                background: rgb(255, 255, 255);
+                opacity: 1;
+                }
+        
+            h3{
+                color: white;
+                opacity: 0.75;
+                text-shadow: 0 0 10px #FFF;
+                font-style: italic;
+                transform: skew(3.9deg);
+            }
+        
+        }
+        }

@@ -11,7 +11,7 @@
     "lint": "ionic-app-scripts lint"
   },
   "dependencies": {
-    "@angular/animations": "^7.2.9",
+    "@angular/animations": "^7.2.10",
     "@angular/common": "5.2.11",
     "@angular/compiler": "5.2.11",
     "@angular/compiler-cli": "5.2.11",
@@ -20,7 +20,7 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
-    "@angular/router": "^7.2.9",
+    "@angular/router": "^7.2.10",
     "@ionic-native/app-update": "^4.20.0",
     "@ionic-native/core": "~4.15.0",
     "@ionic-native/geolocation": "^4.20.0",
@@ -81,7 +81,7 @@
   "devDependencies": {
     "@angular/cli": "^7.3.6",
     "@ionic/app-scripts": "^3.2.3",
-    "typescript": "^2.9.2"
+    "typescript": "^3.3.4000"
   },
   "description": "An Ionic project",
   "cordova": {

@@ -6,8 +6,11 @@
           <img width="37" height="37" src='../../assets/layout/wiecej.png'>
         </button>
         
-    <h3 style="padding-left: 15px;" ion-text color="dark">Piłka nożna!</h3>
-    <img width="50" height="50" style="float: right; margin-top: -52px;" src="../assets/layout/FAB_logo.png">
+        <div text-center>
+        <h3 style="padding-right: 50px;" ion-text>PIŁKA NOŻNA</h3>
+        </div>
+
+        <img width="50" height="50" style="float: right; margin-top: -52px;" src="../assets/layout/FAB_logo.png">
     </ion-navbar>
     
 
@@ -25,27 +28,34 @@
   </ion-refresher-content>
 </ion-refresher>
 
-<ion-list text-wrap>
-<ion-item *ngFor="let result of results">
-  <ion-slides autoplay="4000" pager="true" loop="true">
-    <ion-slide>
-      <img [src]="result.zdjecie" imageViewer>
-    </ion-slide>
-    <ion-slide>
-      <img [src]="result.zdjecie2" imageViewer>
-    </ion-slide>
-    <ion-slide>
-      <img [src]="result.zdjecie3" imageViewer>
-    </ion-slide>
-  </ion-slides>
+
+<ion-list text-wrap [virtualScroll]="results" [approxItemHeight]=" '200px'" [bufferRatio]="30" >
+<ion-grid *virtualItem="let result">
+<ion-row (click)="OPIS(result.Nazwa_Miejsca, result.Dyscyplina, result.Kategoria_Miejsca, result.Adres, result.Nawierzchnia, result.Godziny_Otwarcia, result.Koszt, result.Strona_Internetowa, result.zdjecie, result.zdjecie2, result.zdjecie3, result.Nawigacja)">
+<ion-col >
 
 
-  <h1 [innerText]="result.nazwa" class="app-font-25"></h1>
-  <h2>Odległość: {{result.odleglosc}} km</h2>
-  <button full ion-button (click)="OPIS(result.Nazwa_Miejsca, result.Kategoria_Sportu, result.Kategoria_Miejsca, result.Ulica, result.Krotki_Opis, result.Ocena, result.Godzina_Otwarcia, result.Koszt)">OPIS</button>
-  <button full ion-button class="position" (click)="OpenUrl(result.Nawigacja)"><ion-icon name="navigate"></ion-icon>Nawiguj</button>
+<ion-item no-lines class="tlo">
+    <ion-label class="zdjecia">
+        <!-- imageViewer -->
+
+              <img style="align-items: center;" [src]="result.zdjecie" imageViewer>
+              <h2 style="margin-top: 10px;" class="app-font-km">{{result.odleglosc}} km</h2>
+    </ion-label>
+
+
+    <ion-label>
+      <div class="tytul" text-center>
+        <h4 style="font-size: 17px;" [innerText]="result.Nazwa_Miejsca" class="app-font"></h4>
+      </div>
+    </ion-label>
+
 </ion-item>
+
+</ion-col>
+
+</ion-row>
+</ion-grid>
+
+
 </ion-list>
-
-
-</ion-content>

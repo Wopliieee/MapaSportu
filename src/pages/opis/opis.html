@@ -9,22 +9,24 @@
 
 <ion-content padding>
 
-  <p> <b>Nazwa miejsca: </b>{{NazwaMiejsca}}</p>
-  <p> <b>Adres: </b>{{Adres}}</p>
-  <p> <b>Kategoria miejsca: </b>{{KategoriaMiejsca}}</p>
-  <p> <b>Dyscyplina: </b>{{Dyscyplina}}</p>
-  <p> <b>Nawierzchnia: </b>{{Nawierzchnia}}</p>
+  <button class="nawigowanko" ion-button full color="dark" (click)="OpenUrl(this.nawigacja)">Nawiguj</button>
+
+  <p class="interlinia"> <b>Nazwa miejsca: </b>{{NazwaMiejsca}}</p>
+  <p class="interlinia"> <b>Adres: </b>{{Adres}}</p>
+  <p class="interlinia"> <b>Kategoria miejsca: </b>{{KategoriaMiejsca}}</p>
+  <p class="interlinia"> <b>Dyscyplina: </b>{{Dyscyplina}}</p>
+  <p class="interlinia"> <b>{{przedrostekN}} </b>{{Nawierzchnia}}</p>
 
   <div class="multiline">
   <p class="interlinia"> <b>Godziny otwarcia: </b>{{GodzinyOtwarcia}}</p>
   </div>
 
   <div class="multiline2">
-  <p> <b>Koszt: </b>{{Koszt}}</p>
+  <p class="interlinia"> <b>Koszt: </b>{{Koszt}}</p>
   </div>
   
   <div class="multiline3">
-  <p> <b>Strona internetowa: </b><a (click)="OpenUrl(this.StronaInternetowa)"> {{StronaInternetowa}} </a></p>
+  <p class="interlinia"> <b>{{przedrostek}}</b><a (click)="OpenUrl(this.StronaInternetowa)"> {{StronaInternetowa}} </a></p>
   </div>
 
   <h1>Galeria Zdjęć</h1>
@@ -40,7 +42,6 @@
         <img [src]="zdj3" imageViewer>
       </ion-slide>
     </ion-slides>
-
 
   <!-- <p> <ins> <b>Nazwa miejsca: </b></ins>{{NazwaMiejsca}}</p>
   <p> <ins> <b>Adres: </b></ins>{{Adres}}</p>

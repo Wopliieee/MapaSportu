@@ -56,7 +56,7 @@ page-koszykowka {
     ion-item .item-inner {
         // border-bottom-left-radius: px!important;
         // margin-top: auto;
-        padding-bottom: 50px;
+        padding-bottom: 15px;
         margin-top: auto;
         
         // margin-left: 1px;
@@ -102,6 +102,9 @@ page-koszykowka {
     }
     .app-font {
         font-size: 15px;
+        line-height: 1.7;
+        // background-color: aqua;
+        padding-top: 10px;
     }
     .app-font-km {
         font-size: 13px;
@@ -180,7 +183,13 @@ page-koszykowka {
         opacity: 1;
         }
 
-
+    h3{
+        color: white;
+        opacity: 0.75;
+        text-shadow: 0 0 10px #FFF;
+        font-style: italic;
+        transform: skew(3.9deg);
+    }
 
 }
 }

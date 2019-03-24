@@ -18,6 +18,13 @@ ion-nav{
     top: 0px;
 
 }
+h3{
+    color: white;
+    opacity: 0.75;
+    text-shadow: 0 0 10px #FFF;
+    font-style: italic;
+    transform: skew(3.9deg);
+}
 
 ion-icon {
     &[class*="custom-"] {

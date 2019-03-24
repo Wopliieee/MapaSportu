@@ -103,6 +103,7 @@ export class KoszykowkaPage {
   ZDJECIE2: any;
   ZDJECIE3: any;
   LiveRefreshX: any;
+  nawigacja: any;
 
 
   constructor(private screenOrientation: ScreenOrientation, private photoViewer: PhotoViewer, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
@@ -112,8 +113,9 @@ export class KoszykowkaPage {
     this.lat5 = navParams.get('data');
     this.lon5 = navParams.get('data2');
 
-    this.refresh()
+  
     this.LiveRefresh()
+    this.refresh()
 
 
     this.screenOrientation.onChange().subscribe(
@@ -131,7 +133,17 @@ export class KoszykowkaPage {
     {
       this.refresh()
     },
-    2000); 
+    500); 
+    setTimeout(() => 
+    {
+      this.refresh()
+    },
+    1000); 
+    setTimeout(() => 
+    {
+      this.refresh()
+    },
+    1000); 
   }
 
   ionViewWillLeave(){
@@ -643,11 +655,11 @@ export class KoszykowkaPage {
           
             { odleglosc: this.BoiskoPSP3DawnePG2,
 
-            zdjecie: "../../assets/imgs/Boisko PSP3 (dawne PG2)/1.jpg",
-            zdjecie2: "../../assets/imgs/Boisko PSP3 (dawne PG2)/2.jpg",
-            zdjecie3: "../../assets/imgs/Boisko PSP3 (dawne PG2)/3.jpg",
+            zdjecie: "../../assets/imgs/Boisko PSP3 (3)/1.jpg",
+            zdjecie2: "../../assets/imgs/Boisko PSP3 (3)/2.jpg",
+            zdjecie3: "../../assets/imgs/Boisko PSP3 (3)/3.jpg",
   
-            Nazwa_Miejsca: "Boisko PSP3 (dawne PG2)",
+            Nazwa_Miejsca: "Boisko PSP3 (3)",
             Adres: "Traugutta 2",
             Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
             Dyscyplina: "Koszykówka; Tenis ziemny",
@@ -931,7 +943,6 @@ export class KoszykowkaPage {
 
         ];
 
-
     const sortedByOdleglosc = miejsca.sort((a, b) => {
       // 1st property, sort by count
       if (a.odleglosc > b.odleglosc)
@@ -940,8 +951,8 @@ export class KoszykowkaPage {
           return 1;
       return 0;
   });
-  
-    // console.log(sortedByOdleglosc.reverse())
+  if(this.LiveRefreshX == 1)
+    console.log(sortedByOdleglosc.reverse())
     this.results = sortedByOdleglosc
   }
 
@@ -1107,10 +1118,10 @@ export class KoszykowkaPage {
       Kategoria_Miejsca: this.KategoriaMiejsca, Adres_Adres: this.Adres,
       Nawierzchnia: this.Nawierzchnia,
       Godziny_Otwarcia: this.GodzinyOtwarcia, Koszt_Koszt: this.Koszt, Strona_Internetowa: this.StronaInternetowa,
-      zdjecie: this.ZDJECIE, zdjecie2: this.ZDJECIE2, zdjecie3: this.ZDJECIE3});
+      zdjecie: this.ZDJECIE, zdjecie2: this.ZDJECIE2, zdjecie3: this.ZDJECIE3, Nawigacja: this.nawigacja});
     }
 
-  OPIS(NM, D, KM, A, N, GO, K, SI, Z, Z2, Z3){
+  OPIS(NM, D, KM, A, N, GO, K, SI, Z, Z2, Z3, NAW){
     this.NazwaMiejsca = NM
     this.Dyscyplina = D
     this.KategoriaMiejsca = KM
@@ -1122,6 +1133,7 @@ export class KoszykowkaPage {
     this.ZDJECIE = Z
     this.ZDJECIE2 = Z2
     this.ZDJECIE3 = Z3
+    this.nawigacja = NAW
     this.PUSHOPIS()
   }
 

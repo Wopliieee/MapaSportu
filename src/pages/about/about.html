@@ -5,7 +5,9 @@
         <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
       </button>
   
-      <h3 style="padding-left: 15px;" ion-text color="dark">Sport!</h3>
+      <div text-center>
+        <h3 style="padding-right: 50px;" ion-text>SPORT</h3>
+        </div>
       
       <img width="50" height="50" style="float: right; margin-top: -52px;" src="../assets/layout/FAB_logo.png">
     </ion-navbar>
@@ -27,9 +29,27 @@
     <ion-list *ngSwitchCase="'page1'">
         <ion-grid>
           <ion-row align-items-start>
+              <img style="margin: auto;" id="sport" (click)="bieganieNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/bieganie.png"/>
+              <img style="margin: auto;" id="sport" (click)="crossfitNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/crossfit.png"/>
+              <img style="margin: auto;" id="sport" (click)="fitnessNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/fitness.png"/>
+              <img style="margin: auto;" id="sport" (click)="gimnastykaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/gimnastyka.png"/>
               <img style="margin: auto;" id="sport" (click)="koszykowkaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/koszykowka.png"/>
+              <img style="margin: auto;" id="sport" (click)="kregleNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/kregle.png"/>
+              <img style="margin: auto;" id="sport" (click)="lekkoatletykaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/lekkoatletyka.png"/>
+              <img style="margin: auto;" id="sport" (click)="lyzwiarstwoNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/lyzwiarstwo.png"/>
               <img style="margin: auto;" id="sport" (click)="pilkanoznaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/pilkanozna.png"/>
               <img style="margin: auto;" id="sport" (click)="pilkarecznaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/pilkareczna.png"/>
+              <img style="margin: auto;" id="sport" (click)="plywanieNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/plywanie.png"/>
+              <img style="margin: auto;" id="sport" (click)="siatkowkaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/siatkowka.png"/>
+              <img style="margin: auto;" id="sport" (click)="siatkowkaplazowaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/siatkowkaplazowa.png"/>
+              <img style="margin: auto;" id="sport" (click)="sportyekstremalneNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/sportyekstremalne.png"/>
+              <img style="margin: auto;" id="sport" (click)="sportysiloweNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/sportysilowe.png"/>
+              <img style="margin: auto;" id="sport" (click)="sportywalkiNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/sportywalki.png"/>
+              <img style="margin: auto;" id="sport" (click)="szachyNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/szachy.png"/>
+              <img style="margin: auto;" id="sport" (click)="taniecNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/taniec.png"/>
+              <img style="margin: auto;" id="sport" (click)="tenisstolowyNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/tenisstolowy.png"/>
+              <img style="margin: auto;" id="sport" (click)="tenisziemnyNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/tenisziemny.png"/>
+              <img style="margin: auto;" id="sport" (click)="wspinaczkasciankowaNAV()" width=110 height=110 src="../../assets/layout/dyscyplina/wspinaczkasciankowa.png"/>
           </ion-row>
         </ion-grid>
           
@@ -37,10 +57,27 @@
 
     <ion-list *ngSwitchCase="'page2'">
         <ion-grid>
-            <ion-row>
-              <ion-col>
-                  <img style="margin: auto;" id="sport" (click)="boiskoNAV()" width=110 height=110 src="../../assets/layout/miejsce/boisko.png"/>
-              </ion-col>
+            <ion-row align-items-start>
+                  <img style="margin: auto;" id="sport" (click)="basenNAV()" width=110 height=110 src="../../assets/layout/miejsce/basen.png"/>
+                  <img style="margin: auto;" id="sport" (click)="biezniaNAV()" width=110 height=110 src="../../assets/layout/miejsce/bieznia.png"/>
+                  <img style="margin: auto;" id="sport" (click)="boiskodokoszykowkiNAV()" width=110 height=110 src="../../assets/layout/miejsce/boiskodokoszykowki.png"/>
+                  <img style="margin: auto;" id="sport" (click)="boiskodopilkinoznejNAV()" width=110 height=110 src="../../assets/layout/miejsce/boiskodopilkinoznej.png"/>
+                  <img style="margin: auto;" id="sport" (click)="boiskodopilkirecznejNAV()" width=110 height=110 src="../../assets/layout/miejsce/boiskodopilkirecznej.png"/>
+                  <img style="margin: auto;" id="sport" (click)="boiskodosiatkowkiNAV()" width=110 height=110 src="../../assets/layout/miejsce/boiskodosiatkowki.png"/>
+                  <img style="margin: auto;" id="sport" (click)="boiskodosiatkowkiplazowejNAV()" width=110 height=110 src="../../assets/layout/miejsce/boiskodosiatkowkiplazowej.png"/>
+                  <img style="margin: auto;" id="sport" (click)="boiskodotenisaziemnegoNAV()" width=110 height=110 src="../../assets/layout/miejsce/boiskodotenisaziemnego.png"/>
+                  <img style="margin: auto;" id="sport" (click)="boiskowielofunkcyjneNAV()" width=110 height=110 src="../../assets/layout/miejsce/boiskowielofunkcyjne.png"/>
+                  <img style="margin: auto;" id="sport" (click)="klubsportowyNAV()" width=110 height=110 src="../../assets/layout/miejsce/klubsportowy.png"/>
+                  <img style="margin: auto;" id="sport" (click)="kregielniaNAV()" width=110 height=110 src="../../assets/layout/miejsce/kregielnia.png"/>
+                  <img style="margin: auto;" id="sport" (click)="lodowiskoNAV()" width=110 height=110 src="../../assets/layout/miejsce/lodowisko.png"/>
+                  <img style="margin: auto;" id="sport" (click)="obiektylekkoatletyczneNAV()" width=110 height=110 src="../../assets/layout/miejsce/obiektylekkoatletyczne.png"/>
+                  <img style="margin: auto;" id="sport" (click)="salagimnastycznaNAV()" width=110 height=110 src="../../assets/layout/miejsce/salagimnastyczna.png"/>
+                  <img style="margin: auto;" id="sport" (click)="sciankawspinaczkowaNAV()" width=110 height=110 src="../../assets/layout/miejsce/sciankawspinaczkowa.png"/>
+                  <img style="margin: auto;" id="sport" (click)="silowniaNAV()" width=110 height=110 src="../../assets/layout/miejsce/silownia.png"/>
+                  <img style="margin: auto;" id="sport" (click)="silowniaplenerowaNAV()" width=110 height=110 src="../../assets/layout/miejsce/silowniaplenerowa.png"/>
+                  <img style="margin: auto;" id="sport" (click)="skateparkNAV()" width=110 height=110 src="../../assets/layout/miejsce/skatepark.png"/>
+                  <img style="margin: auto;" id="sport" (click)="stoldogrywpingpongaNAV()" width=110 height=110 src="../../assets/layout/miejsce/stoldogrywpingponga.png"/>
+                  <img style="margin: auto;" id="sport" (click)="stoldogrywszachyNAV()" width=110 height=110 src="../../assets/layout/miejsce/stoldogrywszachy.png"/>
             </ion-row>
           </ion-grid>
       </ion-list>

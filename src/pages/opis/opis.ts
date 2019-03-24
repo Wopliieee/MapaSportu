@@ -26,6 +26,9 @@ export class OpisPage {
   zdj2: any;
   zdj: any;
   zdj3: any;
+  nawigacja: any;
+  przedrostek: string;
+  przedrostekN: string;
   
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private iab: InAppBrowser) {
@@ -41,12 +44,23 @@ export class OpisPage {
     this.Koszt = navParams.get('Koszt_Koszt');
     this.StronaInternetowa = navParams.get("Strona_Internetowa");
 
+    if(this.Nawierzchnia != "-")
+      this.przedrostekN = "Nawierzchnia: "
+    if(this.Nawierzchnia == "-")
+      this.Nawierzchnia = ""
+
+    
+    if(this.StronaInternetowa != "-")
+      this.przedrostek = "Strona internetowa: "
     if(this.StronaInternetowa == "-")
-    this.StronaInternetowa = ""
+      this.StronaInternetowa = ""
+      // this.przedrostek = ""
 
     this.zdj = navParams.get('zdjecie');
     this.zdj2 = navParams.get("zdjecie2");
     this.zdj3 = navParams.get("zdjecie3");
+
+    this.nawigacja = navParams.get("Nawigacja");
 
   }
 

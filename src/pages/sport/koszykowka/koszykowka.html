@@ -7,7 +7,7 @@
           </button>
           
           <div text-center>
-          <h3 style="padding-right: 50px;" ion-text color="dark">Koszykówka!</h3>
+          <h3 style="padding-right: 50px;" ion-text>KOSZYKÓWKA</h3>
           </div>
   
           <img width="50" height="50" style="float: right; margin-top: -52px;" src="../assets/layout/FAB_logo.png">
@@ -29,9 +29,9 @@
   </ion-refresher>
   
 
-  <ion-list text-wrap [virtualScroll]="results" [approxItemHeight]=" '200px'" [bufferRatio]="30">
+  <ion-list text-wrap [virtualScroll]="results" [approxItemHeight]=" '200px'" [bufferRatio]="30" >
   <ion-grid *virtualItem="let result">
-  <ion-row >
+  <ion-row (click)="OPIS(result.Nazwa_Miejsca, result.Dyscyplina, result.Kategoria_Miejsca, result.Adres, result.Nawierzchnia, result.Godziny_Otwarcia, result.Koszt, result.Strona_Internetowa, result.zdjecie, result.zdjecie2, result.zdjecie3, result.Nawigacja)">
   <ion-col >
   
 
@@ -40,6 +40,7 @@
           <!-- imageViewer -->
 
                 <img style="align-items: center;" [src]="result.zdjecie" imageViewer>
+                <h2 style="margin-top: 10px;" class="app-font-km">{{result.odleglosc}} km</h2>
       </ion-label>
 
 
@@ -50,31 +51,6 @@
       </ion-label>
 
   </ion-item>
-
-
-
-  <ion-item no-lines class="przezroczyste">
-    <ion-toolbar color="gray" class="opactiy">
-      <ion-row>
-          <ion-col col-6 style="left: -5px; top: 13px; transform: scale(0.9)">
-              <h2 ion-text class="app-font-km">{{result.odleglosc}} km</h2>
-          </ion-col>
-
-          <ion-col col-3>
-              <h2 ion-text style="left: -10px; float: left; margin-top: auto; top:10px; transform: scale(0.8); width:83px; height: 27px;" no-padding class="opisek" ion-button (click)="OpenUrl(result.Nawigacja)">Nawiguj</h2>
-          </ion-col>
-          
-          <ion-col col-3> 
-              <h2 ion-text style="right: -10px; float: right; margin-top: auto; top:10px; transform: scale(0.8); width:58px; height: 27px;" no-padding class="opisek" ion-button (click)="OPIS(result.Nazwa_Miejsca, result.Dyscyplina, result.Kategoria_Miejsca, result.Adres, result.Nawierzchnia, result.Godziny_Otwarcia, result.Koszt, result.Strona_Internetowa, result.zdjecie, result.zdjecie2, result.zdjecie3)">Opis</h2>
-          </ion-col>
-
-        
-          
-      </ion-row>
-    </ion-toolbar>
-</ion-item>
-      
-
   
   </ion-col>
 
