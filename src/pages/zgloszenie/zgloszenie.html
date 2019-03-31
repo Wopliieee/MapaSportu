@@ -1,0 +1,42 @@
+<ion-header transparent>
+  
+  <ion-navbar transparent>
+    
+    <button ion-button menuToggle >
+      <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
+    </button>
+
+
+    <div text-center>
+      <h3 style="padding-right: 50px;" ion-text>ZGŁOSZENIE</h3>
+      </div>
+    <!-- <h3 style="left: 1%; bottom: 1%;" ion-text color="dark">Mapa Sportu</h3> -->
+
+    <img width="50" height="50" style="float: right; margin-top: -53px;" src="../assets/layout/FAB_logo.png">
+
+
+
+
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-image">
+
+<div padding class="tlo">
+  <ion-item class="tlo2">
+    <ion-label color="primary" stacked><h2>Tytuł</h2></ion-label>
+    <ion-input [(ngModel)]="subject" type="text" placeholder="Tytuł"></ion-input>
+  </ion-item>
+  <ion-item class="tlo2">
+    <ion-label color="primary" stacked><h2>Treść</h2></ion-label>
+    <ion-input [(ngModel)]="body" type="text" placeholder="Treść"></ion-input>
+  </ion-item>
+  <button class="guzik" style="margin-top:20px;" ion-button block (click)="send()"><h1>Wyślij</h1></button>
+
+  <h4>*Zgłoszenia wysyłane są do nas drogą mailową. Wszelkie zgłoszenia nie są anonimowe. W wiadomości prosimy o opisanie błędów lub problemów które napotkałeś przy korzystaniu z aplikacji.</h4>
+</div>
+
+  </ion-content>

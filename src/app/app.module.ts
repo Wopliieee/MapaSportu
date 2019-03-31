@@ -68,6 +68,7 @@ import { FitnessPage } from '../pages/sport/fitness/fitness';
 import { GimnastykaPage } from '../pages/sport/gimnastyka/gimnastyka';
 import { SportywalkiPage } from '../pages/sport/sportywalki/sportywalki';
 import { ObiektylekkoatletycznePage } from '../pages/miejsca/obiektylekkoatletyczne/obiektylekkoatletyczne';
+import { ZgloszeniePage } from '../pages/zgloszenie/zgloszenie';
 
 class ScreenOrientationMock extends ScreenOrientation {
   lock(type) {
@@ -129,7 +130,9 @@ class ScreenOrientationMock extends ScreenOrientation {
     SilowniaplenerowaPage,
     SkateparkPage,
     StoldogrywpingPongaPage,
-    StoldogrywszachyPage
+    StoldogrywszachyPage,
+    
+    ZgloszeniePage
     
     
   ],
@@ -201,7 +204,9 @@ class ScreenOrientationMock extends ScreenOrientation {
     SilowniaplenerowaPage,
     SkateparkPage,
     StoldogrywpingPongaPage,
-    StoldogrywszachyPage
+    StoldogrywszachyPage,
+    
+    ZgloszeniePage
 
   ],
   providers: [

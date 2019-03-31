@@ -10,6 +10,7 @@ import { FaqPage } from '../pages/faq/faq';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
+import { ZgloszeniePage } from '../pages/zgloszenie/zgloszenie';
 
 @Component({
   templateUrl: 'app.html'
@@ -48,9 +49,14 @@ export class MyApp {
   FAQ() {
     this.nav.push(FaqPage);
   }
+  zgloszenie() {
+    this.nav.push(ZgloszeniePage);
+  }
+
   Menu(){
     this.nav.push(HomePage);
   }
+  
 
   SocialMedia(){
   if (this.change == "../assets/layout/FAB_logo.png")
