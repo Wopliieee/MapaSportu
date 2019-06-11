@@ -1,25 +1,46 @@
-<ion-header>
-  
-    <ion-navbar transparent>
-      <button ion-button menuToggle >
-        <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
-      </button>
-  
-      <div text-center>
-        <h3 style="padding-right: 50px;" ion-text>O NAS</h3>
-        </div>
+<ion-header transparent>
+  <ion-navbar transparent>
 
-        <img width="50" height="50" style="float: right; margin-top: -52px;" src="../assets/layout/FAB_logo.png">
-  
-    </ion-navbar>
-  
-  </ion-header>
+            <button ion-button menuToggle >
+                <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
+            </button>
+        
+            <div text-center>
+                <h3 ion-text>O NAS</h3>
+            </div>
+           
+            <ion-buttons end>
+                <img style="padding-bottom: px;" width="50" height="50" src="../assets/layout/FAB_logo.png">
+            </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
 
   <ion-content padding>
-      <h2>Krótko o nas.</h2>
-    
-      <p>Coś tam bla bla bla.</p>
-    
-    
+      <h2 text-center>
+        <!-- <img class="nasze" src="../../assets/layout/naszeZDJECIE.jpg" imageViewer> -->
+        <img class="nasze" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59755148_438471446940872_5387762969314590720_n.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=4de749b4213d29ab53a62ee5f98914dd&oe=5D5DAA06" imageViewer>
+      </h2>
+      <h2>
+          Jesteśmy grupą znajomych których łączy miłość do sportu i technologii. Wspólnie wpadliśmy na
+          pomysł stworzenia tej aplikacji, aby zrobić coś dobrego dla naszej lokalnej społeczności. Nasz projekt
+          ma na celu promocję zdrowego i aktywnego stylu życia. Chcemy pokazać jak różnorodny i ciekawy jest
+          świat sportu i że każdy może znaleźć w nim coś dla siebie. W aplikacji oprócz najpopularniejszych
+          obiektów, umieściliśmy także te mniej znane, o których często zapominamy, a które mogą okazać się
+          lepszymi alternatywami. Jest to nasz pierwszy tak duży projekt. Mimo braku doświadczenia dokładamy
+          wszelkich starań, aby aplikacja była jak najwyższej jakości. Mamy nadzieję, że spodoba Ci się efekt
+          naszej pracy!
+
+        <h2 text-center>
+        <h4>Social Media</h4>
+        <img class="social" (click)="facebook()" src="../../assets/layout/facebook.png">
+        <img class="social" (click)="instagram()" src="../../assets/layout/instagram.png">
+        <img class="zwolnieni" (click)="zwolnienizteorii()" src="../../assets/layout/projekt-realizowany-przez.png">
+        </h2>
+
+      </h2>
+
+
+
     
     </ion-content>

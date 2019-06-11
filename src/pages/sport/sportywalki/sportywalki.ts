@@ -181,11 +181,11 @@ export class SportywalkiPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.HalasportowaimGerardaPodolskiegoAGRO,
 
-          zdjecie: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO)/1.jpg",
-          zdjecie2: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO)/2.jpg",
-          zdjecie3: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO)/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59800427_1142470749272579_38890696937046016_n.jpg?_nc_cat=103&_nc_ht=scontent-waw1-1.xx&oh=50bf28db830db0019c99d094f684a9c8&oe=5D6DE57E",
+          zdjecie2: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO) (2)/2.jpg",
+          zdjecie3: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO) (2)/3.jpg",
 
-          Nazwa_Miejsca: "Hala sportowa im. Gerarda Podolskiego (AGRO)",
+          Nazwa_Miejsca: "Hala sportowa im. Gerarda Podolskiego (AGRO) (2)",
           Adres: "Generała Józefa Hallera 19A",
           Kategoria_Miejsca: "Sala gimnastyczna",
           Dyscyplina: "Koszykówka; Piłka ręczna; Piłka nożna halowa; Sporty siłowe; Gimnastyka;  Boks; Kickboxing; Aikido; Brazylijskie Jujitsu; Kali Eskrima; Karate; Lekkoatletyka",
@@ -197,7 +197,7 @@ export class SportywalkiPage {
         
         { odleglosc: this.SalagimnastycznaMOS,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna MOS/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59285488_316953192310280_5264287233694760960_n.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=f5a2250dacd893040e022e441790e832&oe=5D656E95",
           zdjecie2: "../../assets/imgs/Sala gimnastyczna MOS/2.jpg",
           zdjecie3: "../../assets/imgs/Sala gimnastyczna MOS/3.jpg",
 

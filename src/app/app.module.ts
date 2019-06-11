@@ -1,3 +1,10 @@
+import { CoToZaMiejscePage } from './../pages/co-to-za-miejsce/co-to-za-miejsce';
+import { IntroPage } from './../pages/intro/intro';
+import { PowietrzePage } from './../pages/powietrze/powietrze';
+import { AnkietaPage } from './../pages/ankieta/ankieta';
+import { RegulaminPage } from './../pages/regulamin/regulamin';
+import { PartnerzyPage } from './../pages/partnerzy/partnerzy';
+import { KontaktPage } from './../pages/kontakt/kontakt';
 import { StoldogrywszachyPage } from './../pages/miejsca/stoldogrywszachy/stoldogrywszachy';
 import { StoldogrywpingPongaPage } from './../pages/miejsca/stoldogrywping-ponga/stoldogrywping-ponga';
 import { SkateparkPage } from './../pages/miejsca/skatepark/skatepark';
@@ -70,6 +77,21 @@ import { SportywalkiPage } from '../pages/sport/sportywalki/sportywalki';
 import { ObiektylekkoatletycznePage } from '../pages/miejsca/obiektylekkoatletyczne/obiektylekkoatletyczne';
 import { ZgloszeniePage } from '../pages/zgloszenie/zgloszenie';
 
+import { AppAvailability } from '@ionic-native/app-availability';
+
+import { File } from '@ionic-native/file/ngx';
+import { FileTransfer } from '@ionic-native/file-transfer/ngx';
+import { DocumentViewer } from '@ionic-native/document-viewer';
+
+import { FileOpener } from '@ionic-native/file-opener';
+import { IonicStorageModule } from '@ionic/storage';
+import { LoadingController } from 'ionic-angular';
+import { EventsPage } from '../pages/events/events';
+
+import { HttpClientModule } from '@angular/common/http'; 
+import { HttpModule } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
+
 class ScreenOrientationMock extends ScreenOrientation {
   lock(type) {
     return new Promise((resolve, reject) => {
@@ -132,7 +154,17 @@ class ScreenOrientationMock extends ScreenOrientation {
     StoldogrywpingPongaPage,
     StoldogrywszachyPage,
     
-    ZgloszeniePage
+    ZgloszeniePage,
+
+    KontaktPage,
+    PartnerzyPage,
+    RegulaminPage,
+    AnkietaPage,
+    PowietrzePage,
+    IntroPage,
+    CoToZaMiejscePage,
+    EventsPage
+
     
     
   ],
@@ -146,9 +178,12 @@ class ScreenOrientationMock extends ScreenOrientation {
     IonicImageViewerModule,
     ionicGalleryModal.GalleryModalModule,
     ZoomAreaModule.forRoot(),
+    IonicStorageModule.forRoot(),
     ZoomAreaModule,
     ImageZoomModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule,
+    HttpModule
     
 
   ],
@@ -206,7 +241,16 @@ class ScreenOrientationMock extends ScreenOrientation {
     StoldogrywpingPongaPage,
     StoldogrywszachyPage,
     
-    ZgloszeniePage
+    ZgloszeniePage,
+
+    KontaktPage,
+    PartnerzyPage,
+    RegulaminPage,
+    AnkietaPage,
+    PowietrzePage,
+    IntroPage,
+    CoToZaMiejscePage,
+    EventsPage
 
   ],
   providers: [
@@ -214,6 +258,9 @@ class ScreenOrientationMock extends ScreenOrientation {
     SplashScreen,
     Geolocation,
     PhotoViewer,
+    Storage,
+    LoadingController,
+    AppAvailability,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     { provide: ScreenOrientation, useClass: ScreenOrientationMock },
     {
@@ -221,7 +268,13 @@ class ScreenOrientationMock extends ScreenOrientation {
       useClass: ionicGalleryModal.GalleryModalHammerConfig
     },
     InAppBrowser,
-    ScreenOrientation
+    ScreenOrientation,
+    File,
+    FileTransfer,
+    DocumentViewer,
+    FileOpener,
+    HttpClient
+
   ]
 })
 export class AppModule {}

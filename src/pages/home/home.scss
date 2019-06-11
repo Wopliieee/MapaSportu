@@ -1,10 +1,16 @@
-page-home {
+.ios, .md {
+
+    page-home {
+        .no-scroll .scroll-content{
+            overflow: hidden;
+       }
     ion-content {
         // background-color: aqua !important;
         background-image: url('../../assets/layout/tlo.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        
         
     }
 
@@ -37,7 +43,163 @@ page-home {
         font-style: italic;
         transform: skew(3.9deg);
     }
+    .button-fab{
+        background-color: rgb(43, 43, 43);
+        margin-left: 3px;
+        margin-top: 1px;
+    }
+    .closedbutton{
+        margin-left: 3px;
+        margin-top: 3px;
+    }
+    .currentmapa{
+        margin-top: 10px;
+        width: 200px;
+        border-radius: 15px;
+        background-color: rgb(43, 43, 43);
+    }
+    // .x{
+    //     background-color: rgb(119, 119, 119);
+    //     border: 50px solid;
+    //     border-width: 20px;
+    //     border-color: rgb(119, 119, 119);;
+    //     overflow-y: auto;
+    //     border-radius:100%;
+    //     width: 60px;
+    //     height: 50px;
+    // }
+    .test{
+        // border: 5px solid;
+        // border-width: 5px;
+        border-color: rgba(0, 255, 255, 0);
+        box-shadow: none;
+        // overflow-y: auto;
+        // background-color: aqua;
 
 
+        // height: 10000px;
+        // width: 10000px;
+        // border-radius:1px;
+        // left: -4970px;
+        // top: -4970px;
 
+
+        height: 100px;
+        width: 100px;
+        border-radius:1px;
+        left: -19px;
+        top: -19px;
+        
+    }
+    button{
+        color:rgb(255, 255, 255);
+        // font-size: 1.5vh;
+    }
+    .rozszerzone{
+        font-size: 13.5px;
+        width: 180px;
+        // width: 135px;
+        border-radius: 15px;
+        background-color: rgb(43, 43, 43);
+    }
+    .rozszerzoneMNIEJSZE{
+        font-size: 10px;
+        width: 180px;
+        // width: 135px;
+        border-radius: 15px;
+        background-color: rgb(43, 43, 43);
+    }
+    .square{
+        // border: 5px solid;
+        // border-width: 5px;
+        // border-color: aqua;
+        // overflow-y: auto;
+
+        width:200px;
+        // opacity: 0;
+        // height: 56vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-bottom: 40%;
+    }
+    .fade{
+        position: absolute;
+        background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgb(0, 0, 0)),
+        color-stop(1, rgba(0, 0, 0, 0)));
+        height: 10px;
+        border-radius: 15px;
+
+        width:185px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-bottom: 36%;
+    }
+
+    ion-footer{
+        opacity: 0.5;
+        height: 5px;
+    }
+
+    .mapa{
+        // height: 100%;
+        // width: 100vw;
+        border: none;
+        // transform: scale(1.06) !important;
+        position: absolute;
+        margin-left: -16px;
+        margin-top: -16px;
+        height:calc(100vh - 117px);
+        width:calc(100vw);
+        box-sizing: border-box;
+    }
+
+    // .currentmap{
+    //     padding-top: -500px;
+        
+    // }
+
+    ion-icon {
+        &[class*="custom-"] {
+            margin: 0 5% 0 0;
+            vertical-align: middle;
+
+            $sz: 48px;
+            margin-bottom: 7px;
+            width: $sz;
+            height: $sz;
+        } // custom icons
+        &[class*="filtr"] {
+            background: url('../../assets/layout/filtr.png') no-repeat 50% 50%;
+            background-size: contain;
+        }
+
+    }
+
+    // .close{
+    //     border: 5px solid;
+    //     border-width: 5px;
+    //     border-color: aqua;
+    //     overflow-y: auto;
+    //     width: 100vh;
+    //     height: 100vh;
+    //     left: 200px;
+    //     padding-bottom: 100%;
+    //     border-radius: 0.001px;
+    // }
+
+    .rozszerzone2{
+        border: 5px solid;
+        border-width: 5px;
+        border-color: aqua;
+        overflow-y: auto;
+        width: 500px;
+        height: 500px;
+    }
+
+
+}
 }

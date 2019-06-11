@@ -179,7 +179,7 @@ export class SciankawspinaczkowaPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.ŚciankawspinaczkowaOSiR,
 
-          zdjecie: "../../assets/imgs/Ścianka wspinaczkowa (OSiR)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59285770_422979581861296_6723841296970022912_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=1078702db8358edf72278a68ae7ba03e&oe=5D2E48D7",
           zdjecie2: "../../assets/imgs/Ścianka wspinaczkowa (OSiR)/2.jpg",
           zdjecie3: "../../assets/imgs/Ścianka wspinaczkowa (OSiR)/3.jpg",
 
@@ -188,9 +188,8 @@ export class SciankawspinaczkowaPage {
           Kategoria_Miejsca: "Ścianka wspinaczkowa zewnętrzna",
           Dyscyplina: "Wspinaczka ściankowa",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Śr. - Ndz.: 13:00 – 20:00
-                                       Pon. - Wt.: Zamknięte`,
-          Koszt: "Potrzeba rezerwacji",
+          Godziny_Otwarcia: `Śr. - Ndz.: 13:00 – 20:00 \n Pon. - Wt.: Zamknięte`,
+          Koszt: `STARTER - pierwsze wejście z asekuracją 9 zł \n Bilet normalny \n Pon - pt do godz. 16:00 - 9 zł \n Pon - pt po godz. 16:00 - 12 zł  \n Weekendy i święta - 12 zł \n Bilet ulgowy \n Bilet normalny \n Pon - pt do godz. 16:00 - 7 zł \n Pon - pt po godz. 16:00 - 9 zł \n Weekendy i święta - 9 zł`,
           Strona_Internetowa: "http://osir.com.pl/sciana-wspinaczkowa/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'12.1%22N+18%C2%B032'07.0%22E/@53.9700201,18.5330843,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.970017!4d18.535273"},
         

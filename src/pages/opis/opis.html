@@ -1,57 +1,63 @@
 <ion-header>
   <ion-navbar transparent>
-    <div text-center>
-      <h3 style="padding-right: 50px;" ion-text>OPIS</h3>
+  
+      <div >
+          <h3 ion-text text-center>OPIS</h3>
       </div>
-
-    <img width="50" height="50" style="float: right; margin-top: -52px;" src="../assets/layout/FAB_logo.png">
+     
+      <ion-buttons end>
+          <img style="padding-bottom: px;" width="50" height="50" src="../assets/layout/FAB_logo.png">
+      </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
 
-  <button class="nawigowanko" ion-button full color="dark" (click)="OpenUrl(this.nawigacja)">Nawiguj</button>
-
-  <p class="interlinia"> <b>Nazwa miejsca: </b>{{NazwaMiejsca}}</p>
-  <p class="interlinia"> <b>Adres: </b>{{Adres}}</p>
-  <p class="interlinia"> <b>Kategoria miejsca: </b>{{KategoriaMiejsca}}</p>
-  <p class="interlinia"> <b>Dyscyplina: </b>{{Dyscyplina}}</p>
-  <p class="interlinia"> <b>{{przedrostekN}} </b>{{Nawierzchnia}}</p>
-
-  <div class="multiline">
-  <p class="interlinia"> <b>Godziny otwarcia: </b>{{GodzinyOtwarcia}}</p>
-  </div>
-
-  <div class="multiline2">
-  <p class="interlinia"> <b>Koszt: </b>{{Koszt}}</p>
-  </div>
-  
-  <div class="multiline3">
-  <p class="interlinia"> <b>{{przedrostek}}</b><a (click)="OpenUrl(this.StronaInternetowa)"> {{StronaInternetowa}} </a></p>
-  </div>
-
-  <h1>Galeria Zdjęć</h1>
-
   <ion-slides autoplay="3000" pager="true" loop="true" style="align-items: center;">
       <ion-slide>
-        <img [src]="zdj" imageViewer>
+        <img class="zdjecia" [src]="zdj" imageViewer>
       </ion-slide>
       <ion-slide>
-        <img [src]="zdj2" imageViewer>
+        <img class="zdjecia" [src]="zdj2" imageViewer>
       </ion-slide>
       <ion-slide>
-        <img [src]="zdj3" imageViewer>
+        <img class="zdjecia" [src]="zdj3" imageViewer>
       </ion-slide>
     </ion-slides>
 
-  <!-- <p> <ins> <b>Nazwa miejsca: </b></ins>{{NazwaMiejsca}}</p>
-  <p> <ins> <b>Adres: </b></ins>{{Adres}}</p>
-  <p> <ins> <b>Kategoria miejsca: </b></ins>{{KategoriaMiejsca}}</p>
-  <p> <ins> <b>Dyscyplina: </b></ins>{{Dyscyplina}}</p>
-  <p> <ins> <b>Nawierzchnia: </b></ins>{{Nawierzchnia}}</p>
-  <p> <ins> <b>Godziny otwarcia: </b></ins>{{GodzinyOtwarcia}}</p>
-  <p> <ins> <b>Koszt: </b></ins>{{Koszt}}</p>
-  <p> <ins> <b>Strona internetowa: </b></ins>{{StronaInternetowa}}</p> -->
+    <button class="nawigowanko" ion-button full block color="dark" (click)="OpenUrl(this.nawigacja)">Nawiguj</button>
 
-</ion-content>
+
+      <h1 class="Nazwa_Miejsca" text-wrap color="dark" stacked>{{NazwaMiejsca}}</h1>
+      
+      <h2 class="Tytuł" text-wrap color="dark" stacked>Adres</h2>
+      <p class="Zawartość" [innerText]="Adres" text-wrap color="dark" stacked>{{Adres}}</p>
+
+      <h2 class="Tytuł" text-wrap color="dark" stacked>Kategoria miejsca</h2>
+      <p class="Zawartość" [innerText]="KategoriaMiejsca" text-wrap color="dark" stacked>{{KategoriaMiejsca}}</p>
+
+      <h2 class="Tytuł" text-wrap color="dark" stacked>Dyscyplina</h2>
+      <p class="Zawartość" [innerText]="Dyscyplina" text-wrap color="dark" stacked>{{Dyscyplina}}</p>
+
+      <h2 class="Tytuł" text-wrap color="dark" stacked>Nawierzchnia</h2>
+      <p class="Zawartość" [innerText]="Nawierzchnia" text-wrap color="dark" stacked>{{Nawierzchnia}}</p>
+
+      <h2 class="Tytuł" text-wrap color="dark" stacked>Godziny otwarcia</h2>
+      <p class="Zawartość" [innerText]="GodzinyOtwarcia" text-wrap color="dark" stacked>{{GodzinyOtwarcia}}</p>
+
+      <h2 class="Tytuł" text-wrap color="dark" stacked>Koszt</h2>
+      <p class="Zawartość" [innerText]="Koszt" text-wrap color="dark" stacked>{{Koszt}}</p>
+
+      <h2 class="Tytuł" text-wrap color="dark" stacked>{{przedrostek}}</h2>
+      <p class="Zawartość" text-wrap color="dark" stacked><a (click)="OpenUrl(this.StronaInternetowa)"> {{StronaInternetowa}} </a></p>
+      <p class="Zawartość" text-wrap color="dark" stacked><a (click)="OpenUrl(this.StronaInternetowa2)"> {{StronaInternetowa2}} </a></p>
+
+
+  
+
+
+
+    <button class="nawigowanko" ion-button full block color="dark" (click)="zgloszenie()">Zgłoś Błąd</button>
+
+<!-- </ion-content> -->

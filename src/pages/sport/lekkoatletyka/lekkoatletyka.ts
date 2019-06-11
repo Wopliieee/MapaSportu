@@ -207,7 +207,7 @@ export class LekkoatletykaPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.BieżnaokólnaPSP8,
 
-          zdjecie: "../../assets/imgs/Bieżna okólna PSP8/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59909553_342572779786786_5778182085000822784_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=e8ce77ce1592485fb15b5d4f241000b4&oe=5D6E9E1C",
           zdjecie2: "../../assets/imgs/Bieżna okólna PSP8/2.jpg",
           zdjecie3: "../../assets/imgs/Bieżna okólna PSP8/3.jpg",
 
@@ -223,7 +223,7 @@ export class LekkoatletykaPage {
         
         { odleglosc: this.BieżniaokólnaPSP1,
 
-          zdjecie: "../../assets/imgs/Bieżnia okólna PSP1/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58442795_862091604128063_6053534620190769152_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=d933992706448d8a173ab4ada746d632&oe=5D300666",
           zdjecie2: "../../assets/imgs/Bieżnia okólna PSP1/2.jpg",
           zdjecie3: "../../assets/imgs/Bieżnia okólna PSP1/3.jpg",
 
@@ -239,7 +239,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.BieżniaPSP3,
 
-          zdjecie: "../../assets/imgs/Bieżnia PSP3/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59342885_1033387183522253_8032677557599993856_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=59befb3dcba4594c00937300b8065686&oe=5D6B80D0",
           zdjecie2: "../../assets/imgs/Bieżnia PSP3/2.jpg",
           zdjecie3: "../../assets/imgs/Bieżnia PSP3/3.jpg",
 
@@ -255,7 +255,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.BieżniaPSP4,
 
-          zdjecie: "../../assets/imgs/Bieżnia PSP4/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58379740_837516659934749_2541356793565544448_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=dbb1d146e9eabcc7ad5ecedfd2def388&oe=5D61301D",
           zdjecie2: "../../assets/imgs/Bieżnia PSP4/2.jpg",
           zdjecie3: "../../assets/imgs/Bieżnia PSP4/3.jpg",
 
@@ -271,7 +271,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.SkoczniaPSP1,
 
-          zdjecie: "../../assets/imgs/Skocznia PSP1/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58373829_352182078741862_2321981481972400128_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=237857b5daca245b65c1bbc4c758904e&oe=5D6689E7",
           zdjecie2: "../../assets/imgs/Skocznia PSP1/2.jpg",
           zdjecie3: "../../assets/imgs/Skocznia PSP1/3.jpg",
 
@@ -287,7 +287,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.SkoczniaPSP4,
 
-          zdjecie: "../../assets/imgs/Skocznia PSP4/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59295970_427491334769747_3332204411861598208_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=58dd0c585b0af2ccb3bb1ab43e4fac01&oe=5D2BE27D",
           zdjecie2: "../../assets/imgs/Skocznia PSP4/2.jpg",
           zdjecie3: "../../assets/imgs/Skocznia PSP4/3.jpg",
 
@@ -303,7 +303,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.SkoczniaPSP8,
 
-          zdjecie: "../../assets/imgs/Skocznia PSP8/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59710960_2241901746127229_2241521609053569024_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=1caabd2ecf3a026160812e69b14a293d&oe=5D2D0292",
           zdjecie2: "../../assets/imgs/Skocznia PSP8/2.jpg",
           zdjecie3: "../../assets/imgs/Skocznia PSP8/3.jpg",
 
@@ -319,7 +319,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.StadionMiejskiimKazimierzaDeynyOSiR3,
 
-          zdjecie: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (3)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59672836_2279703192273320_5456031607628496896_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=4f639e071a1fb8061fc9d5a36e6c509d&oe=5D6105E0",
           zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR)(3)/2.jpg",
           zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (3)/3.jpg",
 
@@ -335,7 +335,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.StadionMiejskiimKazimierzaDeynyOSiR2,
 
-          zdjecie: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (2)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59581204_380601742796543_3608000007287865344_n.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=601efe6a60472e84ceb0429001862407&oe=5D5EC0BA",
           zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (2)/2.jpg",
           zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (2)/3.jpg",
 
@@ -351,7 +351,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.StadionMiejskiimKazimierzaDeynyOSiR4,
 
-          zdjecie: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (4)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59397082_478127236260466_4368382662344179712_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=8516efcd14d7debc8b020a88a4a797f9&oe=5D6856E1",
           zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (4)/2.jpg",
           zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (4)/3.jpg",
 
@@ -367,7 +367,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.StadionMiejskiimKazimierzaDeynyOSiR5,
 
-          zdjecie: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (5)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59672836_2279703192273320_5456031607628496896_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=4f639e071a1fb8061fc9d5a36e6c509d&oe=5D6105E0",
           zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (5)/2.jpg",
           zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (5)/3.jpg",
 
@@ -383,7 +383,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.StadionMiejskiimKazimierzaDeynyOSiR6,
 
-          zdjecie: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (6)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59672836_2279703192273320_5456031607628496896_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=4f639e071a1fb8061fc9d5a36e6c509d&oe=5D6105E0",
           zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (6)/2.jpg",
           zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (6)/3.jpg",
 
@@ -399,7 +399,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.StadionMiejskiimKazimierzaDeynyOSiR7,
 
-          zdjecie: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (7)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59672836_2279703192273320_5456031607628496896_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=4f639e071a1fb8061fc9d5a36e6c509d&oe=5D6105E0",
           zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (7)/2.jpg",
           zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (7)/3.jpg",
 
@@ -415,7 +415,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.StadionMiejskiimKazimierzaDeynyOSiR8,
 
-          zdjecie: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (8)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59672836_2279703192273320_5456031607628496896_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=4f639e071a1fb8061fc9d5a36e6c509d&oe=5D6105E0",
           zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (8)/2.jpg",
           zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (8)/3.jpg",
 
@@ -431,7 +431,7 @@ export class LekkoatletykaPage {
 
         { odleglosc: this.StadionMiejskiimKazimierzaDeynyOSiR9,
 
-          zdjecie: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (9)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59991981_384269932178332_8942460083111985152_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=9f63d09f071cd5c9ec77551e10a114a8&oe=5D5D1582",
           zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (9)/2.jpg",
           zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (9)/3.jpg",
 

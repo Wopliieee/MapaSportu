@@ -181,31 +181,13 @@ export class TaniecPage {
 
     this.ObliczKilometry(53.977260, 18.520005, "EndorfinaPoleFitness")
     this.ObliczKilometry(53.965009, 18.526954, "EstaFiesta")
-    this.ObliczKilometry(53.962998, 18.508376, "EbroGym")
     this.ObliczKilometry(53.964124, 18.529760, "NeptunGym")
 
     const miejsca: Miejsce[] =[
-      { odleglosc: this.EbroGym,
-
-          zdjecie: "../../assets/imgs/Ebro Gym/1.jpg",
-          zdjecie2: "../../assets/imgs/Ebro Gym/2.jpg",
-          zdjecie3: "../../assets/imgs/Ebro Gym/3.jpg",
-
-          Nazwa_Miejsca: "Ebro Gym",
-          Adres: "Zblewska 10b",
-          Kategoria_Miejsca: "Siłownia; Klub sportowy",
-          Dyscyplina: "Sporty siłowe; Fitness; Taniec",
-          Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.: 7:00 – 22:00
-                                      Sob. – Ndz.: 7:00 – 18:00`,
-          Koszt: `149zł/ mies.
-               20zł/ 1 wejście`,
-          Strona_Internetowa: "http://www.ebrogym.pl/starogard/cennik.html",
-          Nawigacja: "https://www.google.com/maps/place/53%C2%B057'46.8%22N+18%C2%B030'30.2%22E/@53.9630011,18.5061873,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.962998!4d18.508376"},
       
       { odleglosc: this.EndorfinaPoleFitness,
 
-          zdjecie: "../../assets/imgs/Endorfina Pole Fitness/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59450356_326414378044659_6093464763637956608_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=fbca6b341840f3e9b19b58929bc96331&oe=5D59F1D4",
           zdjecie2: "../../assets/imgs/Endorfina Pole Fitness/2.jpg",
           zdjecie3: "../../assets/imgs/Endorfina Pole Fitness/3.jpg",
 
@@ -214,16 +196,14 @@ export class TaniecPage {
           Kategoria_Miejsca: "Klub sportowy",
           Dyscyplina: "Taniec (Pole dance); Fitness",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. – Czw.: 08:30 - 09:30
-                                      Pt. – Ndz.:  18:00 - 20:00`,
-          Koszt: `1h pool dance 40 zł
-               4h mies. pool dance 130 zł`,
+          Godziny_Otwarcia: `Pon. – Czw.: 08:30 - 09:30 \n Pt. – Ndz.:  18:00 - 20:00`,
+          Koszt: `1h pool dance 40 zł \n 4h mies. pool dance 130 zł`,
           Strona_Internetowa: "https://www.facebook.com/pg/EndorfinaPoleStudio/about/?ref=page_internal",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'38.1%22N+18%C2%B031'12.0%22E/@53.9772631,18.5178163,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.97726!4d18.520005"},
         
       { odleglosc: this.EstaFiesta,
 
-          zdjecie: "../../assets/imgs/Esta Fiesta/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58978353_469872946886591_7973992095130058752_n.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=9b2a58d0d1560dcc128829dabc98b194&oe=5D6BA93A",
           zdjecie2: "../../assets/imgs/Esta Fiesta/2.jpg",
           zdjecie3: "../../assets/imgs/Esta Fiesta/3.jpg",
 
@@ -233,14 +213,13 @@ export class TaniecPage {
           Dyscyplina: "Taniec (Zumba; Sololatino; Salsation); Fitness",
           Nawierzchnia: "-",
           Godziny_Otwarcia: "Zajęcia w godzinach ustalonych",
-          Koszt: `1 wejście: 15zł
-               Karnet – 4 wejścia: 55zł`,
+          Koszt: `1 wejście: 15zł \n Karnet – 4 wejścia: 55zł`,
           Strona_Internetowa: "https://www.facebook.com/pages/category/Sports---Recreation/Esta-Fiesta-Szko%C5%82a-ta%C5%84ca-ZumbaSolo-LatinoSalsation-1403257299929894/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'54.0%22N+18%C2%B031'37.0%22E/@53.9650121,18.5247653,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.965009!4d18.526954"},
         
         { odleglosc: this.NeptunGym,
 
-          zdjecie: "../../assets/imgs/Neptun Gym/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59295991_804161313276280_3266492666363248640_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=e5f3349492d1fdedfc726ad7a0b32cb2&oe=5D313ACF",
           zdjecie2: "../../assets/imgs/Neptun Gym/2.jpg",
           zdjecie3: "../../assets/imgs/Neptun Gym/3.jpg",
 
@@ -249,11 +228,8 @@ export class TaniecPage {
           Kategoria_Miejsca: "Siłownia; Klub sportowy",
           Dyscyplina: "Sporty siłowe; Fitness; Taniec",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.: 6:00 – 22:00
-                                      Sobota: 9:00 – 21:00
-                                      Niedziela: 9:00 – 20:00`,
-          Koszt: `129zł/ mies.
-               25zł/ 1 wejście`,
+          Godziny_Otwarcia: `Pon. - Pt.: 6:00 – 22:00 \n Sobota: 9:00 – 21:00 \n Niedziela: 9:00 – 20:00`,
+          Koszt: `129zł/ mies. \n 25zł/ 1 wejście`,
           Strona_Internetowa: "http://neptungym.pl/cennik/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'50.9%22N+18%C2%B031'47.1%22E/@53.9641271,18.5275713,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.964124!4d18.52976"},
         ];
@@ -302,8 +278,6 @@ export class TaniecPage {
       this.EndorfinaPoleFitness = this.kilometry
     if(WYNIK == "EstaFiesta")
       this.EstaFiesta = this.kilometry
-    if(WYNIK == "EbroGym")
-      this.EbroGym = this.kilometry
     if(WYNIK == "NeptunGym")
       this.NeptunGym = this.kilometry
 

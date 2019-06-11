@@ -180,7 +180,7 @@ export class CrossfitPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.KlubFalangaStarogard,
 
-          zdjecie: "../../assets/imgs/Klub Falanga Starogard/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59299091_2479711962059201_1485930402332803072_n.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=9f80a5258f7472af850d76c53ecd81b6&oe=5D773AEA",
           zdjecie2: "../../assets/imgs/Klub Falanga Starogard/2.jpg",
           zdjecie3: "../../assets/imgs/Klub Falanga Starogard/3.jpg",
 
@@ -189,11 +189,8 @@ export class CrossfitPage {
           Kategoria_Miejsca: "Klub sportowy",
           Dyscyplina: "Crossfit",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt. 18:00 – 20:00 (zajęcia odbywają się o 18:00 i 19:00)
-                                      Sob. 10:00 – 11:00`,
-          Koszt: `30 dni darmowy okres próbny (treningi poniedziałek/środa/ piątek godz. 19:00)
-               Karnet Basic 150 zł/ msc (bez limitu treningów) dla początkujących,
-               Karnet Pro 250 zł/ msc (bez limitu treningów) dla zaawansowanych`,
+          Godziny_Otwarcia: `Pon. - Pt. 18:00 – 20:00 (zajęcia odbywają się o 18:00 i 19:00) \n Sob. 10:00 – 11:00`,
+          Koszt: `30 dni darmowy okres próbny (treningi poniedziałek/środa/ piątek godz. 19:00) \n Karnet Basic 150 zł/ msc (bez limitu treningów) dla początkujących, \n Karnet Pro 250 zł/ msc (bez limitu treningów) dla zaawansowanych`,
           Strona_Internetowa: "https://www.facebook.com/pg/falangastarogard/about/?ref=page_internal",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B056'41.2%22N+18%C2%B030'50.6%22E/@53.9447791,18.5118673,539m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.944776!4d18.514056"},
         

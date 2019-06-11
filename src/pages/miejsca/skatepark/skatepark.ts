@@ -183,7 +183,7 @@ export class SkateparkPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.RolkowiskowParkuRekreacyjnymAKUKU,
 
-          zdjecie: "../../assets/imgs/Rolkowisko w Parku Rekreacyjnym AKUKU/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59487086_1031344820399028_1775082551480680448_n.jpg?_nc_cat=104&_nc_ht=scontent-waw1-1.xx&oh=dcd0a2affb7c15925b4ec579ae754846&oe=5D73DCE6",
           zdjecie2: "../../assets/imgs/Rolkowisko w Parku Rekreacyjnym AKUKU/2.jpg",
           zdjecie3: "../../assets/imgs/Rolkowisko w Parku Rekreacyjnym AKUKU/3.jpg",
 
@@ -199,7 +199,7 @@ export class SkateparkPage {
         
         { odleglosc: this.SkateparkOSiR,
 
-          zdjecie: "../../assets/imgs/Skatepark (OSiR)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/60003022_2196623787318755_9154877534800707584_n.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=0d3dc17b1acf7a3434f9139d7a69e89a&oe=5D2FB0C2",
           zdjecie2: "../../assets/imgs/Skatepark (OSiR)/2.jpg",
           zdjecie3: "../../assets/imgs/Skatepark (OSiR)/3.jpg",
 
@@ -215,7 +215,7 @@ export class SkateparkPage {
           
         { odleglosc: this.SkateparkParkNoweOblicze,
 
-          zdjecie: "../../assets/imgs/Skatepark Park Nowe Oblicze/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59359849_363042557648413_5695809036079857664_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=c8c9746c4c743155ac16567ece132d02&oe=5D674CB2",
           zdjecie2: "../../assets/imgs/Skatepark Park Nowe Oblicze/2.jpg",
           zdjecie3: "../../assets/imgs/Skatepark Park Nowe Oblicze/3.jpg",
 

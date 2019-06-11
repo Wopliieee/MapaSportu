@@ -80,6 +80,10 @@ export class SportysilowePage {
   SiłowniaplenerowaprzyulicySzturmowskiego: any;
   SiłowniaplenerowawParkuRekreacyjnymAKUKU: any;
   StreetWorkoutParkprzyOsJurandazeSpychowa: any;
+  FLOWPARKSiłowniaplenerowa: any;
+  SiłowniaplenerowaprzyplacuzabawFikumiku: any;
+  SiłowniaplenerowaILO: any;
+  SiłowniaplenerowaILO2: any;
 
 
   constructor(private screenOrientation: ScreenOrientation, private photoViewer: PhotoViewer, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
@@ -193,7 +197,6 @@ export class SportysilowePage {
     }
 
     this.ObliczKilometry(53.961521, 18.493140, "DrążkidoStreetworkoutprzyulicySzturmowskiego")
-    this.ObliczKilometry(53.962998, 18.508376, "EbroGym")
     this.ObliczKilometry(53.963387, 18.517096, "FitnessYankess")
     this.ObliczKilometry(53.962796, 18.521749, "FLOWPARKStreetworkoutPark")
     this.ObliczKilometry(53.944776, 18.514056, "KlubFalangaStarogard")
@@ -211,45 +214,31 @@ export class SportysilowePage {
     this.ObliczKilometry(53.961648, 18.492796, "SiłowniaplenerowaprzyulicySzturmowskiego")
     this.ObliczKilometry(53.982568, 18.502943, "SiłowniaplenerowawParkuRekreacyjnymAKUKU")
     this.ObliczKilometry(53.962644, 18.505431, "StreetWorkoutParkprzyOsJurandazeSpychowa")
+    this.ObliczKilometry(53.962796, 18.521749, "FLOWPARKSiłowniaplenerowa")
+    this.ObliczKilometry(53.973069, 18.542568, "SiłowniaplenerowaprzyplacuzabawFikumiku")
+    this.ObliczKilometry(53.971245, 18.531742, "SiłowniaplenerowaILO")
+    this.ObliczKilometry(53.970920, 18.531272, "SiłowniaplenerowaILO2")
 
     const miejsca: Miejsce[] =[
       { odleglosc: this.DrążkidoStreetworkoutprzyulicySzturmowskiego,
 
-          zdjecie: "../../assets/imgs/Drążki do Streetworkout przy ulicy Szturmowskiego/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58779131_283336282556743_5672523608891588608_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=53af047631ded00315d5f60cbaaa9734&oe=5D765385",
           zdjecie2: "../../assets/imgs/Drążki do Streetworkout przy ulicy Szturmowskiego/2.jpg",
           zdjecie3: "../../assets/imgs/Drążki do Streetworkout przy ulicy Szturmowskiego/3.jpg",
 
           Nazwa_Miejsca: "Drążki do Streetworkout przy ulicy Szturmowskiego",
           Adres: "Szturmowskiego 16",
           Kategoria_Miejsca: "Siłownia plenerowa",
-          Dyscyplina: "Sporty siłowe;",
+          Dyscyplina: "Sporty siłowe",
           Nawierzchnia: "-",
           Godziny_Otwarcia: "6:00 – 22:00",
           Koszt: "Bezpłatne",
           Strona_Internetowa: "-",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'41.5%22N+18%C2%B029'35.3%22E/@53.9615241,18.4909513,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.961521!4d18.49314"},
-        
-        { odleglosc: this.EbroGym,
-
-          zdjecie: "../../assets/imgs/Ebro Gym/1.jpg",
-          zdjecie2: "../../assets/imgs/Ebro Gym/2.jpg",
-          zdjecie3: "../../assets/imgs/Ebro Gym/3.jpg",
-
-          Nazwa_Miejsca: "Ebro Gym",
-          Adres: "Zblewska 10b",
-          Kategoria_Miejsca: "Siłownia; Klub sportowy",
-          Dyscyplina: "Sporty siłowe; Fitness; Taniec",
-          Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.: 7:00 – 22:00
-                                      Sob. – Ndz.: 7:00 – 18:00`,
-          Koszt: `149zł/ mies.
-               20zł/ 1 wejście`,
-          Strona_Internetowa: "http://www.ebrogym.pl/starogard/cennik.html",
-          Nawigacja: "https://www.google.com/maps/place/53%C2%B057'46.8%22N+18%C2%B030'30.2%22E/@53.9630011,18.5061873,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.962998!4d18.508376"},
 
         { odleglosc: this.FitnessYankess,
 
-          zdjecie: "../../assets/imgs/Fitness Yankess/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58805549_938616219825708_4349413904921657344_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=b06f6af85c3ed547ea6dd700373ba0e2&oe=5D729D68",
           zdjecie2: "../../assets/imgs/Fitness Yankess/2.jpg",
           zdjecie3: "../../assets/imgs/Fitness Yankess/3.jpg",
 
@@ -258,19 +247,19 @@ export class SportysilowePage {
           Kategoria_Miejsca: "Siłownia; Klub sportowy",
           Dyscyplina: "Sporty siłowe; Fitness",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.: 8:00 – 22:00
-                                      Sobota: 9:00 – 15:00
-                                      Ndz.: 11:00 – 15:00`,
-          Koszt: `1 wejście: 29zł
-               Karnet 1 mies.: 100zł`,
+          Godziny_Otwarcia: `Pon. - Pt.: 8:00 – 22:00 \n Sobota: 9:00 – 15:00 \n Ndz.: 11:00 – 15:00`,
+          Koszt: `1 wejście: 29zł \n Karnet 1 mies.: 100zł`,
           Strona_Internetowa: "http://yankes.pl/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'48.2%22N+18%C2%B031'01.6%22E/@53.9633901,18.5149073,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.963387!4d18.517096"},
 
         { odleglosc: this.FLOWPARKStreetworkoutPark,
 
-          zdjecie: "../../assets/imgs/FLOWPARK Streetworkout Park/1.jpg",
-          zdjecie2: "../../assets/imgs/FLOWPARK Streetworkout Park/2.jpg",
-          zdjecie3: "../../assets/imgs/FLOWPARK Streetworkout Park/3.jpg",
+          // zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58626020_445450169534312_8730037945613942784_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=fd4cb09a1ca593c5510a0b685d051e8c&oe=5D76288F",
+          // zdjecie2: "../../assets/imgs/FLOWPARK Streetworkout Park/2.jpg",
+          // zdjecie3: "../../assets/imgs/FLOWPARK Streetworkout Park/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58626020_445450169534312_8730037945613942784_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=fd4cb09a1ca593c5510a0b685d051e8c&oe=5D76288F",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59422324_338099853514531_392767444889894912_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=aa23bf9447921b2aaa56c1636012bbd7&oe=5D601BB4",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59450348_315684459104302_6790683804278194176_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=26078831592a5ed8d40455ddaa6f7d46&oe=5D3054C9",
 
           Nazwa_Miejsca: "FLOWPARK Streetworkout Park",
           Adres: "Os. 60-lecia Odzyskania Niepodległości 8",
@@ -284,7 +273,7 @@ export class SportysilowePage {
 
         { odleglosc: this.KlubFalangaStarogard,
 
-          zdjecie: "../../assets/imgs/Klub Falanga Starogard/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59299091_2479711962059201_1485930402332803072_n.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=9f80a5258f7472af850d76c53ecd81b6&oe=5D773AEA",
           zdjecie2: "../../assets/imgs/Klub Falanga Starogard/2.jpg",
           zdjecie3: "../../assets/imgs/Klub Falanga Starogard/3.jpg",
 
@@ -293,18 +282,15 @@ export class SportysilowePage {
           Kategoria_Miejsca: "Klub sportowy",
           Dyscyplina: "Crossfit",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt. 18:00 – 20:00 (zajęcia odbywają się o 18:00 i 19:00)
-                                      Sob. 10:00 – 11:00`,
-          Koszt: `30 dni darmowy okres próbny (treningi poniedziałek/środa/ piątek godz. 19:00)
-               Karnet Basic 150 zł/ msc (bez limitu treningów) dla początkujących,
-               Karnet Pro 250 zł/ msc (bez limitu treningów) dla zaawansowanych`,
-          Strona_Internetowa: "https://www.facebook.com/pg/falangastarogard/about/?ref=page_internal",
+          Godziny_Otwarcia: `Pon. - Pt. 18:00 – 20:00 (zajęcia odbywają się o 18:00 i 19:00) \n Sob. 10:00 – 11:00`,
+          Koszt: `30 dni darmowy okres próbny (treningi poniedziałek/środa/ piątek godz. 19:00) \n Karnet Basic 150 zł/ msc (bez limitu treningów) dla początkujących, \n Karnet Pro 250 zł/ msc (bez limitu treningów) dla zaawansowanych`,
+          Strona_Internetowa: "https://www.falangastarogard.pl",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B056'41.2%22N+18%C2%B030'50.6%22E/@53.9447791,18.5118673,539m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.944776!4d18.514056"},
 
 
         { odleglosc: this.PumaKlubFitness,
 
-          zdjecie: "../../assets/imgs/Puma Klub Fitness/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58694245_2337184599852597_3738682320073261056_n.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=c02c714216ecf3c3ab2d067355d8ecc6&oe=5D62A957",
           zdjecie2: "../../assets/imgs/Puma Klub Fitness/2.jpg",
           zdjecie3: "../../assets/imgs/Puma Klub Fitness/3.jpg",
 
@@ -313,16 +299,14 @@ export class SportysilowePage {
           Kategoria_Miejsca: "Siłownia; Klub sportowy",
           Dyscyplina: "Sporty siłowe; Fitness",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt: 7:30 – 21:00
-                                      Sobota: 8:00 – 17:00
-                                      Niedziela: 10:00 – 15:00`,
-          Koszt: "129zł/ mies. lub 20zł/ 1 wejście",
-          Strona_Internetowa: "-",
+          Godziny_Otwarcia: `Pon. - Pt: 7:30 – 21:00 \n Sobota: 8:00 – 17:00 \n Niedziela: 10:00 – 15:00`,
+          Koszt: "129zł/ mies. \n 20zł/ 1 wejście",
+          Strona_Internetowa: "http://www.pumaclub.pl/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'50.9%22N+18%C2%B031'38.7%22E/@53.9641321,18.5252213,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.964129!4d18.52741"},
 
         { odleglosc: this.NeptunGym,
 
-          zdjecie: "../../assets/imgs/Neptun Gym/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59295991_804161313276280_3266492666363248640_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=e5f3349492d1fdedfc726ad7a0b32cb2&oe=5D313ACF",
           zdjecie2: "../../assets/imgs/Neptun Gym/2.jpg",
           zdjecie3: "../../assets/imgs/Neptun Gym/3.jpg",
 
@@ -331,17 +315,14 @@ export class SportysilowePage {
           Kategoria_Miejsca: "Siłownia; Klub sportowy",
           Dyscyplina: "Sporty siłowe; Fitness; Taniec",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.: 6:00 – 22:00
-                                      Sobota: 9:00 – 21:00
-                                      Niedziela: 9:00 – 20:00`,
-          Koszt:`129zł/ mies.
-               25zł/ 1 wejście`,
+          Godziny_Otwarcia: `Pon. - Pt.: 6:00 – 22:00 \n Sobota: 9:00 – 21:00 \n Niedziela: 9:00 – 20:00`,
+          Koszt:`129zł/ mies. \n 25zł/ 1 wejście`,
           Strona_Internetowa: "http://neptungym.pl/cennik/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'50.9%22N+18%C2%B031'47.1%22E/@53.9641271,18.5275713,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.964124!4d18.52976"},
 
         { odleglosc: this.SiłowniaplenerowaOSiR,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa (OSiR)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58675168_872516803103258_2423911316583350272_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=4311ba37d40647393ffbfef9413f6dca&oe=5D6D40BB",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa (OSiR)/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa (OSiR)/3.jpg",
 
@@ -357,7 +338,7 @@ export class SportysilowePage {
 
         { odleglosc: this.SiłowniaplenerowanaOsKonstytucji3goMaja,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa na Os. Konstytucji 3-go Maja/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58758461_352689748706404_2235948910461845504_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=fe56176ffd74a9c8ee28ea20d85ce22c&oe=5D738B3A",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa na Os. Konstytucji 3-go Maja/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa na Os. Konstytucji 3-go Maja/3.jpg",
 
@@ -373,7 +354,7 @@ export class SportysilowePage {
 
         { odleglosc: this.SiłowniaplenerowanaOsMikołajaKopernika2,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa na Os. Mikołaja Kopernika (2)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58579360_2335272373358261_6859489244784623616_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=95f48ab8a934fbfa8e8ce3ed6fb86edb&oe=5D653F17",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa na Os. Mikołaja Kopernika (2)/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa na Os. Mikołaja Kopernika (2)/3.jpg",
 
@@ -389,7 +370,7 @@ export class SportysilowePage {
 
         { odleglosc: this.SiłowniaplenerowanaOsMikołajaKopernika,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa na Os. Mikołaja Kopernika/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58689299_567819123727133_8428206533317230592_n.jpg?_nc_cat=103&_nc_ht=scontent-waw1-1.xx&oh=0f66c1aa7f179134e8896e9dd05bd8fa&oe=5D71E057",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa na Os. Mikołaja Kopernika/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa na Os. Mikołaja Kopernika/3.jpg",
 
@@ -405,7 +386,7 @@ export class SportysilowePage {
 
         { odleglosc: this.Leszczynowa2,
 
-          zdjecie: "../../assets/imgs/Leszczynowa 2/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/60171722_424255411485662_874231990281306112_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=1a58dfe5c544ea314ea0fd32cd242d3c&oe=5D6BC635",
           zdjecie2: "../../assets/imgs/Leszczynowa 2/2.jpg",
           zdjecie3: "../../assets/imgs/Leszczynowa 2/3.jpg",
 
@@ -421,7 +402,7 @@ export class SportysilowePage {
 
         { odleglosc: this.SiłowniaplenerowaobokPolpharmy,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa obok Polpharmy/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59551421_1381352328671363_6871539746196160512_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=ba8ca48f6a1420ce48835cb3aad43597&oe=5D782592",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa obok Polpharmy/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa obok Polpharmy/3.jpg",
 
@@ -437,7 +418,7 @@ export class SportysilowePage {
 
         { odleglosc: this.SiłowniaplenerowaParkNoweOblicze,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa Park Nowe Oblicze/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59410323_316495075701289_8614898333493755904_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=9c0e49732ca8d84b57e3c322b17bb08d&oe=5D60834E",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa Park Nowe Oblicze/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa Park Nowe Oblicze/3.jpg",
 
@@ -453,7 +434,7 @@ export class SportysilowePage {
 
         { odleglosc: this.SiłowniaplenerowaprzyOsJurandazeSpychowa,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa przy Os. Juranda ze Spychowa/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/57556888_605996723214139_6633415386232520704_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=dadf37d68524961d5dbfa98427b88c48&oe=5D2E4486",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa przy Os. Juranda ze Spychowa/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa przy Os. Juranda ze Spychowa/3.jpg",
 
@@ -469,7 +450,7 @@ export class SportysilowePage {
 
         { odleglosc: this.SiłowniaplenerowaprzyulTraugutta,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa przy ul. Traugutta/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59285790_805281483198816_1529464143600418816_n.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=ee58bb74edbeeeefccc104e1fab0853d&oe=5D29CD0B",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa przy ul. Traugutta/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa przy ul. Traugutta/3.jpg",
 
@@ -485,7 +466,7 @@ export class SportysilowePage {
 
         { odleglosc: this.SiłowniaplenerowaprzyulicySzturmowskiego,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa przy ulicy Szturmowskiego/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59157494_670789763380152_3256393029291868160_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=bad6a213c44b6dd4c9182b629a7ad5f2&oe=5D5FA13F",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa przy ulicy Szturmowskiego/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa przy ulicy Szturmowskiego/3.jpg",
 
@@ -501,11 +482,11 @@ export class SportysilowePage {
 
         { odleglosc: this.SiłowniaplenerowawParkuRekreacyjnymAKUKU,
 
-          zdjecie: "../../assets/imgs/Siłownia plenerowa w Parku Rekreacyjnym AKUKU/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58442630_466412973900066_1802526494853955584_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=b5e2048e5769049e26e2b1200b349ee0&oe=5D735B19",
           zdjecie2: "../../assets/imgs/Siłownia plenerowa w Parku Rekreacyjnym AKUKU/2.jpg",
           zdjecie3: "../../assets/imgs/Siłownia plenerowa w Parku Rekreacyjnym AKUKU/3.jpg",
 
-          Nazwa_Miejsca: "Siłownia plenerowa w Parku Rekreacyjnym AKUKU",
+          Nazwa_Miejsca: "Street Workout Park w Parku Rekreacyjnym AKUKU",
           Adres: "Stanisława Kryzana 14",
           Kategoria_Miejsca: "Siłownia plenerowa",
           Dyscyplina: "Sporty siłowe; Fitness",
@@ -517,7 +498,7 @@ export class SportysilowePage {
 
         { odleglosc: this.StreetWorkoutParkprzyOsJurandazeSpychowa,
 
-          zdjecie: "../../assets/imgs/Street Workout Park przy Os. Juranda ze Spychowa/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58961653_441346383094491_1133507878766772224_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=b451cf86aed93c986dee0143ea911674&oe=5D2A323A",
           zdjecie2: "../../assets/imgs/Street Workout Park przy Os. Juranda ze Spychowa/2.jpg",
           zdjecie3: "../../assets/imgs/Street Workout Park przy Os. Juranda ze Spychowa/3.jpg",
 
@@ -530,6 +511,72 @@ export class SportysilowePage {
           Koszt: "Bezpłatne",
           Strona_Internetowa: "-",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'45.5%22N+18%C2%B030'19.6%22E/@53.9626471,18.5032423,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.962644!4d18.505431"},
+        
+        { odleglosc: this.FLOWPARKSiłowniaplenerowa,
+
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58633326_570652310093925_605725718860529664_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=b61f151d5fb7e3c12bec3351827f5336&oe=5D780AD0",
+          zdjecie2: "../../assets/imgs/FLOWPARK Streetworkout Park (2)/2.jpg",
+          zdjecie3: "../../assets/imgs/FLOWPARK Streetworkout Park (2)/3.jpg",
+
+          Nazwa_Miejsca: "FLOWPARK Siłownia plenerowa",
+          Adres: "Os. 60-lecia Odzyskania Niepodległości 8",
+          Kategoria_Miejsca: "Siłownia plenerowa",
+          Dyscyplina: "Sport siłowe",
+          Nawierzchnia: "-",
+          Godziny_Otwarcia: "6:00 - 22:00",
+          Koszt: "Bezpłatne",
+          Strona_Internetowa: "-",
+          Nawigacja: "https://www.google.com/maps/place/53%C2%B057'46.1%22N+18%C2%B031'18.3%22E/@53.9627991,18.5195603,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.962796!4d18.521749"},
+
+        { odleglosc: this.SiłowniaplenerowaprzyplacuzabawFikumiku,
+
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59914161_326754854690614_8140039997559406592_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=44e6482e701ae4e95a738ef07e359b48&oe=5D5A4CBF",
+          zdjecie2: "../../assets/imgs/Siłownia plenerowa przy placu zabaw Fiku-miku/2.jpg",
+          zdjecie3: "../../assets/imgs/Siłownia plenerowa przy placu zabaw Fiku-miku/3.jpg",
+
+          Nazwa_Miejsca: 'Siłownia plenerowa przy placu zabaw "Fiku-miku"',
+          Adres: "ul. Jana Buchholtza 6",
+          Kategoria_Miejsca: "Siłownia plenerowa",
+          Dyscyplina: "Sporty siłowe",
+          Nawierzchnia: "-",
+          Godziny_Otwarcia: "6:00 – 22:00",
+          Koszt: "Bezpłatne",
+          Strona_Internetowa: "-",
+          Nawigacja: "https://www.google.pl/maps/place/Jana+Buchholza+6,+83-250+Starogard+Gdański/@53.9732109,18.5425676,17z/data=!4m5!3m4!1s0x47029c9a9b3ef00b:0x767aa42251651a23!8m2!3d53.9729004!4d18.5426218"},
+        
+        { odleglosc: this.SiłowniaplenerowaILO,
+
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62007810_2284191734968336_8629090039311106048_n.jpg?_nc_cat=103&_nc_ht=scontent-waw1-1.xx&oh=2a24503f574fed5ce1717ab467e94f7f&oe=5D8607D1",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62211140_350116682356166_4118848919327211520_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=b5a029a8aa7f9d06c412104790652a38&oe=5D8DE66D",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62052375_2272129522876861_4997394684566306816_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=a263e9e87e5f08adf655d2754da64d49&oe=5D925D26",
+
+          Nazwa_Miejsca: "Siłownia plenerowa I LO",
+          Adres: "Generała Józefa Hallera 31",
+          Kategoria_Miejsca: "Siłownia plenerowa",
+          Dyscyplina: "Sporty siłowe; Fitness",
+          Nawierzchnia: "-",
+          Godziny_Otwarcia: "15:00 - 22:00",
+          Koszt: "Potrzeba rezerwacji",
+          Strona_Internetowa: "-",
+          Nawigacja: "https://www.google.pl/maps/place/53%C2%B058'15.3%22N+18%C2%B031'52.6%22E/@53.9709208,18.5307042,168m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.97092!4d18.531272?hl=pl"},
+
+        { odleglosc: this.SiłowniaplenerowaILO2,
+
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62307640_341924979840034_7115018603233017856_n.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=5ae41269b5c955b03d41362c5c245351&oe=5D90A377",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62366824_478349779373586_6164124178317312_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=620c38d3adef82c650ff334351dbc4d3&oe=5D7FEF3A",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62421957_366140140925681_6424818260708950016_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=333e4de64ba5c4eb52712884869be308&oe=5D9B2EA8",
+
+          Nazwa_Miejsca: "Siłownia plenerowa I LO (2)",
+          Adres: "Generała Józefa Hallera 31",
+          Kategoria_Miejsca: "Siłownia plenerowa",
+          Dyscyplina: "Sporty siłowe; Fitness",
+          Nawierzchnia: "-",
+          Godziny_Otwarcia: "15:00 - 22:00",
+          Koszt: "Potrzeba rezerwacji",
+          Strona_Internetowa: "-",
+          Nawigacja: "https://www.google.pl/maps/place/53%C2%B058'16.5%22N+18%C2%B031'54.3%22E/@53.9712458,18.5311772,167m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.971245!4d18.531742?hl=pl"},
+
+          
         ];
 
     const sortedByOdleglosc = miejsca.sort((a, b) => {
@@ -574,8 +621,6 @@ export class SportysilowePage {
     this.kilometry = Math.round(this.odległość*100)/100;
     if(WYNIK == "DrążkidoStreetworkoutprzyulicySzturmowskiego")
       this.DrążkidoStreetworkoutprzyulicySzturmowskiego = this.kilometry
-    if(WYNIK == "EbroGym")
-      this.EbroGym = this.kilometry
     if(WYNIK == "FitnessYankess")
       this.FitnessYankess = this.kilometry
     if(WYNIK == "FLOWPARKStreetworkoutPark")
@@ -610,6 +655,14 @@ export class SportysilowePage {
       this.SiłowniaplenerowawParkuRekreacyjnymAKUKU = this.kilometry
     if(WYNIK == "StreetWorkoutParkprzyOsJurandazeSpychowa")
       this.StreetWorkoutParkprzyOsJurandazeSpychowa = this.kilometry
+    if(WYNIK == "FLOWPARKSiłowniaplenerowa")
+      this.FLOWPARKSiłowniaplenerowa = this.kilometry
+    if(WYNIK == "SiłowniaplenerowaprzyplacuzabawFikumiku")
+      this.SiłowniaplenerowaprzyplacuzabawFikumiku = this.kilometry
+    if(WYNIK == "SiłowniaplenerowaILO")
+      this.SiłowniaplenerowaILO = this.kilometry
+    if(WYNIK == "SiłowniaplenerowaILO2")
+      this.SiłowniaplenerowaILO2 = this.kilometry  
 
   }
 

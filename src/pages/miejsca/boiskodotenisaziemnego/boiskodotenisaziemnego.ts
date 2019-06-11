@@ -65,6 +65,7 @@ export class BoiskodotenisaziemnegoPage {
   KortOSiR: any;
   KortTenisowyNaUlZblewskiej: any;
   BoiskoPSP3: any;
+  PlaczabawFikumiku: any;
 
 
   constructor(private screenOrientation: ScreenOrientation, private photoViewer: PhotoViewer, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
@@ -181,11 +182,12 @@ export class BoiskodotenisaziemnegoPage {
     this.ObliczKilometry(53.970017, 18.535273, "KortOSiR")
     this.ObliczKilometry(53.961181, 18.500359, "KortTenisowyNaUlZblewskiej")
     this.ObliczKilometry(53.971949, 18.536903, "BoiskoPSP3")
+    this.ObliczKilometry(53.973069, 18.542568, "PlaczabawFikumiku")
 
     const miejsca: Miejsce[] =[
       { odleglosc: this.MiejskaHalaSportowaImAndrzejaGrubbyOSiR,
 
-          zdjecie: "../../assets/imgs/Miejska Hala Sportowa im. Andrzeja Grubby (OSiR)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58549574_2165665393528151_3939023251438567424_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=6f315a2d508caffb2e325af64b6e09c0&oe=5D71BF1B",
           zdjecie2: "../../assets/imgs/Miejska Hala Sportowa im. Andrzeja Grubby (OSiR)/2.jpg",
           zdjecie3: "../../assets/imgs/Miejska Hala Sportowa im. Andrzeja Grubby (OSiR)/3.jpg",
 
@@ -201,7 +203,7 @@ export class BoiskodotenisaziemnegoPage {
         
         { odleglosc: this.KortOSiR,
 
-          zdjecie: "../../assets/imgs/Kort (OSiR)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59394667_427932204451596_8106676558460092416_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=e4be9c58f303aca49692aa77dacbe633&oe=5D765928",
           zdjecie2: "../../assets/imgs/Kort (OSiR)/2.jpg",
           zdjecie3: "../../assets/imgs/Kort (OSiR)/3.jpg",
 
@@ -217,7 +219,7 @@ export class BoiskodotenisaziemnegoPage {
         
         { odleglosc: this.KortTenisowyNaUlZblewskiej,
 
-          zdjecie: "../../assets/imgs/Kort tenisowy na Ul.Zblewskiej/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58462896_2389475004663226_4260594028485017600_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=907d908bc3da2df33ef2ab18b0e971c0&oe=5D70B66D",
           zdjecie2: "../../assets/imgs/Kort tenisowy na Ul.Zblewskiej/2.jpg",
           zdjecie3: "../../assets/imgs/Kort tenisowy na Ul.Zblewskiej/3.jpg",
 
@@ -226,22 +228,18 @@ export class BoiskodotenisaziemnegoPage {
           Kategoria_Miejsca: "Kort",
           Dyscyplina: "Tenis ziemny",
           Nawierzchnia: "Tartan",
-          Godziny_Otwarcia: "Pon. - Ndz. 07:00 – 23:00",
-          Koszt: `Pon. - Pt.
-               7:30 – 15:00 40zł/h
-               16:00 – 22:00 50zł/h
-               Sob. - Ndz.
-               7:30 - 22:30 50zł/h`,
+          Godziny_Otwarcia: "Pon. - Ndz. \n 07:00 – 23:00",
+          Koszt: `Pon. - Pt. \n 7:30 – 15:00 40zł/h \n 16:00 – 22:00 50zł/h \n Sob. - Ndz. \n 7:30 - 22:30 50zł/h`,
           Strona_Internetowa: "https://korty.org/starogard-gdanski",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'40.3%22N+18%C2%B030'01.3%22E/@53.9611841,18.4981703,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.961181!4d18.500359"},
         
         { odleglosc: this.BoiskoPSP3,
 
-          zdjecie: "../../assets/imgs/Boisko PSP3/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko PSP3/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko PSP3/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58419539_547324022462986_348770298125877248_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=c255561e3bd14e6322f69a2c570e3786&oe=5D6E305E",
+          zdjecie2: "../../assets/imgs/Boisko PSP3 (3)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko PSP3 (3)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko PSP3 ",
+          Nazwa_Miejsca: "Boisko PSP3 (3)",
           Adres: "Traugutta 2",
           Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
           Dyscyplina: "Koszykówka; Tenis ziemny",
@@ -250,6 +248,22 @@ export class BoiskodotenisaziemnegoPage {
           Koszt: "Bezpłatny/ Możliwość rezerwacji",
           Strona_Internetowa: "https://www.facebook.com/psp3starogard/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'19.0%22N+18%C2%B032'12.9%22E/@53.9719521,18.5347143,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.971949!4d18.536903"},
+        
+          { odleglosc: this.PlaczabawFikumiku,
+
+            zdjecie: '../../assets/imgs/Plac zabaw Fiku-miku/1.jpg',
+            zdjecie2: '../../assets/imgs/Plac zabaw Fiku-miku/2.jpg',
+            zdjecie3: '../../assets/imgs/Plac zabaw Fiku-miku/3.jpg',
+  
+            Nazwa_Miejsca: 'Plac zabaw "Fiku-miku"',
+            Adres: "ul. Jana Buchholtza 6",
+            Kategoria_Miejsca: "Boisko wielofunkcyjne",
+            Dyscyplina: "Koszykówka",
+            Nawierzchnia: "Tartan",
+            Godziny_Otwarcia: "6:00 – 22:00",
+            Koszt: "Bezpłatne",
+            Strona_Internetowa: "-",
+            Nawigacja: "https://www.google.pl/maps/place/Jana+Buchholza+6,+83-250+Starogard+Gdański/@53.9732109,18.5425676,17z/data=!4m5!3m4!1s0x47029c9a9b3ef00b:0x767aa42251651a23!8m2!3d53.9729004!4d18.5426218"},
         ];
 
     const sortedByOdleglosc = miejsca.sort((a, b) => {
@@ -301,7 +315,9 @@ export class BoiskodotenisaziemnegoPage {
       this.KortTenisowyNaUlZblewskiej = this.kilometry
     if(WYNIK == "BoiskoPSP3")
       this.BoiskoPSP3 = this.kilometry
-
+    if(WYNIK == "PlaczabawFikumiku")
+      this.PlaczabawFikumiku = this.kilometry
+      
   }
 
   PUSHOPIS(){

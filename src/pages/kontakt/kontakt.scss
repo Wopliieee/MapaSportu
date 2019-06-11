@@ -1,0 +1,85 @@
+.ios, .md {
+    page-kontakt {
+            ion-content {
+                // background-color: aqua !important;
+                background-image: url('../../assets/layout/tlo.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                // .scroll-content
+                
+            }
+        
+            ion-navbar {
+                background-image: url('../../assets/layout/pasek_gora.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            h1{
+                font-size: 22px;
+                color: rgb(53, 53, 53);
+                text-shadow: 0 0 10px #FFF;
+                font-style: italic;
+                transform: skew(3.9deg);
+                font-weight: bold;
+                
+            }
+        
+            p{
+                font-size:20px;
+                padding-bottom:10px;
+                color: rgb(26, 26, 26);
+                margin-left: 5px;
+            }
+
+            .różowy{
+                color: rgb(216, 27, 216);
+            }
+            
+    
+            .tlo{
+                background-color: rgb(227, 175, 199);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                box-shadow: 22px 16px 65px -31px rgba(0,0,0,0.74);
+                border-radius : 10px;
+            }
+            .tlo2{
+                background-color: rgb(227, 175, 199);
+                padding-bottom:10px;
+            }
+    
+            .shadow{
+                -webkit-box-shadow: inset -3px 4px 52px -22px rgba(0,0,0,0.16);
+                -moz-box-shadow: inset -3px 4px 52px -22px rgba(0,0,0,0.16);
+                box-shadow: inset -3px 4px 52px -22px rgba(0,0,0,0.16);
+            }
+    
+            .guzik{
+                background-color: rgb(0, 0, 0);
+                border-radius: 10px;
+            }
+
+            .social{
+                border-radius: 20%;
+                height: auto;
+                width: 30%;
+                margin: 10px;
+                // margin-left: 13%;
+            }
+
+            .discordclass{
+                height: auto;
+                height: 500px;
+                width: 80%;
+                margin: 10px;
+            }
+        
+        
+        }
+        
+    }

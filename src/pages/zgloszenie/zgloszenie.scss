@@ -1,5 +1,8 @@
 .ios, .md {
 page-zgloszenie {
+    .no-scroll .scroll-content{
+        overflow: hidden;
+   }
         ion-content {
             // background-color: aqua !important;
             background-image: url('../../assets/layout/tlo.png');
@@ -32,7 +35,7 @@ page-zgloszenie {
             text-shadow: 0 0 10px #FFF;
             font-style: italic;
             transform: skew(3.9deg);
-            font-size: 20px;
+            font-size: 24px;
         }
         h1{
             color: white;
@@ -40,7 +43,7 @@ page-zgloszenie {
             font-style: italic;
             transform: skew(3.9deg);
             font-size: 20px;
-            margin: 5px;
+            margin: 0.01%;
         }
 
         .tlo{
@@ -54,10 +57,17 @@ page-zgloszenie {
         }
         .tlo2{
             background-color: rgb(227, 175, 199);
+            padding-bottom:10px;
+        }
+
+        .shadow{
+            -webkit-box-shadow: inset -3px 4px 52px -22px rgba(0,0,0,0.16);
+            -moz-box-shadow: inset -3px 4px 52px -22px rgba(0,0,0,0.16);
+            box-shadow: inset -3px 4px 52px -22px rgba(0,0,0,0.16);
         }
 
         .guzik{
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(43, 43, 43);
             border-radius: 10px;
         }
     

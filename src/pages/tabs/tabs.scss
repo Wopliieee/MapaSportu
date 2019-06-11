@@ -14,6 +14,7 @@ page-tabs {
         &[class*="custom-"] {
             margin: 0 5% 5 0;
             vertical-align: middle;
+            margin-top: 8px;
             $sz: 48px;
             width: $sz;
             height: $sz;

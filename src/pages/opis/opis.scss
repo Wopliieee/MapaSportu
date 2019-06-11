@@ -16,6 +16,20 @@ page-opis {
         background-position: center;
         background-size: cover;
     }
+    .tlo{
+        background-color: rgba(227, 175, 199, 0);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        // box-shadow: 22px 16px 65px -31px rgba(0,0,0,0.74);
+        // border-radius : 10px;
+    }
+    .tlo2{
+        background-color: rgba(227, 175, 199, 0);
+        padding-left: -100000000px;
+        left: -10px;
+    }
 
     b {
         font-size: 16px;
@@ -24,15 +38,39 @@ page-opis {
     // b{
     //     font-style: normal;
     // }
-    // p{
-    //     font-style: italic;
-    // }
+    p{
+        font-size:15px;
+        padding-bottom:10px;
+        color: rgb(26, 26, 26);
+        
+    }
+    h2{
+        color: rgb(53, 53, 53);
+        text-shadow: 0 0 10px #FFF;
+        font-style: italic;
+        transform: skew(3.9deg);
+        font-size: 23px;
+        font-weight: bold;
+    }
 
     .multiline{
         white-space: pre-wrap;
-        margin-top: -53px;
-        margin-left: -4px;
+        text-align: left;
+        margin-top: -35px;
+        margin-bottom: -40px;
+
     }
+    .app-font {
+        // font-size: 15px;
+        // line-height: 1.7;
+        // background-color: aqua;
+        padding-top: 10px;
+    }
+
+    // ion-label {
+    //     // text-overflow: ellipsis;
+    //     // white-space: pre;
+    //   }
   
     .multiline2{
         white-space: pre-wrap;
@@ -47,11 +85,11 @@ page-opis {
         line-height: 1.6;
     }
     a{
-        color: rgb(245, 115, 201);
+        color: rgb(216, 27, 216);
     }
 
     h1{
-        text-align: center;
+        text-align: left;
         font-size: 25px;
     }
 
@@ -61,8 +99,13 @@ page-opis {
     ion-slide{
         border-radius: 10px;
     }
+    .zdjecia{
+        // height: 200px;
+        height: 30vh;
+        width: 100%;
+    }
     ion-slides{
-        height: 200px;
+        height: auto;
         border-radius: 10px;
     }
     .swiper-pagination-bullet-active {
@@ -82,6 +125,23 @@ page-opis {
         font-style: italic;
         transform: skew(3.9deg);
     }
+
+    .Nazwa_Miejsca{
+        font-size: 35px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+    .Tytuł{
+        margin-left: 10px;
+    }
+    .Zawartość{
+        margin-left: 10px;
+        white-space: pre-wrap;
+        text-align: left;
+        line-height: 1.4;
+    }
+
 
 }
 }

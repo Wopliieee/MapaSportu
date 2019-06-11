@@ -22,4 +22,6 @@ export class FaqPage {
     console.log('ionViewDidLoad FaqPage');
   }
 
+  
+
 }

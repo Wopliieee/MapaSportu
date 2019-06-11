@@ -1,56 +1,211 @@
-ion-content {
-    // background-color: aqua !important;
-    background-image: url('../../assets/layout/tlo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+.ios, .md {
+    // ::-webkit-scrollbar { 
+    //     display: none; 
+    // }
 
-ion-navbar {
-    background-image: url('../../assets/layout/pasek_gora.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-ion-nav{
-    position: fixed;
-    top: 0px;
-
-}
-h3{
-    color: white;
-    opacity: 0.75;
-    text-shadow: 0 0 10px #FFF;
-    font-style: italic;
-    transform: skew(3.9deg);
-}
-
-ion-icon {
-    &[class*="custom-"] {
-        margin: 0 5px 0 0;
-        vertical-align: middle;
-        $sz: 50px;
-        width: $sz;
-        height: $sz;
-    } // custom icons
-
-    &[class*="MapaSportu"]{
-        background: url('../../assets/layout/logo.png') no-repeat 80% 100%;
-        background-size: contain;
-        background-size: 30%;
+    ion-content {
+        // background-color: aqua !important;
+        background-image: url('../../assets/layout/tlo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
     }
-}
-.fab {
-    // background-color: white;
-    border-style: solid;
-    // border-radius: 50%;
-    // border-width: 2px;
-    // border-color: white;
-    background-color: rgba(255, 255, 255, 0);
-    
-}
 
-* ::-webkit-scrollbar {
-    display: none;
-  }
+    ion-navbar {
+        background-image: url('../../assets/layout/pasek_gora.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    ion-nav{
+        position: fixed;
+        top: 0px;
+
+    }
+    h3{
+        color: white;
+        opacity: 0.75;
+        text-shadow: 0 0 10px #FFF;
+        font-style: italic;
+        transform: skew(3.9deg);
+    }
+
+    ion-icon {
+        &[class*="custom-"] {
+            margin: 0 5px 0 0;
+            vertical-align: middle;
+            $sz: 50px;
+            width: $sz;
+            height: $sz;
+        } // custom icons
+
+        &[class*="MapaSportu"]{
+            background: url('../../assets/layout/logo.png') no-repeat 80% 100%;
+            background-size: contain;
+            background-size: 30%;
+        }
+    }
+    .fab {
+        // background-color: white;
+        border-style: solid;
+        // border-radius: 50%;
+        // border-width: 2px;
+        // border-color: white;
+        background-color: rgba(255, 255, 255, 0);
+        
+    }
+
+        *::-webkit-scrollbar-button{ display: none; height: 13px; border-radius: 0; background-color: #ca7ddd; }
+        ::-webkit-scrollbar-button:hover{ background-color: #e9e9e9; }
+        ::-webkit-scrollbar-thumb{ background-color: rgba(155, 155, 155, 0.603);border-radius: 150px; }
+        ::-webkit-scrollbar-thumb:hover{ background-color: rgb(66, 66, 66);border-radius: 10px; }
+        ::-webkit-scrollbar-track{ background-color: #c5c5c500;border-radius: 15px; } 
+        ::-webkit-scrollbar-track:hover{ background-color: rgb(151, 151, 151); } 
+        ::-webkit-scrollbar{ width: 7px; }
+    .okrag{
+        box-shadow: none;
+        border-radius: 300px;
+        background-color: rgba(253, 253, 253, 0.938);
+        font-size: 130%;
+    }
+    .okrag2{
+        box-shadow: none;
+        // border-radius: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: rgba(252, 252, 252, 0.938);
+        font-size: 130%;
+    }
+
+    .break{
+        margin-bottom: 15px;
+    }
+
+
+    .version{
+        text-align: center;
+        vertical-align: text-bottom;
+    }
+    .versionFOOTER{
+        background-color: rgba(0, 255, 255, 0);
+            // background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(252, 252, 252, 0.938));
+    }
+
+    .alertDanger{
+        // color: rgb(0, 0, 0);
+
+        // text-align: center;
+
+
+            .alert-message {
+                color: rgb(0, 0, 0); // text color for confirm alerts
+                text-align: center;
+                
+            }
+            .alert-title {
+                color: rgb(0, 0, 0); // text color for confirm alerts
+                text-align: center;
+                font-weight: 900;
+                font-size: 25px;
+            }
+
+            .alert-wrapper{
+                border-radius: 15px;
+            }
+
+            
+            button{
+                color: rgb(255, 255, 255);
+                background-color: rgb(43, 43, 43);
+                // margin-left: 2px;
+                // margin-right: 2px;
+                width: 46%;
+                right: 5px;
+                font-weight: 200;
+                border-radius: 15px;
+                
+            }
+            .takbutton{
+                padding-right: 43%;
+            }
+            .niebutton{
+                padding-right: 44%;
+            }
+
+
+            .airQUALITY{
+                height: 100px;
+                width: 100px;
+                border: none;
+                position: absolute;
+                margin-left: 16px;
+                margin-top: 16px;
+            }
+
+        
+        }
+
+
+
+
+    .alertDangerIOS{
+        // color: rgb(0, 0, 0);
+
+        // text-align: center;
+
+
+            .alert-message {
+                color: rgb(0, 0, 0); // text color for confirm alerts
+                text-align: center;
+                font-weight: 600;
+                font-size: 15px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+            }
+            .alert-title {
+                color: rgb(0, 0, 0); // text color for confirm alerts
+                text-align: center;
+                font-weight: 900;
+                font-size: 25px;
+            }
+
+            .alert-wrapper{
+                border-radius: 15px;
+            }
+
+            .niebutton{
+                margin-bottom: 10px;
+            }
+
+            
+            button{
+                color: rgb(255, 255, 255);
+                background-color: rgb(43, 43, 43);
+                // margin-left: 2px;
+                // margin-right: 2px;
+                width: 50%;
+                right: 5px;
+                font-weight: 200;
+                border-radius: 15px;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 5px;
+            }
+
+
+            .airQUALITY{
+                height: 100px;
+                width: 100px;
+                border: none;
+                position: absolute;
+                margin-left: 16px;
+                margin-top: 16px;
+            }
+
+        
+        }
+
+}

@@ -75,6 +75,9 @@ export class PilkarecznaPage {
   SalaGimnastycznaPSP1: any;
   SalaGimnastycznaPSP8: any;
   SalaGimnastycznaZSE: any;
+  BoiskoILO: any;
+  BoiskoPSP1filia: any;
+  SalagimnastycznaPSP1filia: any;
 
 
   constructor(private screenOrientation: ScreenOrientation, private photoViewer: PhotoViewer, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
@@ -202,15 +205,18 @@ export class PilkarecznaPage {
     this.ObliczKilometry(53.961259, 18.501102, "SalaGimnastycznaPSP1")
     this.ObliczKilometry(53.957562, 18.527770, "SalaGimnastycznaPSP8")
     this.ObliczKilometry(53.966320, 18.535633, "SalaGimnastycznaZSE")
+    this.ObliczKilometry(53.971048, 18.531133, "BoiskoILO")
+    this.ObliczKilometry(53.966475, 18.519187, "BoiskoPSP1filia")
+    this.ObliczKilometry(53.966306, 18.519750, "SalagimnastycznaPSP1filia")
 
     const miejsca: Miejsce[] =[
       { odleglosc: this.BoiskoOSIR,
 
-          zdjecie: "../../assets/imgs/Boisko (OSiR)/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko (OSiR)/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko (OSiR)/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59410583_355557525073206_7708766246715523072_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=a4a1d0cc93d817ffce20ad5566c0e014&oe=5D6F0D37",
+          zdjecie2: "../../assets/imgs/Boisko (OSiR) (4)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko (OSiR) (4)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko (OSiR)",
+          Nazwa_Miejsca: "Boisko (OSiR) (4)",
           Adres: "Olimpijczyków Starogardzkich 1",
           Kategoria_Miejsca: "Boisko zewnętrzne",
           Dyscyplina: "Koszykówka",
@@ -223,11 +229,11 @@ export class PilkarecznaPage {
       
       { odleglosc: this.AdresBoiskoNaOsMikołajaKopernika,
 
-          zdjecie: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika/3.jpg",
-
-          Nazwa_Miejsca: "Boisko na Os. Mikołaja Kopernika",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58378903_352122728764906_4348086472264384512_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=8bb70dc174e27185b8e7a91938f534c9&oe=5D6E4D00",
+          zdjecie2: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (2)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (2)/3.jpg",
+        
+          Nazwa_Miejsca: "Boisko na Os. Mikołaja Kopernika (2)",
           Adres: "Os. Mikołaja Kopernika 10",
           Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
           Dyscyplina: "Koszykówka; Piłka ręczna; Piłka nożna",
@@ -239,11 +245,11 @@ export class PilkarecznaPage {
 
       { odleglosc: this.BoiskoPSP1,
 
-          zdjecie: "../../assets/imgs/Boisko PSP1/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko PSP1/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko PSP1/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59188968_638035613289639_5888665737823780864_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=a2568095962bdabae0cc97faae8de961&oe=5D2D35CC",
+          zdjecie2: "../../assets/imgs/Boisko PSP1 (2)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko PSP1 (2)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko PSP1",
+          Nazwa_Miejsca: "Boisko PSP1 (2)",
           Adres: "Zblewska 18",
           Kategoria_Miejsca: "Boisko zewnętrzne",
           Dyscyplina: "Piłka nożna; Piłka ręczna",
@@ -255,7 +261,7 @@ export class PilkarecznaPage {
  
       { odleglosc: this.BoiskoPSP32,
 
-          zdjecie: "../../assets/imgs/Boisko PSP3 (2)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59387063_1099253716927620_3578788238195687424_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=bd94a1357db6484d69fc13d3577b8726&oe=5D77D36B",
           zdjecie2: "../../assets/imgs/Boisko PSP3 (2)/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP3 (2)/3.jpg",
 
@@ -271,11 +277,11 @@ export class PilkarecznaPage {
 
       { odleglosc: this.BoiskoPSP3,
 
-          zdjecie: "../../assets/imgs/Boisko PSP3/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko PSP3/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko PSP3/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58570936_2097807960517081_4011165907303792640_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=5e107381f783465a01dd0d67a330b74a&oe=5D5B0602",
+          zdjecie2: "../../assets/imgs/Boisko PSP3 (5)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko PSP3 (5)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko PSP3 ",
+          Nazwa_Miejsca: "Boisko PSP3 (5)",
           Adres: "Traugutta 2",
           Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
           Dyscyplina: "Piłka nożna; Piłka ręczna",
@@ -287,7 +293,7 @@ export class PilkarecznaPage {
 
       { odleglosc: this.BoiskoPSP4AlejaJanaPawłaII,
 
-          zdjecie: "../../assets/imgs/Boisko PSP4  aleja Jana Pawła II/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59400748_2286217288318003_6571011787754307584_n.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=5f22416142a75a4f4fcdd04103f4e5bd&oe=5D6EED65",
           zdjecie2: "../../assets/imgs/Boisko PSP4  aleja Jana Pawła II/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP4  aleja Jana Pawła II/3.jpg",
 
@@ -303,7 +309,7 @@ export class PilkarecznaPage {
 
       { odleglosc: this.BoiskoPSP6,
 
-          zdjecie: "../../assets/imgs/Boisko PSP6/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59623610_871823323161433_1583353862767509504_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=799a76bd9ca25ba46f6ff94286a46597&oe=5D5E1961",
           zdjecie2: "../../assets/imgs/Boisko PSP6/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP6/3.jpg",
 
@@ -319,7 +325,7 @@ export class PilkarecznaPage {
 
       { odleglosc: this.BoiskoPSP8,
 
-          zdjecie: "../../assets/imgs/Boisko PSP8/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/60107420_593727607703480_1613628103689502720_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=befcb56be752a3817b0c06eb147e8e45&oe=5D30B255",
           zdjecie2: "../../assets/imgs/Boisko PSP8/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP8/3.jpg",
 
@@ -335,7 +341,7 @@ export class PilkarecznaPage {
 
       { odleglosc: this.BoiskoZSZ,
 
-          zdjecie: "../../assets/imgs/Boisko ZSZ/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59909556_444930762743540_6020110102361538560_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=8db16bfa0eab67249f3ecda3636216b7&oe=5D2C8B3B",
           zdjecie2: "../../assets/imgs/Boisko ZSZ/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko ZSZ/3.jpg",
 
@@ -351,7 +357,7 @@ export class PilkarecznaPage {
 
       { odleglosc: this.HalaSportowaImGerardaPodolskiegoAGRO,
 
-          zdjecie: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59519045_576585839518008_3379895599867363328_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=b9e47dd47294b8d8ccdfd557f1a30f56&oe=5D688E56",
           zdjecie2: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO)/2.jpg",
           zdjecie3: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO)/3.jpg",
 
@@ -367,7 +373,7 @@ export class PilkarecznaPage {
 
       { odleglosc: this.MiejskaHalaSportowaImAndrzejaGrubbyOSiR,
 
-          zdjecie: "../../assets/imgs/Miejska Hala Sportowa im. Andrzeja Grubby (OSiR)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58549574_2165665393528151_3939023251438567424_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=6f315a2d508caffb2e325af64b6e09c0&oe=5D71BF1B",
           zdjecie2: "../../assets/imgs/Miejska Hala Sportowa im. Andrzeja Grubby (OSiR)/2.jpg",
           zdjecie3: "../../assets/imgs/Miejska Hala Sportowa im. Andrzeja Grubby (OSiR)/3.jpg",
 
@@ -383,9 +389,9 @@ export class PilkarecznaPage {
 
       { odleglosc: this.SalaGimnastycznaIILiceumOgólnokształcące,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna II Liceum Ogólnokształcące/1.jpg",
-          zdjecie2: "../../assets/imgs/Sala gimnastyczna II Liceum Ogólnokształcące/2.jpg",
-          zdjecie3: "../../assets/imgs/Sala gimnastyczna II Liceum Ogólnokształcące/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59914231_443028193113136_7340890559667503104_n.jpg?_nc_cat=104&_nc_ht=scontent-waw1-1.xx&oh=7cfd3fb5ed57cd0fb51b6cb4e9561a8c&oe=5D70541E",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59609231_596722054173850_7209239151936274432_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=2c889eb85830112139f6f33e5005b90e&oe=5D2EF83B",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/60272396_430450314398382_8564265337703366656_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=914602ec7bee9c52860b030cb7300002&oe=5D73B6DB",
 
           Nazwa_Miejsca: "Sala gimnastyczna II Liceum Ogólnokształcące",
           Adres: "Tadeusza Kościuszki 131",
@@ -399,7 +405,7 @@ export class PilkarecznaPage {
 
       { odleglosc: this.SalaGimnastycznaPSP1,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna PSP1/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59243937_883508015334863_102627822631124992_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=697d614a9ba33c6b38ebb23b8f6ad2b4&oe=5D5DE6A3",
           zdjecie2: "../../assets/imgs/Sala gimnastyczna PSP1/2.jpg",
           zdjecie3: "../../assets/imgs/Sala gimnastyczna PSP1/3.jpg",
 
@@ -415,7 +421,7 @@ export class PilkarecznaPage {
 
       { odleglosc: this.SalaGimnastycznaPSP8,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna PSP8/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59601883_688619581558217_2630446084710727680_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=8148c23ef326018d3d5bb15c5d1c0281&oe=5D77FC92",
           zdjecie2: "../../assets/imgs/Sala gimnastyczna PSP8/2.jpg",
           zdjecie3: "../../assets/imgs/Sala gimnastyczna PSP8/3.jpg",
 
@@ -431,7 +437,7 @@ export class PilkarecznaPage {
 
       { odleglosc: this.SalaGimnastycznaZSE,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna ZSE/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/60161939_373268329951436_1336134385568579584_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=04afb74fe3403f3229a6bd949c63b04a&oe=5D5E04D7",
           zdjecie2: "../../assets/imgs/Sala gimnastyczna ZSE/2.jpg",
           zdjecie3: "../../assets/imgs/Sala gimnastyczna ZSE/3.jpg",
 
@@ -445,6 +451,53 @@ export class PilkarecznaPage {
           Strona_Internetowa: "https://www.zse.com.pl/pl/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'58.8%22N+18%C2%B032'08.3%22E/@53.9663231,18.5334443,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.96632!4d18.535633"},
 
+      { odleglosc: this.BoiskoILO,
+
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/64328633_350759058976743_7237311427550117888_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=e6b02b25359d74806dc782ad562ac60b&oe=5D89597F",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62053825_332770054062851_7322606454391701504_n.jpg?_nc_cat=103&_nc_ht=scontent-waw1-1.xx&oh=c08ac852006e6d758dd23c5af4ea9f51&oe=5D9A4E87",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/61967921_415376065978649_6559416952308105216_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=0248336455be48eb440d76f938ed50b0&oe=5D8294FC",
+
+          Nazwa_Miejsca: "Boisko I LO",
+          Adres: "Generała Józefa Hallera 31",
+          Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
+          Dyscyplina: "Koszykówka; Piłka nożna; Piłka ręczna",
+          Nawierzchnia: "Tartan",
+          Godziny_Otwarcia: "15:00 - 22:00",
+          Koszt: "Potrzeba rezerwacji",
+          Strona_Internetowa: "-",
+          Nawigacja: "https://www.google.pl/maps/place/53%C2%B058'15.8%22N+18%C2%B031'52.1%22E/@53.971049,18.53046,200m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.971048!4d18.531133?hl=pl"},
+
+      { odleglosc: this.BoiskoPSP1filia,
+
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62073974_380842429443324_3345047983279308800_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=0395ae9118ce30598982ca6a0d8644e7&oe=5D9C5C25",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62261343_892430341098058_7259790161095950336_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=71e344b093b04cbff4e16337e8195f20&oe=5D8BDE0A",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62527691_1254149958075974_3580834991975694336_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=d07d40bc9eacb132ce34dab735199c72&oe=5D52E53A",
+
+          Nazwa_Miejsca: "Boisko PSP1 (filia)",
+          Adres: "2 Pułku Szwoleżerów Rokitniańskich 4",
+          Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
+          Dyscyplina: "Piłka ręczna, Piłka nożna",
+          Nawierzchnia: "Asfalt",
+          Godziny_Otwarcia: "Czynne całą dobę",
+          Koszt: "Bezpłatne",
+          Strona_Internetowa: "http://www.pg3.starogard.pl/",
+          Nawigacja: "https://www.google.pl/maps/place/53%C2%B057'59.3%22N+18%C2%B031'09.1%22E/@53.9664759,18.5185349,196m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d53.9664754!4d18.5191872?hl=pl"},
+
+      { odleglosc: this.SalagimnastycznaPSP1filia,
+
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62339791_2829946233743253_2002428261518278656_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=8d7bb29cad65c5c197e9bbe8b2d10e55&oe=5D51D741",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62230531_2436987163046177_3735550636079448064_n.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=0fe3297c1bfe9c0971b2391c5916d284&oe=5D98787A",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62454870_418559702207369_3967025132538429440_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=6fec4434a29d2dc9b0c3b40ee1c9cc53&oe=5D851DD8",
+
+          Nazwa_Miejsca: "Sala gimnastyczna PSP1 (filia)",
+          Adres: "2 Pułku Szwoleżerów Rokitniańskich 4",
+          Kategoria_Miejsca: "Sala gimnastyczna",
+          Dyscyplina: "Koszykówka, siatkówka, gimnastyka",
+          Nawierzchnia: "Parkiet drewniany",
+          Godziny_Otwarcia: "16:00 - 22:00",
+          Koszt: "Bezpłatne (Potrzeba rezerwacji)",
+          Strona_Internetowa: "http://psp1starogardgd.edupage.org/news/?",
+          Nawigacja: "https://www.google.pl/maps/place/53%C2%B057'58.7%22N+18%C2%B031'11.1%22E/@53.9663072,18.5186557,18z/data=!3m1!4b1!4m13!1m6!3m5!1s0x47029b5f8762496d:0xd1f2455896a7bd86!2sPubliczne+Gimnazjum+nr+3+im.+Stanis%C5%82awa+Staszica!8m2!3d53.9659753!4d18.5193786!3m5!1s0x0:0x0!7e2!8m2!3d53.9663018!4d18.5197563"},
 
         ];
 
@@ -518,6 +571,12 @@ export class PilkarecznaPage {
       this.SalaGimnastycznaPSP8 = this.kilometry
     if(WYNIK == "SalaGimnastycznaZSE")
       this.SalaGimnastycznaZSE = this.kilometry
+    if(WYNIK == "BoiskoILO")
+      this.BoiskoILO = this.kilometry
+    if(WYNIK == "BoiskoPSP1filia")
+      this.BoiskoPSP1filia = this.kilometry
+    if(WYNIK == "SalagimnastycznaPSP1filia")
+      this.SalagimnastycznaPSP1filia = this.kilometry
 
   }
 

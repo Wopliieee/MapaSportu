@@ -183,7 +183,7 @@ export class SzachyPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.StółdogrywszachyNaOsMikołajaKopernika,
 
-          zdjecie: "../../assets/imgs/Stół do gry w szachy na Os. Mikołaja Kopernika/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58463084_2409173205979236_706426531399860224_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=be0fe19977a9c754e329a5d9c0753bf4&oe=5D77131C",
           zdjecie2: "../../assets/imgs/Stół do gry w szachy na Os. Mikołaja Kopernika/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do gry w szachy na Os. Mikołaja Kopernika/3.jpg",
 
@@ -199,7 +199,7 @@ export class SzachyPage {
         
         { odleglosc: this.StółdogrywszachynaOsPiastów,
 
-          zdjecie: "../../assets/imgs/Stół do gry w szachy na Os. Piastów/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58652574_603169466864774_2333531538089574400_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=7d643849df23c4c7045344e144f82338&oe=5D2B0581",
           zdjecie2: "../../assets/imgs/Stół do gry w szachy na Os. Piastów/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do gry w szachy na Os. Piastów/3.jpg",
 
@@ -215,9 +215,12 @@ export class SzachyPage {
         
         { odleglosc: this.FLOWPARKStółszachowy,
 
-          zdjecie: "../../assets/imgs/FLOWPARK Stół szachowy/1.jpg",
-          zdjecie2: "../../assets/imgs/FLOWPARK Stół szachowy/2.jpg",
-          zdjecie3: "../../assets/imgs/FLOWPARK Stół szachowy/3.jpg",
+          // zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59394159_826680024375081_7449772829639180288_n.jpg?_nc_cat=104&_nc_ht=scontent-waw1-1.xx&oh=d2cea689758d69f81b9e571f50404ac9&oe=5D746483",
+          // zdjecie2: "../../assets/imgs/FLOWPARK Stół szachowy/2.jpg",
+          // zdjecie3: "../../assets/imgs/FLOWPARK Stół szachowy/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59394159_826680024375081_7449772829639180288_n.jpg?_nc_cat=104&_nc_ht=scontent-waw1-1.xx&oh=d2cea689758d69f81b9e571f50404ac9&oe=5D746483",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58833855_413084812608849_851623853665812480_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=558ab08d6873074bf344d204c468f2bb&oe=5D6B4089",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59397993_278103949736585_1378146845124984832_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=6cebe268adb97dacf75ecdd868ec6dcd&oe=5D311DE9",
 
           Nazwa_Miejsca: "FLOWPARK Stół szachowy",
           Adres: "Os. 60-lecia Odzyskania Niepodległości 8",

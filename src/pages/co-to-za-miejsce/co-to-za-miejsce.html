@@ -1,0 +1,85 @@
+<ion-header transparent>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry"></script>
+  <ion-navbar transparent>
+
+            <button ion-button menuToggle >
+                <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
+            </button>
+        
+            <div text-center>
+                <h3 ion-text>MIEJSCA W POBLIŻU</h3>
+            </div>
+           
+            <ion-buttons end>
+                <img style="padding-bottom: px;" width="50" height="50" src="../assets/layout/FAB_logo.png">
+            </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-refresher id="lower" slot="fixed" (ionRefresh)="doRefresh($event)">
+  <ion-refresher-content id="lower"
+  pullingIcon="custom-glownaZZT"
+  pullingText="Puść aby odświeżyć"
+  refreshingSpinner="circles"
+  refreshingText="Odświeżanie...">
+  </ion-refresher-content>
+</ion-refresher>
+
+<!-- <ion-fab #filtry top left>
+
+  <button class="button-fab" ion-fab>
+          <ion-icon name="custom-filtr"></ion-icon>  
+      </button>
+
+
+          <ion-fab-list style="height: 90%;">
+              <div #filtry class="square">
+                      <button class="rozszerzone" ion-button color="dark">
+                          250m
+                      </button>
+                      
+                      <ion-footer class="fade">
+                          
+                      </ion-footer>
+              </div>
+              
+      </ion-fab-list>
+      
+    </ion-fab> -->
+
+
+<ion-list text-wrap [virtualScroll]="results" [approxItemHeight]=" '200px'" [bufferRatio]="30" >
+<ion-grid *virtualItem="let result">
+<ion-row (click)="OPIS(result.Nazwa_Miejsca, result.Dyscyplina, result.Kategoria_Miejsca, result.Adres, result.Nawierzchnia, result.Godziny_Otwarcia, result.Koszt, result.Strona_Internetowa, result.zdjecie, result.zdjecie2, result.zdjecie3, result.Nawigacja)">
+<ion-col >
+
+
+<ion-item no-lines class="tlo">
+    <ion-label class="zdjecia">
+        <!-- imageViewer -->
+
+              <img style="align-items: center;" [src]="result.zdjecie" imageViewer>
+              <h2 style="margin-top: 10px;" class="app-font-km">{{result.odleglosc}} km</h2>
+    </ion-label>
+
+
+    <ion-label>
+      <div class="tytul" text-center>
+        <h4 style="font-size: 17px;" [innerText]="result.Nazwa_Miejsca" class="app-font"></h4>
+      </div>
+    </ion-label>
+
+</ion-item>
+
+</ion-col>
+
+</ion-row>
+</ion-grid>
+
+
+</ion-list>
+<p text-center>{{NapisNaDole}}</p>

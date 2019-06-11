@@ -1,38 +1,157 @@
 <ion-header transparent>
-  
   <ion-navbar transparent>
-    
-      <!-- <div style="padding-bottom: 5px;">
-          <img width="45" height="45" src="../assets/layout/FAB_logo.png">
-      </div> -->
-    
-    <button ion-button menuToggle >
-      <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
-    </button>
-    
+      
 
+            <button ion-button menuToggle >
+                <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
+            </button>
+        
+            <div text-center>
+                <h3 ion-text (click)="reset()">MAPA SPORTU</h3>
+            </div>
 
-    <div text-center>
-      <h3 style="padding-right: 50px;" ion-text>MAPA SPORTU</h3>
-      </div>
-
-
-     
-
-
-
-
+            
+            <ion-buttons end>
+                <img style="padding-bottom: px;" width="50" height="50" src="../assets/layout/FAB_logo.png">
+            </ion-buttons>
 
   </ion-navbar>
-  
-
 </ion-header>
 
 
-<ion-content padding class="bg-image">
-  
+<ion-content padding class="bg-image; no-scroll">
 
-    <div id="map"  src="https://www.openstreetmap.org/export/embed.html?bbox=18.30253601074219%2C53.877226052392416%2C18.65615844726563%2C54.05052041018567&amp;layer=mapnik%22%3E"><br/><small></small></div>
+    <!-- <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1kVjMkvOvGe-doqu0ae1BlxQ3oQcOOEkh"></iframe> -->
 
-  </ion-content>
+
+
+    <!-- TUTAJ JEST MAPA W APLIKACJI -->
+    <iframe class="mapa" id="myframe" src="https://umap.openstreetmap.fr/pl/map/bieganie-mapa-sportu_331567?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5184"></iframe>
+    <!-- TUTAJ JEST MAPA W APLIKACJI -->
+
+
+
+        <!-- <iframe src="https://snazzymaps.com/embed/146947" width="100%" height="600px" style="border:none;"></iframe> -->
+        <!-- <iframe class="mapa" id="myframe" src="https://umap.openstreetmap.fr/pl/map/mapa-bez-nazwy_324603?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe><p><a href="https://umap.openstreetmap.fr/pl/map/mapa-bez-nazwy_324603">Pełny ekran</a></p> -->
+
+
+
+
+
+        <!-- <ion-fab class="currentmap" top right>
+                <button (click)="sport()" ion-button color="dark" class="currentmapa">{{currentMAP}}</button>
+        </ion-fab> -->
+
+        <ion-fab style="margin-top: 55px;" top left class="closedbutton">
+                <button class="button-fab" ion-fab>
+                        <ion-icon name="close"></ion-icon>  
+                    </button>
+        </ion-fab>
+
+
+
+        <ion-fab class="currentmap" top left>
+                <button  (click)="sport()" ion-button color="dark" class="currentmapa">{{currentMAP}}</button>
+            </ion-fab>
+
+
+
+        <ion-fab style="margin-top: 53px;" #filtry top left>
+            
+
+            <div #close (click)="zmiana()" class="test" ion-fab>
+            <button class="button-fab" ion-fab>
+                    <ion-icon name="custom-filtr"></ion-icon>  
+                </button>
+            </div>
+
+
+            <!-- *************************RESET BUTTON********************************** -->
+            <!-- <button ion-button color="dark" (click)="clicker()">click</button> -->
+            <!-- <h2>{{this.cookie}}</h2> -->
+            <!-- *************************RESET BUTTON********************************** -->
+
+
+                    <ion-fab-list style="height: 80%;">
+                        <div #filtry class="square">
+                        <!-- <div style="overflow: scroll; height:50vh;"> -->
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/bieganie-mapa-sportu_331567?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5184', 'Bieganie')" class="rozszerzone" ion-button color="dark">
+                                    Bieganie
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/mapa-bez-nazwy_333004?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5184', 'Fitness')" class="rozszerzone" ion-button color="dark">
+                                    Fitness
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/gimnastyka-mapa-sportu_331510?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9674/18.5185', 'Gimnastyka')" class="rozszerzone" ion-button color="dark">
+                                    Gimnastyka
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/koszykowka-mapa-sportu_332784?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&editinosmControl=false&locateControl=false&measureControl=false#12/53.9699/18.5159', 'Koszykówka')" class="rozszerzone" ion-button color="dark">
+                                    Koszykówka
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/kregle-mapa-sportu_331585?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5184', 'Kręgle')" class="rozszerzone" ion-button color="dark">
+                                    Kręgle
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/lekkoatletyka_333205?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false#12/53.9676/18.5185', 'Lekkoatletyka')" class="rozszerzone" ion-button color="dark">
+                                    Lekkoatletyka
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/wspinaczka-sciankowa_331607?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false#13/53.9675/18.5184', 'Łyżwiarstwo')" class="rozszerzone" ion-button color="dark">
+                                    Łyżwiarstwo
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/pika-nozna_332931?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false#13/53.9675/18.5184', 'Piłka nożna')" class="rozszerzone" ion-button color="dark">
+                                    Piłka nożna
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/pika-reczna_333385?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false#13/53.9675/18.5184', 'Piłka ręczna')" class="rozszerzone" ion-button color="dark">
+                                    Piłka ręczna
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/pywanie-mapa-sportu_331564?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#12/53.9699/18.5161', 'Pływanie')" class="rozszerzone" ion-button color="dark">
+                                    Pływanie
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/siatkowka_332970?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&editinosmControl=false&measureControl=false&locateControl=false#13/53.9674/18.5185', 'Siatkówka')" class="rozszerzone" ion-button color="dark">
+                                    Siatkówka
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/siatkowka-plazowa_333021?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false#13/53.9675/18.5184', 'Siatkówka plażowa')" class="rozszerzoneMNIEJSZE" ion-button color="dark">
+                                    Siatkówka plażowa
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/mapa-sportu_329796?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5184', 'Sporty ekstremalne')" class="rozszerzoneMNIEJSZE" ion-button color="dark">
+                                    Sporty ekstremalne
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/sporty-siowe_335209?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false#13/53.9675/18.5186', 'Sporty siłowe')" class="rozszerzone" ion-button color="dark">
+                                    Sporty siłowe
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/sporty-walki_333002?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false#12/53.9675/18.5185', 'Sporty walki')" class="rozszerzone" ion-button color="dark">
+                                    Sporty walki
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/szachy-mapa-sportu_331554?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5194', 'Szachy')" class="rozszerzone" ion-button color="dark">
+                                    Szachy
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/mapa-bez-nazwy_333023?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5184', 'Taniec')" class="rozszerzone" ion-button color="dark">
+                                    Taniec
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/tenis-stoowy_333335?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5185', 'Tenis stołowy')" class="rozszerzone" ion-button color="dark">
+                                    Tenis stołowy
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/mapa-bez-nazwy_333024?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5184', 'Tenis ziemny')" class="rozszerzone" ion-button color="dark">
+                                    Tenis ziemny
+                                </button>
+                                <button (click)="filtr('https://umap.openstreetmap.fr/pl/map/wspinaczka-sciankowa_331607?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/53.9675/18.5184', 'Wspinaczka ściankowa')" class="rozszerzoneMNIEJSZE" ion-button color="dark">
+                                    Wspinaczka ściankowa
+                                </button>
+
+                                
+                                <ion-footer class="fade">
+                                    
+                                </ion-footer>
+                        </div>
+                        
+                    <!-- </div> -->
+                </ion-fab-list>
+                
+                
+              </ion-fab>
+              <!-- <ion-fab class="currentmap" bottom>
+                <button style="margin-bottom: 25px;" (click)="sport()" ion-button color="dark" class="currentmapa">{{currentMAP}}</button>
+            </!-->
+              
+
+
+</ion-content>
 

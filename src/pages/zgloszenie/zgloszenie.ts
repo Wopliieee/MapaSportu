@@ -18,6 +18,7 @@ export class ZgloszeniePage {
   body="";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.subject = navParams.get('data');
   }
 
   send(){

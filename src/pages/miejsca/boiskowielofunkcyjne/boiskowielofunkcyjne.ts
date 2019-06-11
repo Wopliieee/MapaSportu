@@ -87,6 +87,9 @@ export class BoiskowielofunkcyjnePage {
   BoiskoPSP32: any;
   BoiskoPSP4AlejaJanaPawłaII: any;
   SalaGimnastycznaILiceumOgólnokształcące: any;
+  PlaczabawFikumiku: any;
+  BoiskoILO: any;
+  BoiskoPSP1filia: any;
 
 
   constructor(private screenOrientation: ScreenOrientation, private photoViewer: PhotoViewer, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
@@ -223,18 +226,14 @@ export class BoiskowielofunkcyjnePage {
     this.ObliczKilometry(53.975131, 18.531258, "BoiskoPSP32")
     this.ObliczKilometry(53.962934, 18.528891, "BoiskoPSP4AlejaJanaPawłaII")
     this.ObliczKilometry(53.971029, 18.531611, "SalaGimnastycznaILiceumOgólnokształcące")
-    // this.ObliczKilometry(xxxxx, yyyyyy, "nazwa")
-    // this.ObliczKilometry(xxxxx, yyyyyy, "nazwa")
-    // this.ObliczKilometry(xxxxx, yyyyyy, "nazwa")
-    // this.ObliczKilometry(xxxxx, yyyyyy, "nazwa")
-    // this.ObliczKilometry(xxxxx, yyyyyy, "nazwa")
-    // this.ObliczKilometry(xxxxx, yyyyyy, "nazwa")
-    // this.ObliczKilometry(xxxxx, yyyyyy, "nazwa")
+    this.ObliczKilometry(53.973069, 18.542568, "PlaczabawFikumiku")
+    this.ObliczKilometry(53.971048, 18.531133, "BoiskoILO")
+
 
     const miejsca: Miejsce[] =[
       { odleglosc: this.BoiskoNaOs60Lecia2,
 
-        zdjecie: "../../assets/imgs/Boisko na Os. 60-lecia (2)/1.jpg",
+        zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58381675_402424277155767_1502330597513625600_n.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=94650dbabe19f598c7703e152c4546e8&oe=5D702B75",
         zdjecie2: "../../assets/imgs/Boisko na Os. 60-lecia (2)/2.jpg",
         zdjecie3: "../../assets/imgs/Boisko na Os. 60-lecia (2)/3.jpg",
 
@@ -250,7 +249,7 @@ export class BoiskowielofunkcyjnePage {
       
         { odleglosc: this.BoiskoNaOs60lecia,
 
-        zdjecie: "../../assets/imgs/Boisko na Os. 60-lecia/1.jpg",
+        zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59320246_375849029937188_1674812537046040576_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=8d8dc3e2997a230c96d50c39e326f01b&oe=5D2CF10F",
         zdjecie2: "../../assets/imgs/Boisko na Os. 60-lecia/2.jpg",
         zdjecie3: "../../assets/imgs/Boisko na Os. 60-lecia/3.jpg",
 
@@ -266,12 +265,12 @@ export class BoiskowielofunkcyjnePage {
         
         { odleglosc: this.BoiskoNaOsKonstytucji3goMaja,
 
-          zdjecie: "../../assets/imgs/Boisko na Os. Konstytucji 3-go Maja/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58722640_1223298177825283_9016269319432044544_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=59b21d4271233578593a1f1773e9a72b&oe=5D757877",
           zdjecie2: "../../assets/imgs/Boisko na Os. Konstytucji 3-go Maja/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko na Os. Konstytucji 3-go Maja/3.jpg",
 
           Nazwa_Miejsca: "Boisko na Os. Konstytucji 3-go Maja",
-          Adres: "Os. Konstytucji 3-go Maja 14",
+          Adres: "Os. Konstytucji 3-go Maja 22",
           Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
           Dyscyplina: "Koszykówka; Piłka nożna; Piłka ręczna",
           Nawierzchnia: "Tartan",
@@ -282,7 +281,7 @@ export class BoiskowielofunkcyjnePage {
       
       { odleglosc: this.BoiskoNaOsMikołajaKopernika2,
 
-          zdjecie: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (2)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58378903_352122728764906_4348086472264384512_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=8bb70dc174e27185b8e7a91938f534c9&oe=5D6E4D00",
           zdjecie2: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (2)/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (2)/3.jpg",
 
@@ -298,7 +297,7 @@ export class BoiskowielofunkcyjnePage {
         
         { odleglosc: this.BoiskoObokPolpharmy,
 
-          zdjecie: "../../assets/imgs/Boisko obok Polpharmy/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/60146686_1015325028676607_1722647576391450624_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=afdf4ba129209d8c3a2a12e4793b315a&oe=5D746E13",
           zdjecie2: "../../assets/imgs/Boisko obok Polpharmy/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko obok Polpharmy/3.jpg",
 
@@ -314,7 +313,7 @@ export class BoiskowielofunkcyjnePage {
         
         { odleglosc: this.BoiskoORLIKŻabno,
 
-          zdjecie: "../../assets/imgs/Boisko ORLIK Żabno/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58800327_352375305628755_2750603030381461504_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=cc2490ee279d386b64074a26903a00a3&oe=5D72D0D3",
           zdjecie2: "../../assets/imgs/Boisko ORLIK Żabno/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko ORLIK Żabno/3.jpg",
 
@@ -323,21 +322,14 @@ export class BoiskowielofunkcyjnePage {
           Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
           Dyscyplina: "Koszykówka; Siatkówka",
           Nawierzchnia: "Tartan",
-          Godziny_Otwarcia: `Marzec – Kwiecień
-                                      Pon. - Pt.: 17:00 – 20:00
-                                      Sob. - Ndz.: 14:00 – 21:30
-                                      Maj – Październik
-                                      Pon. - Pt.: 17:0 – 21:30
-                                      Sob.- Ndz.: 14:00 – 21:30
-                                      Listopad – Luty
-                                      Zamknięte`,
+          Godziny_Otwarcia: `Marzec – Kwiecień \n \n Pon. - Pt.: 17:00 – 20:00 \n Sob. - Ndz.: 14:00 – 21:30 \n \n Maj – Październik \n Pon. - Pt.: 17:0 – 21:30 \n Sob.- Ndz.: 14:00 – 21:30 \n \n Listopad – Luty \n Zamknięte`,
           Koszt: "Bezpłatne",
           Strona_Internetowa: "-",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'57.5%22N+18%C2%B029'33.5%22E/@53.9826421,18.4904373,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.982639!4d18.492626"},
         
         { odleglosc: this.BoiskoNaUlicyPołudniowej,
 
-          zdjecie: "../../assets/imgs/Boisko na ulicy Południowej/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59670574_2423564007667788_4674961061474992128_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=45bf30959bfa5d9c943629e4d4189f57&oe=5D5CE9A6",
           zdjecie2: "../../assets/imgs/Boisko na ulicy Południowej/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko na ulicy Południowej/3.jpg",
 
@@ -353,7 +345,7 @@ export class BoiskowielofunkcyjnePage {
 
         { odleglosc: this.BoiskoPSP3DawnePG2,
 
-          zdjecie: "../../assets/imgs/Boisko PSP3 (dawne PG2)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58419539_547324022462986_348770298125877248_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=c255561e3bd14e6322f69a2c570e3786&oe=5D6E305E",
           zdjecie2: "../../assets/imgs/Boisko PSP3 (dawne PG2)/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP3 (dawne PG2)/3.jpg",
 
@@ -370,7 +362,7 @@ export class BoiskowielofunkcyjnePage {
 
         { odleglosc: this.BoiskoPSP6,
 
-          zdjecie: "../../assets/imgs/Boisko PSP6/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59623610_871823323161433_1583353862767509504_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=799a76bd9ca25ba46f6ff94286a46597&oe=5D5E1961",
           zdjecie2: "../../assets/imgs/Boisko PSP6/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP6/3.jpg",
 
@@ -386,7 +378,7 @@ export class BoiskowielofunkcyjnePage {
         
         { odleglosc: this.BoiskoZSZ,
 
-          zdjecie: "../../assets/imgs/Boisko ZSZ/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59909556_444930762743540_6020110102361538560_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=8db16bfa0eab67249f3ecda3636216b7&oe=5D2C8B3B",
           zdjecie2: "../../assets/imgs/Boisko ZSZ/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko ZSZ/3.jpg",
 
@@ -402,7 +394,7 @@ export class BoiskowielofunkcyjnePage {
         
         { odleglosc: this.BoiskoPSP4,
 
-          zdjecie: "../../assets/imgs/Boisko PSP 4/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59899126_409522506551496_1108409094911295488_n.jpg?_nc_cat=103&_nc_ht=scontent-waw1-1.xx&oh=05e1ed29f7e477a9005666bc3bfef22c&oe=5D6C2620",
           zdjecie2: "../../assets/imgs/Boisko PSP 4/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP 4/3.jpg",
 
@@ -418,7 +410,7 @@ export class BoiskowielofunkcyjnePage {
           
         { odleglosc: this.BoiskoPSP12,
 
-          zdjecie: "../../assets/imgs/Boisko PSP1 (2)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59188968_638035613289639_5888665737823780864_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=a2568095962bdabae0cc97faae8de961&oe=5D2D35CC",
           zdjecie2: "../../assets/imgs/Boisko PSP1 (2)/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP1 (2)/3.jpg",
 
@@ -434,11 +426,11 @@ export class BoiskowielofunkcyjnePage {
 
          { odleglosc: this.BoiskoPSP3,
 
-          zdjecie: "../../assets/imgs/Boisko PSP3/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko PSP3/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko PSP3/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58570936_2097807960517081_4011165907303792640_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=5e107381f783465a01dd0d67a330b74a&oe=5D5B0602",
+          zdjecie2: "../../assets/imgs/Boisko PSP3 (5)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko PSP3 (5)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko PSP3",
+          Nazwa_Miejsca: "Boisko PSP3 (5)",
           Adres: "Wybickiego 17",
           Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
           Dyscyplina: "Piłka ręczna; Piłka nożna",
@@ -450,7 +442,7 @@ export class BoiskowielofunkcyjnePage {
 
         { odleglosc: this.BoiskoPSP8,
 
-          zdjecie: "../../assets/imgs/Boisko PSP8/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/60107420_593727607703480_1613628103689502720_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=befcb56be752a3817b0c06eb147e8e45&oe=5D30B255",
           zdjecie2: "../../assets/imgs/Boisko PSP8/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP8/3.jpg",
 
@@ -466,7 +458,7 @@ export class BoiskowielofunkcyjnePage {
           
         { odleglosc: this.HalaSportowaImGerardaPodolskiegoAGRO,
 
-          zdjecie: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59519045_576585839518008_3379895599867363328_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=b9e47dd47294b8d8ccdfd557f1a30f56&oe=5D688E56",
           zdjecie2: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO)/2.jpg",
           zdjecie3: "../../assets/imgs/Hala sportowa im. Gerarda Podolskiego (AGRO)/3.jpg",
 
@@ -482,7 +474,7 @@ export class BoiskowielofunkcyjnePage {
 
         { odleglosc: this.MiejskaHalaSportowaImAndrzejaGrubbyOSiR,
 
-          zdjecie: "../../assets/imgs/Miejska Hala Sportowa im. Andrzeja Grubby (OSiR)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58549574_2165665393528151_3939023251438567424_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=6f315a2d508caffb2e325af64b6e09c0&oe=5D71BF1B",
           zdjecie2: "../../assets/imgs/Miejska Hala Sportowa im. Andrzeja Grubby (OSiR)/2.jpg",
           zdjecie3: "../../assets/imgs/Miejska Hala Sportowa im. Andrzeja Grubby (OSiR)/3.jpg",
 
@@ -498,9 +490,9 @@ export class BoiskowielofunkcyjnePage {
           
          { odleglosc: this.SalaGimnastycznaIILiceumOgólnokształcące,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna II Liceum Ogólnokształcące/1.jpg",
-          zdjecie2: "../../assets/imgs/Sala gimnastyczna II Liceum Ogólnokształcące/2.jpg",
-          zdjecie3: "../../assets/imgs/Sala gimnastyczna II Liceum Ogólnokształcące/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59914231_443028193113136_7340890559667503104_n.jpg?_nc_cat=104&_nc_ht=scontent-waw1-1.xx&oh=7cfd3fb5ed57cd0fb51b6cb4e9561a8c&oe=5D70541E",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59609231_596722054173850_7209239151936274432_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=2c889eb85830112139f6f33e5005b90e&oe=5D2EF83B",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/60272396_430450314398382_8564265337703366656_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=914602ec7bee9c52860b030cb7300002&oe=5D73B6DB",
 
           Nazwa_Miejsca: "Sala gimnastyczna II Liceum Ogólnokształcące",
           Adres: "Tadeusza Kościuszki 131",
@@ -514,7 +506,7 @@ export class BoiskowielofunkcyjnePage {
         
         { odleglosc: this.SalaGimnastycznaPSP1,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna PSP1/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59243937_883508015334863_102627822631124992_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=697d614a9ba33c6b38ebb23b8f6ad2b4&oe=5D5DE6A3",
           zdjecie2: "../../assets/imgs/Sala gimnastyczna PSP1/2.jpg",
           zdjecie3: "../../assets/imgs/Sala gimnastyczna PSP1/3.jpg",
 
@@ -530,7 +522,7 @@ export class BoiskowielofunkcyjnePage {
         
         { odleglosc: this.SalaGimnastycznaPSP8,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna PSP8/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59601883_688619581558217_2630446084710727680_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=8148c23ef326018d3d5bb15c5d1c0281&oe=5D77FC92",
           zdjecie2: "../../assets/imgs/Sala gimnastyczna PSP8/2.jpg",
           zdjecie3: "../../assets/imgs/Sala gimnastyczna PSP8/3.jpg",
 
@@ -546,7 +538,7 @@ export class BoiskowielofunkcyjnePage {
         
         { odleglosc: this.SalaGimnastycznaZSE,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna ZSE/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/60161939_373268329951436_1336134385568579584_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=04afb74fe3403f3229a6bd949c63b04a&oe=5D5E04D7",
           zdjecie2: "../../assets/imgs/Sala gimnastyczna ZSE/2.jpg",
           zdjecie3: "../../assets/imgs/Sala gimnastyczna ZSE/3.jpg",
 
@@ -562,7 +554,7 @@ export class BoiskowielofunkcyjnePage {
 
         { odleglosc: this.BoiskoNaOsMikołajaKopernika,
 
-          zdjecie: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59680060_2285627204835355_7519850598372474880_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=6139f999598a54197850d40ac69169f3&oe=5D6B36A4",
           zdjecie2: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika/3.jpg",
 
@@ -578,7 +570,7 @@ export class BoiskowielofunkcyjnePage {
 
         { odleglosc: this.BoiskoPSP32,
 
-          zdjecie: "../../assets/imgs/Boisko PSP3/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58381029_380946925965549_909825943336386560_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=e6d238b56d1cdad6c7d7414e41596313&oe=5D60F1FA",
           zdjecie2: "../../assets/imgs/Boisko PSP3/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko PSP3/3.jpg",
 
@@ -594,9 +586,9 @@ export class BoiskowielofunkcyjnePage {
 
         { odleglosc: this.BoiskoPSP4AlejaJanaPawłaII,
 
-          zdjecie: "../../assets/imgs/Boisko PSP4  aleja Jana Pawła II/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko PSP4  aleja Jana Pawła II/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko PSP4  aleja Jana Pawła II/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58667578_2173537046064752_1956257702388695040_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=2bfe02ef32a104f8681fdb13a1291386&oe=5D7651F7",
+          zdjecie2: "../../assets/imgs/Boisko PSP4 aleja Jana Pawła II (2)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko PSP4 aleja Jana Pawła II (2)/3.jpg",
 
           Nazwa_Miejsca: "Boisko PSP4 aleja Jana Pawła II",
           Adres: "Aleja Jana Pawła II ",
@@ -610,7 +602,7 @@ export class BoiskowielofunkcyjnePage {
         
         { odleglosc: this.SalaGimnastycznaILiceumOgólnokształcące,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna I Liceum Ogólnokształcące/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59601883_688619581558217_2630446084710727680_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=8148c23ef326018d3d5bb15c5d1c0281&oe=5D77FC92",
           zdjecie2: "../../assets/imgs/Sala gimnastyczna I Liceum Ogólnokształcące/2.jpg",
           zdjecie3: "../../assets/imgs/Sala gimnastyczna I Liceum Ogólnokształcące/3.jpg",
 
@@ -624,7 +616,56 @@ export class BoiskowielofunkcyjnePage {
           Strona_Internetowa: "http://www.lo.internetdsl.pl/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'15.7%22N+18%C2%B031'53.8%22E/@53.9710321,18.5294223,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.971029!4d18.531611"},
         
+          { odleglosc: this.PlaczabawFikumiku,
+
+            zdjecie: '../../assets/imgs/Plac zabaw Fiku-miku/1.jpg',
+            zdjecie2: '../../assets/imgs/Plac zabaw Fiku-miku/2.jpg',
+            zdjecie3: '../../assets/imgs/Plac zabaw Fiku-miku/3.jpg',
+  
+            Nazwa_Miejsca: 'Plac zabaw "Fiku-miku"',
+            Adres: "ul. Jana Buchholtza 6",
+            Kategoria_Miejsca: "Boisko wielofunkcyjne",
+            Dyscyplina: "Koszykówka",
+            Nawierzchnia: "Tartan",
+            Godziny_Otwarcia: "6:00 – 22:00",
+            Koszt: "Bezpłatne",
+            Strona_Internetowa: "-",
+            Nawigacja: "https://www.google.pl/maps/place/Jana+Buchholza+6,+83-250+Starogard+Gdański/@53.9732109,18.5425676,17z/data=!4m5!3m4!1s0x47029c9a9b3ef00b:0x767aa42251651a23!8m2!3d53.9729004!4d18.5426218"},
+            
         
+        { odleglosc: this.BoiskoILO,
+
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/64328633_350759058976743_7237311427550117888_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=e6b02b25359d74806dc782ad562ac60b&oe=5D89597F",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62053825_332770054062851_7322606454391701504_n.jpg?_nc_cat=103&_nc_ht=scontent-waw1-1.xx&oh=c08ac852006e6d758dd23c5af4ea9f51&oe=5D9A4E87",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/61967921_415376065978649_6559416952308105216_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=0248336455be48eb440d76f938ed50b0&oe=5D8294FC",
+
+          Nazwa_Miejsca: "Boisko I LO",
+          Adres: "Generała Józefa Hallera 31",
+          Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
+          Dyscyplina: "Koszykówka; Piłka nożna; Piłka ręczna",
+          Nawierzchnia: "Tartan",
+          Godziny_Otwarcia: "15:00 - 22:00",
+          Koszt: "Potrzeba rezerwacji",
+          Strona_Internetowa: "-",
+          Nawigacja: "https://www.google.pl/maps/place/53%C2%B058'15.8%22N+18%C2%B031'52.1%22E/@53.971049,18.53046,200m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.971048!4d18.531133?hl=pl"},
+        
+        { odleglosc: this.BoiskoPSP1filia,
+
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62073974_380842429443324_3345047983279308800_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=0395ae9118ce30598982ca6a0d8644e7&oe=5D9C5C25",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62261343_892430341098058_7259790161095950336_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=71e344b093b04cbff4e16337e8195f20&oe=5D8BDE0A",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/62527691_1254149958075974_3580834991975694336_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=d07d40bc9eacb132ce34dab735199c72&oe=5D52E53A",
+
+          Nazwa_Miejsca: "Boisko PSP1 (filia)",
+          Adres: "2 Pułku Szwoleżerów Rokitniańskich 4",
+          Kategoria_Miejsca: "Boisko wielofunkcyjne zewnętrzne",
+          Dyscyplina: "Piłka ręczna, Piłka nożna",
+          Nawierzchnia: "Asfalt",
+          Godziny_Otwarcia: "Czynne całą dobę",
+          Koszt: "Bezpłatne",
+          Strona_Internetowa: "http://www.pg3.starogard.pl/",
+          Nawigacja: "https://www.google.pl/maps/place/53%C2%B057'59.3%22N+18%C2%B031'09.1%22E/@53.9664759,18.5185349,196m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d53.9664754!4d18.5191872?hl=pl"},
+
+          
         ];
 
     const sortedByOdleglosc = miejsca.sort((a, b) => {
@@ -742,23 +783,15 @@ export class BoiskowielofunkcyjnePage {
 
     if(WYNIK == "SalaGimnastycznaILiceumOgólnokształcące")
       this.SalaGimnastycznaILiceumOgólnokształcące = this.kilometry
-    // if(WYNIK == "nazwa")
-    //   this.nazwa = this.kilometry
-    // if(WYNIK == "nazwa")
-    //   this.nazwa = this.kilometry
-    // if(WYNIK == "nazwa")
-    //   this.nazwa = this.kilometry
-    // if(WYNIK == "nazwa")
-    //   this.nazwa = this.kilometry
-    // if(WYNIK == "nazwa")
-    //   this.nazwa = this.kilometry
-    // if(WYNIK == "nazwa")
-    //   this.nazwa = this.kilometry
-    // if(WYNIK == "nazwa")
-    //   this.nazwa = this.kilometry
 
-      
+    if(WYNIK == "PlaczabawFikumiku")
+      this.PlaczabawFikumiku = this.kilometry
 
+    if(WYNIK == "BoiskoILO")
+      this.BoiskoILO = this.kilometry
+
+    if(WYNIK == "BoiskoPSP1filia")
+      this.BoiskoPSP1filia = this.kilometry
 
   }
 

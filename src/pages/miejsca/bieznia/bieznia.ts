@@ -188,7 +188,7 @@ export class BiezniaPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.BieżnaokólnaPSP8,
 
-          zdjecie: "../../assets/imgs/Bieżna okólna PSP8/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59909553_342572779786786_5778182085000822784_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=e8ce77ce1592485fb15b5d4f241000b4&oe=5D6E9E1C",
           zdjecie2: "../../assets/imgs/Bieżna okólna PSP8/2.jpg",
           zdjecie3: "../../assets/imgs/Bieżna okólna PSP8/3.jpg",
 
@@ -204,7 +204,7 @@ export class BiezniaPage {
       
       { odleglosc: this.BieżniaokólnaPSP1,
 
-          zdjecie: "../../assets/imgs/Bieżnia okólna PSP1/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58442795_862091604128063_6053534620190769152_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=d933992706448d8a173ab4ada746d632&oe=5D300666",
           zdjecie2: "../../assets/imgs/Bieżnia okólna PSP1/2.jpg",
           zdjecie3: "../../assets/imgs/Bieżnia okólna PSP1/3.jpg",
 
@@ -220,7 +220,7 @@ export class BiezniaPage {
         
         { odleglosc: this.BieżniaPSP3,
 
-          zdjecie: "../../assets/imgs/Bieżnia PSP3/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59342885_1033387183522253_8032677557599993856_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=59befb3dcba4594c00937300b8065686&oe=5D6B80D0",
           zdjecie2: "../../assets/imgs/Bieżnia PSP3/2.jpg",
           zdjecie3: "../../assets/imgs/Bieżnia PSP3/3.jpg",
 
@@ -236,7 +236,7 @@ export class BiezniaPage {
         
         { odleglosc: this.BieżniaPSP4,
 
-          zdjecie: "../../assets/imgs/Bieżnia PSP4/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58379740_837516659934749_2541356793565544448_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=dbb1d146e9eabcc7ad5ecedfd2def388&oe=5D61301D",
           zdjecie2: "../../assets/imgs/Bieżnia PSP4/2.jpg",
           zdjecie3: "../../assets/imgs/Bieżnia PSP4/3.jpg",
 
@@ -252,11 +252,11 @@ export class BiezniaPage {
         
         { odleglosc: this.StadionMiejskiimKazimierzaDeynyOSiR,
 
-          zdjecie: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR)/1.jpg",
-          zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR)/2.jpg",
-          zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR)/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59991981_384269932178332_8942460083111985152_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=9f63d09f071cd5c9ec77551e10a114a8&oe=5D5D1582",
+          zdjecie2: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (9)/2.jpg",
+          zdjecie3: "../../assets/imgs/Stadion Miejski im. Kazimierza Deyny (OSiR) (9)/3.jpg",
 
-          Nazwa_Miejsca: "Stadion Miejski im. Kazimierza Deyny (OSiR)",
+          Nazwa_Miejsca: "Stadion Miejski im. Kazimierza Deyny (OSiR) (9)",
           Adres: "Olimpijczyków Starogardzkich 1",
           Kategoria_Miejsca: "Bieżnia okólna (400m)",
           Dyscyplina: "Bieganie",

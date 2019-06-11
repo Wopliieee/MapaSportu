@@ -1,40 +1,35 @@
 <ion-header transparent>
-  
+   
   <ion-navbar transparent>
-    
-    <button ion-button menuToggle >
-      <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
-    </button>
 
-
-    <div text-center>
-      <h3 style="padding-right: 50px;" ion-text>ZGŁOSZENIE</h3>
-      </div>
-    <!-- <h3 style="left: 1%; bottom: 1%;" ion-text color="dark">Mapa Sportu</h3> -->
-
-    <img width="50" height="50" style="float: right; margin-top: -53px;" src="../assets/layout/FAB_logo.png">
-
-
-
-
+            <button ion-button menuToggle >
+                <img style="padding-bottom: 5px;" width="37" height="37" src='../../assets/layout/wiecej.png'>
+            </button>
+        
+            <div text-center>
+                <h3 ion-text>ZGŁOŚ</h3>
+            </div>
+           
+            <ion-buttons end>
+                <img style="padding-bottom: px;" width="50" height="50" src="../assets/layout/FAB_logo.png">
+            </ion-buttons>
 
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding class="bg-image">
+<ion-content padding class="bg-image; no-scroll">
 
 <div padding class="tlo">
-  <ion-item class="tlo2">
-    <ion-label color="primary" stacked><h2>Tytuł</h2></ion-label>
-    <ion-input [(ngModel)]="subject" type="text" placeholder="Tytuł"></ion-input>
+  <ion-item no-lines class="tlo2" style="padding-right:4%;">
+    <ion-label color="dark" stacked><h2>Tytuł</h2></ion-label>
+    <ion-textarea class="shadow" rows="2" style="background-color: rgba(212, 131, 169, 0.473); border-radius: 10px;" [(ngModel)]="subject" type="text" placeholder="Tytuł"></ion-textarea>
   </ion-item>
-  <ion-item class="tlo2">
-    <ion-label color="primary" stacked><h2>Treść</h2></ion-label>
-    <ion-input [(ngModel)]="body" type="text" placeholder="Treść"></ion-input>
+  <ion-item no-lines class="tlo2" style="padding-right:4%;">
+    <ion-label color="dark" stacked><h2>Treść</h2></ion-label>
+    <ion-textarea class="shadow" rows="5" style="background-color: rgba(212, 131, 169, 0.473); border-radius: 10px;" [(ngModel)]="body" type="text" placeholder="Treść"></ion-textarea>
   </ion-item>
-  <button class="guzik" style="margin-top:20px;" ion-button block (click)="send()"><h1>Wyślij</h1></button>
+  <button class="guzik" ion-button block (click)="send()"><h1>Wyślij</h1></button>
 
   <h4>*Zgłoszenia wysyłane są do nas drogą mailową. Wszelkie zgłoszenia nie są anonimowe. W wiadomości prosimy o opisanie błędów lub problemów które napotkałeś przy korzystaniu z aplikacji.</h4>
 </div>

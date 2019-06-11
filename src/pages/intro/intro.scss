@@ -1,0 +1,142 @@
+.ios, .md {
+  
+page-intro {
+
+    ion-slide {
+        background-color: #dadada;
+      }
+      ion-slides {
+        background-color: #dadada;
+      }
+      
+
+      .swiper-pagination-bullet-active {
+        background: rgb(255, 255, 255);
+        opacity: 1;
+        }
+  
+      ion-slide img {
+        height: 101vh !important;
+        // width: 100% !important;
+      }
+      .opis{
+        background-color: #dadada;
+        height: 22%;
+        padding-left: 15px;
+        padding-right: 1px;
+        overflow-y: scroll !important;
+      }
+      
+      .opis2{
+        background-color: #dadada;
+        height: 65%;
+        padding-left: 15px;
+        padding-right: 1px;
+        font-size: 5vw;
+        font-size: 2vh;
+        overflow-y: scroll !important;
+      }
+
+      h2{
+        height: 65%;
+        overflow-y: scroll !important;
+        font-size: 5vw;
+        font-size: 2.5vh;
+      }
+      .witaj{
+        font-size: 15vw;
+        height: 100%;
+      }
+      .zaczynamy{
+        color: white;
+        // margin-top: 10px;
+        // margin-bottom: 50px;
+        width: 50vw;
+        font-size: 4vh;
+        font-size: 4vw;
+        // height: 6vh;
+        border-radius: 15px;
+        background-color: rgb(43, 43, 43);
+      }
+      .akceptuje{
+        color: white;
+        // margin-top: 10px;
+        margin-bottom: 50px;
+        width: 80vw;
+        font-size: 4vh;
+        font-size: 4vw;
+        // height: 6vh;
+        border-radius: 15px;
+        background-color: rgb(43, 43, 43);
+      }
+      .zaczynamytext{
+        font-size: 5vh;
+        font-size: 8vw;
+        margin-left: 3px;
+        margin-right: 3px;
+        height: 100%;
+      }
+      .regulamin{
+        color: white;
+        margin-top: 10px;
+        width: 180px;
+        border-radius: 15px;
+        background-color: rgb(43, 43, 43);
+      }
+      .screen{
+        // width: 150%;
+        // margin-left: 5px;
+        // margin-right: 5px;
+      }
+      
+      
+}
+
+.alertDanger{
+  // color: rgb(0, 0, 0);
+
+  // text-align: center;
+
+  .alert-message {
+      color: rgb(0, 0, 0); // text color for confirm alerts
+      text-align: center;
+      
+  }
+  .alert-title {
+      color: rgb(36, 35, 35); // text color for confirm alerts
+      text-align: center;
+      font-weight: 900;
+      font-size: 25px;
+  }
+
+  .alert-wrapper{
+      border-radius: 15px;
+  }
+  .regulamin{
+    padding-right: 32%
+  }
+  .zapoznaniesie{
+    padding-right: 8%
+  }
+  button{
+    color: rgb(255, 255, 255);
+    
+    background-color: rgb(43, 43, 43);
+    // margin-left: 2px;
+    // margin-right: 2px;
+
+    // padding-left: 50px;
+    // padding-right: 70px;
+    margin-bottom: 5px;
+        
+    width: 100%;
+    right: 5px;
+    font-weight: 200;
+    border-radius: 15px;
+    
+  }
+
+  
+  
+}
+}

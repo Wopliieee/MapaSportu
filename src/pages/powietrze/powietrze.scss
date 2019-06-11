@@ -1,0 +1,82 @@
+.ios, .md {
+    page-powietrze {
+        .no-scroll .scroll-content{
+            overflow: hidden;
+       }
+            ion-content {
+                // background-color: aqua !important;
+                background-image: url('../../assets/layout/tlo.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                
+            }
+        
+            ion-navbar {
+                background-image: url('../../assets/layout/pasek_gora.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            h4{
+                opacity: 0.5;
+                font-size:15px;
+            }
+        
+            h3{
+                color: white;
+                opacity: 0.75;
+                text-shadow: 0 0 10px #FFF;
+                font-style: italic;
+                transform: skew(3.9deg);
+                font-size:20px;
+            }
+
+            h1{
+                color: white;
+                text-shadow: 0 0 10px #FFF;
+                font-style: italic;
+                transform: skew(3.9deg);
+                font-size: 20px;
+                margin: 0.01%;
+            }
+    
+            .tlo{
+                background-color: rgb(227, 175, 199);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                box-shadow: 22px 16px 65px -31px rgba(0,0,0,0.74);
+                border-radius : 10px;
+            }
+            .tlo2{
+                background-color: rgb(227, 175, 199);
+                padding-bottom:10px;
+            }
+    
+            .shadow{
+                -webkit-box-shadow: inset -3px 4px 52px -22px rgba(0,0,0,0.16);
+                -moz-box-shadow: inset -3px 4px 52px -22px rgba(0,0,0,0.16);
+                box-shadow: inset -3px 4px 52px -22px rgba(0,0,0,0.16);
+            }
+    
+            .guzik{
+                background-color: rgb(0, 0, 0);
+                border-radius: 10px;
+            }
+
+            .airWEB{
+                height: 100%;
+                width: 100%;
+                border: none;
+                // transform: scale(1.06) !important;
+                position: absolute;
+                margin-left: -16px;
+                margin-top: -16px;
+            }
+        
+        
+        }
+        
+    }

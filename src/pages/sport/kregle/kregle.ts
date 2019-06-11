@@ -63,6 +63,8 @@ export class KreglePage {
   BoiskoOSIR: any;
   KręgielniaKULA: any;
   CastleBowlingClub: any;
+  BasenREN: any;
+  KręgielniaREN: any;
 
 
   constructor(private screenOrientation: ScreenOrientation, private photoViewer: PhotoViewer, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
@@ -177,11 +179,12 @@ export class KreglePage {
 
     this.ObliczKilometry(53.969680, 18.530878, "KręgielniaKULA")
     this.ObliczKilometry(53.963851, 18.526420, "CastleBowlingClub")
+    this.ObliczKilometry(53.975631, 18.520472, "KręgielniaREN")
 
     const miejsca: Miejsce[] =[
       { odleglosc: this.KręgielniaKULA,
 
-          zdjecie: "../../assets/imgs/Kręgielnia KULA/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59285871_2502330279779467_4235989268947795968_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=def3eeca0b6b9b7c273fdeb58ca1e720&oe=5D2C0A7F",
           zdjecie2: "../../assets/imgs/Kręgielnia KULA/2.jpg",
           zdjecie3: "../../assets/imgs/Kręgielnia KULA/3.jpg",
 
@@ -190,19 +193,14 @@ export class KreglePage {
           Kategoria_Miejsca: "Kręgielnia",
           Dyscyplina: "Kręgle",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Czw.: 14:00 – 1:00
-                                       Sobota: 12:00 – 1:00
-                                       Niedziela: 14:00 – 23:00`,
-          Koszt: `Kręgle
-               Pon. - Czw.: 39zł/ h
-               Pt. - Sob.: 49zł/ h
-               Ndz.: 44zł/ h`,
+          Godziny_Otwarcia: `Pon. - Czw.: 14:00 – 1:00 \n Sobota: 12:00 – 1:00 \n Niedziela: 14:00 – 23:00`,
+          Koszt: `Kręgle \n Pon. - Czw.: 39zł/ h \n Pt. - Sob.: 49zł/ h \n Ndz.: 44zł/ h`,
           Strona_Internetowa: "http://kulabowling.pl/oferta/bowling/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'10.9%22N+18%C2%B031'51.2%22E/@53.9696831,18.5286893,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.96968!4d18.530878"},
         
         { odleglosc: this.CastleBowlingClub,
 
-          zdjecie: "../../assets/imgs/Castle Bowling Club/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59339687_2297341593823248_4056743322859864064_n.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=b2076750a488576d6e0fc6a1668aded8&oe=5D5B32CB",
           zdjecie2: "../../assets/imgs/Castle Bowling Club/2.jpg",
           zdjecie3: "../../assets/imgs/Castle Bowling Club/3.jpg",
 
@@ -211,11 +209,26 @@ export class KreglePage {
           Kategoria_Miejsca: "Kręgielnia",
           Dyscyplina: "Kręgle",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Czw.: 10:00 – 22:00
-                                      Pt. - Ndz.: 10:00 – 23:00`,
+          Godziny_Otwarcia: `Pon. - Czw.: 10:00 – 22:00 \n Pt. - Ndz.: 10:00 – 23:00`,
           Koszt: "1 tor: 35zł",
           Strona_Internetowa: "https://www.facebook.com/castle.stg/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'49.9%22N+18%C2%B031'35.1%22E/@53.9638541,18.5242313,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.963851!4d18.52642"},
+        
+          { odleglosc: this.KręgielniaREN,
+
+            zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59765368_401542173762240_7232559492913692672_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=b14b8952475534bbc7708e24eb88c8ae&oe=5D729ACF",
+            zdjecie2: "../../assets/imgs/Kręgielnia REN/2.jpg",
+            zdjecie3: "../../assets/imgs/Kręgielnia REN/3.jpg",
+  
+            Nazwa_Miejsca: "Kręgielnia REN",
+            Adres: "Skarszewska 5",
+            Kategoria_Miejsca: "Kręgielnia",
+            Dyscyplina: "Kręgle",
+            Nawierzchnia: "-",
+            Godziny_Otwarcia:"pon. - czw. 12:00–23:00 \n pt. - sob. 12:00–01:00 \n niedz. - 12:00 - 22:00",
+            Koszt: "Pon.-Czw. 45 zł/h \n Pt.-Sb. 55 zł/h \n Ndz. 45 zł/h",
+            Strona_Internetowa: "http://ren.com.pl/bowling/",
+            Nawigacja: "https://www.google.com/maps/place/53%C2%B058'32.3%22N+18%C2%B031'13.7%22E/@53.9756341,18.5182833,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.975631!4d18.520472"},
         ];
 
     const sortedByOdleglosc = miejsca.sort((a, b) => {
@@ -263,6 +276,8 @@ export class KreglePage {
       this.KręgielniaKULA = this.kilometry
     if(WYNIK == "CastleBowlingClub")
       this.CastleBowlingClub = this.kilometry
+    if(WYNIK == "KręgielniaREN")
+      this.KręgielniaREN = this.kilometry
   }
 
   PUSHOPIS(){

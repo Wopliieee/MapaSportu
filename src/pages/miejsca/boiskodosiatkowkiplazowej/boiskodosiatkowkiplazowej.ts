@@ -195,7 +195,7 @@ export class BoiskodosiatkowkiplazowejPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.BoiskoNaOs60Lecia,
 
-          zdjecie: "../../assets/imgs/Boisko na Os. 60-lecia/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59320246_375849029937188_1674812537046040576_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=8d8dc3e2997a230c96d50c39e326f01b&oe=5D2CF10F",
           zdjecie2: "../../assets/imgs/Boisko na Os. 60-lecia/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko na Os. 60-lecia/3.jpg",
 
@@ -211,7 +211,7 @@ export class BoiskodosiatkowkiplazowejPage {
         
       { odleglosc: this.BoiskoNaOs60Lecia2,
 
-          zdjecie: "../../assets/imgs/Boisko na Os. 60-lecia (2)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58381675_402424277155767_1502330597513625600_n.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=94650dbabe19f598c7703e152c4546e8&oe=5D702B75",
           zdjecie2: "../../assets/imgs/Boisko na Os. 60-lecia (2)/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko na Os. 60-lecia (2)/3.jpg",
 
@@ -227,11 +227,11 @@ export class BoiskodosiatkowkiplazowejPage {
         
       { odleglosc: this.BoiskoNaOsMikołajaKopernika,
 
-          zdjecie: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59561659_408025279750418_1294341523395051520_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=cabf6a5279c806892723f0a5ae70bb87&oe=5D6F9A52",
+          zdjecie2: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (4)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (4)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko na Os. Mikołaja Kopernika",
+          Nazwa_Miejsca: "Boisko na Os. Mikołaja Kopernika (4)",
           Adres: "Os. Mikołaja Kopernika 27",
           Kategoria_Miejsca: "Boisko zewnętrzne",
           Dyscyplina: "Siatkówka plażowa",
@@ -244,11 +244,11 @@ export class BoiskodosiatkowkiplazowejPage {
         
         { odleglosc: this.BoiskoNaOsMikołajaKopernika2,
 
-          zdjecie: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (2)/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (2)/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (2)/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59350553_990805734448059_186051051185504256_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=4220650400d5a356d3811038fa1873c6&oe=5D6230C0",
+          zdjecie2: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (5)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko na Os. Mikołaja Kopernika (5)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko na Os. Mikołaja Kopernika (2)",
+          Nazwa_Miejsca: "Boisko na Os. Mikołaja Kopernika (5)",
           Adres: "Os. Mikołaja Kopernika 10",
           Kategoria_Miejsca: "Boisko zewnętrzne",
           Dyscyplina: "Siatkówka plażowa",
@@ -261,11 +261,11 @@ export class BoiskodosiatkowkiplazowejPage {
         
           { odleglosc: this.BoiskoNaOsSzumana,
 
-          zdjecie: "../../assets/imgs/Boisko na Os. Szumana/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko na Os. Szumana/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko na Os. Szumana/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58772267_290341225180291_3837949897730949120_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=799da1cc98d863d1803bbd70d7f762a3&oe=5D753780",
+          zdjecie2: "../../assets/imgs/Boisko na Os. Szumana (3)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko na Os. Szumana (3)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko na Os. Szumana ",
+          Nazwa_Miejsca: "Boisko na Os. Szumana (3)",
           Adres: "Os. Księdza Henryka Szumana 13",
           Kategoria_Miejsca: "Boisko zewnętrzne",
           Dyscyplina: "Siatkówka plażowa",
@@ -277,11 +277,11 @@ export class BoiskodosiatkowkiplazowejPage {
         
         { odleglosc: this.BoiskoPSP3CzynneSezonowo,
 
-          zdjecie: "../../assets/imgs/Boisko PSP3 (czynne sezonowo)/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko PSP3 (czynne sezonowo)/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko PSP3 (czynne sezonowo)/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59863030_2339519576289528_3675213548230803456_n.jpg?_nc_cat=103&_nc_ht=scontent-waw1-1.xx&oh=4f2fcf9e432e038f50a1f23873f2b7ed&oe=5D6EC63A",
+          zdjecie2: "../../assets/imgs/Boisko PSP3 (4)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko PSP3 (4)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko PSP3 (czynne sezonowo)",
+          Nazwa_Miejsca: "Boisko PSP3 (4)",
           Adres: "Traugutta 2",
           Kategoria_Miejsca: "Boisko zewnętrzne",
           Dyscyplina: "Siatkówka plażowa",
@@ -293,9 +293,12 @@ export class BoiskodosiatkowkiplazowejPage {
         
         { odleglosc: this.BoiskoPSP4AlejaJanaPawłaII,
 
-          zdjecie: "../../assets/imgs/Boisko PSP4 aleja Jana Pawła II/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko PSP4 aleja Jana Pawła II/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko PSP4 aleja Jana Pawła II/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59828688_442800163153432_4522428815535767552_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=00f528465af5eedf31fcc194bfe9e3d5&oe=5D2B03F9",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59914911_285445202358686_3404753719525376000_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=abfcc2c3fc8c36176c1b1b2ff2705b3d&oe=5D6905AB",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58442616_2091979177772882_5237304419485220864_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=13b4152bfa5d238f831c2e247b7ddc4a&oe=5D713F33",
+          // zdjecie: "../../assets/imgs/Boisko PSP4 aleja Jana Pawła II (3)/1.jpg",
+          // zdjecie2: "../../assets/imgs/Boisko PSP4 aleja Jana Pawła II (3)/2.jpg",
+          // zdjecie3: "../../assets/imgs/Boisko PSP4 aleja Jana Pawła II (3)/3.jpg",
 
           Nazwa_Miejsca: "Boisko PSP4  aleja Jana Pawła II",
           Adres: "Aleja Jana Pawła II 4",
@@ -309,11 +312,11 @@ export class BoiskodosiatkowkiplazowejPage {
         
         { odleglosc: this.BoiskoWRodzinnymParkuEdukacjiSportowejIWypoczynku,
 
-          zdjecie: "../../assets/imgs/Boisko w Rodzinnym Parku Edukacji Sportowej i Wypoczynku/1.jpg",
-          zdjecie2: "../../assets/imgs/Boisko w Rodzinnym Parku Edukacji Sportowej i Wypoczynku/2.jpg",
-          zdjecie3: "../../assets/imgs/Boisko w Rodzinnym Parku Edukacji Sportowej i Wypoczynku/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59689091_2349462745267236_3779104104131854336_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=2f8d2aff0adc1101fc6552bcbead728c&oe=5D5EE40E",
+          zdjecie2: "../../assets/imgs/Boisko w Rodzinnym Parku Edukacji Sportowej i Wypoczynku (3)/2.jpg",
+          zdjecie3: "../../assets/imgs/Boisko w Rodzinnym Parku Edukacji Sportowej i Wypoczynku (3)/3.jpg",
 
-          Nazwa_Miejsca: "Boisko w Rodzinnym Parku Edukacji Sportowej i Wypoczynku",
+          Nazwa_Miejsca: "Boisko w Rodzinnym Parku Edukacji Sportowej i Wypoczynku (3)",
           Adres: "Nierzwickiego 18",
           Kategoria_Miejsca: "Boisko do siatkówki plażowej",
           Dyscyplina: "Siatkówka plażowa",
@@ -325,7 +328,7 @@ export class BoiskodosiatkowkiplazowejPage {
 
         { odleglosc: this.BoiskoDoSiatkówkiPlażowejPrzyUlTraugutta,
 
-          zdjecie: "../../assets/imgs/Boisko do siatkówki plażowej przy ul. Traugutta/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58381991_381534772454669_4728207239922319360_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=5c2389215a2d8e80b5b1cf389c423a10&oe=5D6AB81A",
           zdjecie2: "../../assets/imgs/Boisko do siatkówki plażowej przy ul. Traugutta/2.jpg",
           zdjecie3: "../../assets/imgs/Boisko do siatkówki plażowej przy ul. Traugutta/3.jpg",
 

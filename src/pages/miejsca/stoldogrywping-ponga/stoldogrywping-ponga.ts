@@ -72,6 +72,7 @@ export class StoldogrywpingPongaPage {
   StółDoGryWPingPongaPrzyUlicyKsPiotraŚciegiennego: any;
   StółdogrywpingpongaWParkuRekreacyjnymAKUKU: any;
   StółdogrywpingpongaprzyulTraugutta: any;
+  PlaczabawFikumiku: any;
 
 
   constructor(private screenOrientation: ScreenOrientation, private photoViewer: PhotoViewer, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, public geo: Geolocation, imageViewerCtrl: ImageViewerController, private iab: InAppBrowser) {
@@ -195,15 +196,16 @@ export class StoldogrywpingPongaPage {
     this.ObliczKilometry(53.968830, 18.513343, "StółDoGryWPingPongaPrzyUlicyKsPiotraŚciegiennego")
     this.ObliczKilometry(53.982568, 18.502943, "StółdogrywpingpongaWParkuRekreacyjnymAKUKU")
     this.ObliczKilometry(53.978171, 18.537196, "StółdogrywpingpongaprzyulTraugutta")
+    this.ObliczKilometry(53.973069, 18.542568, "PlaczabawFikumiku")
 
     const miejsca: Miejsce[] =[
       { odleglosc: this.SalaGimnastycznaPSP32,
 
-          zdjecie: "../../assets/imgs/Sala gimnastyczna PSP3 (2) (dawne PG2)/1.jpg",
-          zdjecie2: "../../assets/imgs/Sala gimnastyczna PSP3 (2) (dawne PG2)/2.jpg",
-          zdjecie3: "../../assets/imgs/Sala gimnastyczna PSP3 (2) (dawne PG2)/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59601883_688619581558217_2630446084710727680_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=8148c23ef326018d3d5bb15c5d1c0281&oe=5D77FC92",
+          zdjecie2: "../../assets/imgs/Sala gimnastyczna PSP3 (3)/2.jpg",
+          zdjecie3: "../../assets/imgs/Sala gimnastyczna PSP3 (3)/3.jpg",
 
-          Nazwa_Miejsca: "Sala gimnastyczna PSP3 (2) (dawne PG2)",
+          Nazwa_Miejsca: "Sala gimnastyczna PSP3 (3)",
           Adres: "Traugutta 2",
           Kategoria_Miejsca: "Sala gimnastyczna",
           Dyscyplina: "Gimnastyka; Tenis stołowy",
@@ -215,7 +217,7 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółDoGryWPingPongaNaAleiJanaPawłaII,
 
-          zdjecie: "../../assets/imgs/Stół do gry w ping-ponga na Alei Jana Pawła II/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58420337_329197661116959_7182378490891599872_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=355de984b29e8cba99bd63c7117bb25b&oe=5D688BCC",
           zdjecie2: "../../assets/imgs/Stół do gry w ping-ponga na Alei Jana Pawła II/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do gry w ping-ponga na Alei Jana Pawła II/3.jpg",
 
@@ -231,9 +233,12 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółDoGryWPingPongaNaOs60lecia,
 
-          zdjecie: "../../assets/imgs/Stół do gry w ping-ponga na Os. 60-lecia/1.jpg",
-          zdjecie2: "../../assets/imgs/Stół do gry w ping-ponga na Os. 60-lecia/2.jpg",
-          zdjecie3: "../../assets/imgs/Stół do gry w ping-ponga na Os. 60-lecia/3.jpg",
+          // zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58382083_323064771690826_7753168494794899456_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=3af7f744eb1830842b23f39152e2ac1f&oe=5D2E4BCA",
+          // zdjecie2: "../../assets/imgs/Stół do gry w ping-ponga na Os. 60-lecia/2.jpg",
+          // zdjecie3: "../../assets/imgs/Stół do gry w ping-ponga na Os. 60-lecia/3.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58382083_323064771690826_7753168494794899456_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=3af7f744eb1830842b23f39152e2ac1f&oe=5D2E4BCA",
+          zdjecie2: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58462119_1009615909235649_4498498739526172672_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=eba5661b889b870d46bf2a9a17b086e1&oe=5D6F5712",
+          zdjecie3: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59064631_406711220183121_1500196569998163968_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=ce71f344a67c315d2bc2ef298ff7365c&oe=5D682E78",
 
           Nazwa_Miejsca: "Stół do gry w ping-ponga na Os. 60-lecia",
           Adres: "Os. 60-lecia Odzyskania Niepodległości 2",
@@ -247,7 +252,7 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółDoPingPongaNaOs60lecia2,
 
-          zdjecie: "../../assets/imgs/Stół do ping-ponga na Os. 60-lecia (2)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58895183_992181727644168_1538142799331852288_n.jpg?_nc_cat=101&_nc_ht=scontent-waw1-1.xx&oh=fef3b064099550b6f59cacdb1ed96e12&oe=5D709ADA",
           zdjecie2: "../../assets/imgs/Stół do ping-ponga na Os. 60-lecia (2)/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do ping-ponga na Os. 60-lecia (2)/3.jpg",
 
@@ -263,7 +268,7 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółDoGryWPingPongaNaOsKonstytucji3goMaja,
 
-          zdjecie: "../../assets/imgs/Stół do gry w ping-ponga na Os. Konstytucji 3-go Maja/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59691394_444599389630729_4267899003351334912_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=a86c2d62c71faa71f568b02396006be9&oe=5D5D88BD",
           zdjecie2: "../../assets/imgs/Stół do gry w ping-ponga na Os. Konstytucji 3-go Maja/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do gry w ping-ponga na Os. Konstytucji 3-go Maja/3.jpg",
 
@@ -279,7 +284,7 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółDoGryWPingPongaPrzyRodzinnymParkuEdukacjiSportowejIWypoczynku,
 
-          zdjecie: "../../assets/imgs/Stół do gry w ping-ponga przy Rodzinnym Parku Edukacji Sportowej i Wypoczynku/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58441249_655041334968620_9087564861717610496_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=77d1b88f026fac08625818b9947e701a&oe=5D2BFA31",
           zdjecie2: "../../assets/imgs/Stół do gry w ping-ponga przy Rodzinnym Parku Edukacji Sportowej i Wypoczynku/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do gry w ping-ponga przy Rodzinnym Parku Edukacji Sportowej i Wypoczynku/3.jpg",
 
@@ -295,7 +300,7 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółDoGryWPingPongaNaOsMikołajaKopernika,
 
-          zdjecie: "../../assets/imgs/Stół do gry w ping-ponga na Os. Mikołaja Kopernika/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58383334_579468612564979_2826886623130550272_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=ba5e2860b1233e28026b7aa5e3850c22&oe=5D61017A",
           zdjecie2: "../../assets/imgs/Stół do gry w ping-ponga na Os. Mikołaja Kopernika/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do gry w ping-ponga na Os. Mikołaja Kopernika/3.jpg",
 
@@ -311,7 +316,7 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółDoPingPongaNaOsKonstytucji3goMaja2,
 
-          zdjecie: "../../assets/imgs/Stół do ping-ponga na Os. Konstytucji 3-go Maja (2)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59717237_2051032538526652_2133297147683012608_n.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=49051238ad13fecf041e04041bebd421&oe=5D68884A",
           zdjecie2: "../../assets/imgs/Stół do ping-ponga na Os. Konstytucji 3-go Maja (2)/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do ping-ponga na Os. Konstytucji 3-go Maja (2)/3.jpg",
 
@@ -327,7 +332,7 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółDoGryWPingPongaPrzyUlicyKsPiotraŚciegiennego,
 
-          zdjecie: "../../assets/imgs/Stół do gry w ping-ponga przy ulicy Ks. Piotra Ściegiennego/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58805603_445539642848790_6344453753243959296_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=2ca4552183b75a035554fef152219376&oe=5D610402",
           zdjecie2: "../../assets/imgs/Stół do gry w ping-ponga przy ulicy Ks. Piotra Ściegiennego/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do gry w ping-ponga przy ulicy Ks. Piotra Ściegiennego/3.jpg",
 
@@ -343,7 +348,7 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółdogrywpingpongaWParkuRekreacyjnymAKUKU,
 
-          zdjecie: "../../assets/imgs/Stół do gry w ping-ponga w Parku Rekreacyjnym AKUKU/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59383509_1120697674798889_116428106603954176_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=3615ed97a1aee7ec5a63d6be94e76d1c&oe=5D2BE2FB",
           zdjecie2: "../../assets/imgs/Stół do gry w ping-ponga w Parku Rekreacyjnym AKUKU/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do gry w ping-ponga w Parku Rekreacyjnym AKUKU/3.jpg",
 
@@ -359,7 +364,7 @@ export class StoldogrywpingPongaPage {
         
         { odleglosc: this.StółdogrywpingpongaprzyulTraugutta,
 
-          zdjecie: "../../assets/imgs/Stół do gry w ping-ponga przy ul. Traugutta/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58543201_2403639386588739_7897298766795898880_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=ea38bcc0bd23ecac53fae1fa14039f7e&oe=5D5BD872",
           zdjecie2: "../../assets/imgs/Stół do gry w ping-ponga przy ul. Traugutta/2.jpg",
           zdjecie3: "../../assets/imgs/Stół do gry w ping-ponga przy ul. Traugutta/3.jpg",
 
@@ -372,6 +377,23 @@ export class StoldogrywpingPongaPage {
           Koszt: "Bezpłatne",
           Strona_Internetowa: "-",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'41.4%22N+18%C2%B032'13.9%22E/@53.9781729,18.5358909,321m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.978171!4d18.537196"},
+        
+          { odleglosc: this.PlaczabawFikumiku,
+
+            zdjecie: '../../assets/imgs/Stół na placu zabaw Fiku-miku/1.jpg',
+            zdjecie2: '../../assets/imgs/Stół na placu zabaw Fiku-miku/2.jpg',
+            zdjecie3: '../../assets/imgs/Stół na placu zabaw Fiku-miku/3.jpg',
+  
+            Nazwa_Miejsca: 'Stół na placu zabaw "Fiku-miku"',
+            Adres: "ul. Jana Buchholtza 6",
+            Kategoria_Miejsca: "Stół do tenisa stołowego",
+            Dyscyplina: "Tenis stołowy",
+            Nawierzchnia: "-",
+            Godziny_Otwarcia: "6:00 – 22:00",
+            Koszt: "Bezpłatne",
+            Strona_Internetowa: "-",
+            Nawigacja: "https://www.google.pl/maps/place/Jana+Buchholza+6,+83-250+Starogard+Gdański/@53.9732109,18.5425676,17z/data=!4m5!3m4!1s0x47029c9a9b3ef00b:0x767aa42251651a23!8m2!3d53.9729004!4d18.5426218"},
+            
         ];
 
     const sortedByOdleglosc = miejsca.sort((a, b) => {
@@ -437,7 +459,9 @@ export class StoldogrywpingPongaPage {
       this.StółdogrywpingpongaWParkuRekreacyjnymAKUKU = this.kilometry
     if(WYNIK == "StółdogrywpingpongaprzyulTraugutta")
       this.StółdogrywpingpongaprzyulTraugutta = this.kilometry
-
+    if(WYNIK == "PlaczabawFikumiku")
+      this.PlaczabawFikumiku = this.kilometry
+      
   }
 
   PUSHOPIS(){

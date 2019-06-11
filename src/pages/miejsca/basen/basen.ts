@@ -183,7 +183,7 @@ export class BasenPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.BasenPSP1,
 
-          zdjecie: "../../assets/imgs/Basen PSP1/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59230021_2019338135029760_3833510632418705408_n.jpg?_nc_cat=102&_nc_ht=scontent-waw1-1.xx&oh=40cb7cf5d60b6015d2a33e2cb9f30f54&oe=5D2CC4F5",
           zdjecie2: "../../assets/imgs/Basen PSP1/2.jpg",
           zdjecie3: "../../assets/imgs/Basen PSP1/3.jpg",
 
@@ -192,18 +192,15 @@ export class BasenPage {
           Kategoria_Miejsca: "Basen wewnętrzny",
           Dyscyplina: "Pływanie; Fitness",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.
-                                       16:00 - 21:15
-                                       Sobota, Niedziela oraz dni świąteczne
-                                       10:00 – 19:00`,
-          Koszt: `	- dzieci, młodzież szkół podstawowych i gimnazjum – 6 zł.- osoby dorosłe - 14 zł.` ,
+          Godziny_Otwarcia: `Pon. - Pt. \n 16:00 - 21:15 \n Sobota, Niedziela oraz dni świąteczne \n 10:00 – 19:00`,
+          Koszt: `dzieci, młodzież szkół podstawowych i gimnazjum – 6 zł. \n osoby dorosłe - 14 zł. \n młodzież szkół średnich/studenci do 25 lat oraz osoby niepełnosprawne - 10 zł` ,
           Strona_Internetowa: "https://basenpsp1.wordpress.com/about/cennik/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'41.8%22N+18%C2%B030'04.7%22E/@53.9616201,18.4991283,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.961617!4d18.501317"},
         
 
         { odleglosc: this.BasenREN,
 
-          zdjecie: "../../assets/imgs/Basen REN/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59481801_654227601696436_6392134504479195136_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=505ea111e6ee1dacb352abf1840285d7&oe=5D301976",
           zdjecie2: "../../assets/imgs/Basen REN/2.jpg",
           zdjecie3: "../../assets/imgs/Basen REN/3.jpg",
 
@@ -212,18 +209,14 @@ export class BasenPage {
           Kategoria_Miejsca: "Basen wewnętrzny",
           Dyscyplina: "Pływanie; Fitness",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. – Pt. 9:00 – 22:00
-                                      Sob. – Ndz. 9:00 – 21:00`,
-          Koszt: `Godz. 7:00 – 16:00 
-               20 zł/ h BASEN + JACUZZI
-               Godz. 16:00 – 22:00 
-               25zł/ h BASEN + JACUZZI`,
+          Godziny_Otwarcia: `Pon. – Pt. 9:00 – 22:00 \n Sob. – Ndz. 9:00 – 21:00`,
+          Koszt: `Godz. 7:00 – 16:00 \n 20 zł/ h BASEN + JACUZZI \n Godz. 16:00 – 22:00 \n 25zł/ h BASEN + JACUZZI`,
           Strona_Internetowa: "http://ren.com.pl/basen-spa/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'32.3%22N+18%C2%B031'13.7%22E/@53.9756341,18.5182833,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.975631!4d18.520472"},
         
         { odleglosc: this.CentrumRehabilitacyjnoLeczniczeMEDPHARMA,
 
-          zdjecie: "../../assets/imgs/Centrum Rehabilitacyjno - Lecznicze MEDPHARMA/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/57434126_1202474393253299_9000471201356709888_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=929cd3cdd40275e16e4d063db7e32b55&oe=5D2A16B6",
           zdjecie2: "../../assets/imgs/Centrum Rehabilitacyjno - Lecznicze MEDPHARMA/2.jpg",
           zdjecie3: "../../assets/imgs/Centrum Rehabilitacyjno - Lecznicze MEDPHARMA/3.jpg",
 
@@ -232,13 +225,8 @@ export class BasenPage {
           Kategoria_Miejsca: "Basen wewnętrzny",
           Dyscyplina: "Pływanie; Fitness",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.: 7:00 – 22:00                                                                                                                                       
-                                     Sob. - Ndz.: 8:00 – 22:00`,
-          Koszt: `Cennik Zajęć Fitness:
-                 Poranne ( 7:00 – 13:00) 15 zł/ 1 wejście
-                 Wieczorne (13:00 – 22:00) 20 zł/ 1 wejście
-                 Cennik Aqua Fitness:
-                 25zł/ 1 wejście`,
+          Godziny_Otwarcia: `Pon. - Pt.: 7:00 – 22:00 \n Sob. - Ndz.: 8:00 – 22:00`,
+          Koszt: `Cennik Zajęć Fitness \n Poranne ( 7:00 – 13:00) 15 zł/ 1 wejście \n Wieczorne (13:00 – 22:00) 20 zł/ 1 wejście \n Cennik Aqua Fitness \n 25zł/ 1 wejście \n Basen \n 7:00 - 20:00 - 20 zł/h \n 20:00 - 22:00 - 30 zł/h`,
           Strona_Internetowa: "http://fitness.medpharma.pl/oferta/cennik/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'38.5%22N+18%C2%B029'13.6%22E/@53.9606831,18.4849283,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.96068!4d18.487117"},
         ];

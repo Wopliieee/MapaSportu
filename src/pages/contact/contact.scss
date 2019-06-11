@@ -1,3 +1,4 @@
+.ios, .md {
 page-contact {
     ion-content {
         background-image: url('../../assets/layout/tlo.png');
@@ -19,6 +20,60 @@ page-contact {
         text-shadow: 0 0 10px #FFF;
         font-style: italic;
         transform: skew(3.9deg);
+        margin: 0.01%;
+    }
+    h2{
+        font-size: 15px;
+        line-height: 1.4;
+        text-align: justify;
+        text-align-last: center;
+        margin-left: 8px;
+        margin-right: 8px;
+        // background-color: rgba(227, 175, 199, 0);
+        // border-style:solid;
+        // border-color: rgba(227, 175, 199, 0);
+        // border-width: 17px;
+        // border-radius:15px;
+        // -webkit-box-shadow: -3px 4px 39px -15px rgba(0,0,0,0.33);
+        // -moz-box-shadow: -3px 4px 39px -15px rgba(0,0,0,0.33);
+        // box-shadow: -3px 4px 39px -15px rgba(0,0,0,0.33);
     }
 
+    h4{
+        color: rgb(65, 65, 65);
+        // text-shadow: 0 0 10px #FFF;
+        // font-style: italic;
+        // transform: skew(3.9deg);
+        font-size: 35px;
+        padding-top:40px;
+        // background-color: rgba(227, 175, 199, 0);
+        // border-style:solid;
+        // border-color: rgba(227, 175, 199, 0);
+        // border-width: 15px;
+        // border-radius: 15px;
+    }
+    .social{
+        border-radius: 20%;
+        height: auto;
+        width: 30%;
+        margin: 10px;
+    }
+    .nasze{
+        border-radius: 5vh;
+        height: auto;
+        // width: 80%;
+        // margin-left: 10%;
+        transform: scale(1) !important;
+        -webkit-box-shadow: -3px 4px 39px -15px rgba(0,0,0,0.33);
+        -moz-box-shadow: -3px 4px 39px -15px rgba(0,0,0,0.33);
+        box-shadow: -3px 4px 39px -15px rgba(0,0,0,0.33); 
+    }
+    .zwolnieni{
+        // border-radius: 5vh;
+        height: auto;
+        width: 66%;
+        margin-top: 10px;
+    }
+
+}
 }

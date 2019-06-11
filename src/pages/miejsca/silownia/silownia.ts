@@ -177,33 +177,15 @@ export class SilowniaPage {
       Nawigacja: string,
     }
 
-    this.ObliczKilometry(53.962998, 18.508376, "EbroGym")
     this.ObliczKilometry(53.963387, 18.517096, "FitnessYankess")
     this.ObliczKilometry(53.964129, 18.527410, "PumaKlubFitness")
     this.ObliczKilometry(53.964124, 18.529760, "NeptunGym")
 
     const miejsca: Miejsce[] =[
-      { odleglosc: this.EbroGym,
-
-          zdjecie: "../../assets/imgs/Ebro Gym/1.jpg",
-          zdjecie2: "../../assets/imgs/Ebro Gym/2.jpg",
-          zdjecie3: "../../assets/imgs/Ebro Gym/3.jpg",
-
-          Nazwa_Miejsca: "Ebro Gym",
-          Adres: "Zblewska 10b",
-          Kategoria_Miejsca: "Siłownia; Klub sportowy",
-          Dyscyplina: "Sporty siłowe; Fitness; Taniec",
-          Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.: 7:00 – 22:00
-                                      Sob. – Ndz.: 7:00 – 18:00`,
-          Koszt: `149zł/ mies.
-               20zł/ 1 wejście`,
-          Strona_Internetowa: "http://www.ebrogym.pl/starogard/cennik.html",
-          Nawigacja: "https://www.google.com/maps/place/53%C2%B057'46.8%22N+18%C2%B030'30.2%22E/@53.9630011,18.5061873,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.962998!4d18.508376"},
           
         { odleglosc: this.FitnessYankess,
 
-          zdjecie: "../../assets/imgs/Fitness Yankess/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58805549_938616219825708_4349413904921657344_n.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=b06f6af85c3ed547ea6dd700373ba0e2&oe=5D729D68",
           zdjecie2: "../../assets/imgs/Fitness Yankess/2.jpg",
           zdjecie3: "../../assets/imgs/Fitness Yankess/3.jpg",
 
@@ -212,17 +194,14 @@ export class SilowniaPage {
           Kategoria_Miejsca: "Siłownia; Klub sportowy",
           Dyscyplina: "Sporty siłowe; Fitness",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.: 8:00 – 22:00
-                                      Sobota: 9:00 – 15:00
-                                      Ndz.: 11:00 – 15:00`,
-          Koszt: `1 wejście: 29zł
-               Karnet 1 mies.: 100zł`,
+          Godziny_Otwarcia: `Pon. - Pt.: 8:00 – 22:00 \n Sobota: 9:00 – 15:00 \n Ndz.: 11:00 – 15:00`,
+          Koszt: `1 wejście: 29zł \n Karnet 1 mies.: 100zł`,
           Strona_Internetowa: "http://yankes.pl/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'48.2%22N+18%C2%B031'01.6%22E/@53.9633901,18.5149073,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.963387!4d18.517096"},
 
          { odleglosc: this.PumaKlubFitness,
 
-          zdjecie: "../../assets/imgs/Puma Klub Fitness/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/58694245_2337184599852597_3738682320073261056_n.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=c02c714216ecf3c3ab2d067355d8ecc6&oe=5D62A957",
           zdjecie2: "../../assets/imgs/Puma Klub Fitness/2.jpg",
           zdjecie3: "../../assets/imgs/Puma Klub Fitness/3.jpg",
 
@@ -231,16 +210,14 @@ export class SilowniaPage {
           Kategoria_Miejsca: "Siłownia; Klub sportowy",
           Dyscyplina: "Sporty siłowe; Fitness",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt: 7:30 – 21:00
-                                      Sobota: 8:00 – 17:00
-                                      Niedziela: 10:00 – 15:00`,
-          Koszt: "129zł/ mies. lub 20zł/ 1 wejście",
-          Strona_Internetowa: "-",
+          Godziny_Otwarcia: `Pon. - Pt: 7:30 – 21:00 \n Sobota: 8:00 – 17:00 \n Niedziela: 10:00 – 15:00`,
+          Koszt: "129zł/ mies. \n 20zł/ 1 wejście",
+          Strona_Internetowa: "http://www.pumaclub.pl/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'50.9%22N+18%C2%B031'38.7%22E/@53.9641321,18.5252213,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.964129!4d18.52741"},
 
         { odleglosc: this.NeptunGym,
 
-          zdjecie: "../../assets/imgs/Neptun Gym/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59295991_804161313276280_3266492666363248640_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=e5f3349492d1fdedfc726ad7a0b32cb2&oe=5D313ACF",
           zdjecie2: "../../assets/imgs/Neptun Gym/2.jpg",
           zdjecie3: "../../assets/imgs/Neptun Gym/3.jpg",
 
@@ -249,11 +226,8 @@ export class SilowniaPage {
           Kategoria_Miejsca: "Siłownia; Klub sportowy",
           Dyscyplina: "Sporty siłowe; Fitness; Taniec",
           Nawierzchnia: "-",
-          Godziny_Otwarcia: `Pon. - Pt.: 6:00 – 22:00
-                                      Sobota: 9:00 – 21:00
-                                      Niedziela: 9:00 – 20:00`,
-          Koszt:`129zł/ mies.
-               25zł/ 1 wejście`,
+          Godziny_Otwarcia: `Pon. - Pt.: 6:00 – 22:00 \n Sobota: 9:00 – 21:00 \n Niedziela: 9:00 – 20:00`,
+          Koszt:`129zł/ mies. \n 25zł/ 1 wejście`,
           Strona_Internetowa: "http://neptungym.pl/cennik/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B057'50.9%22N+18%C2%B031'47.1%22E/@53.9641271,18.5275713,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.964124!4d18.52976"},
 
@@ -301,8 +275,6 @@ export class SilowniaPage {
     //ostateczny wynik w kilometrach
     this.kilometry = Math.round(this.odległość*100)/100;
 
-    if(WYNIK == "EbroGym")
-      this.EbroGym = this.kilometry
     if(WYNIK == "FitnessYankess")
       this.FitnessYankess = this.kilometry
     if(WYNIK == "PumaKlubFitness")

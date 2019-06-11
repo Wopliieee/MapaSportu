@@ -179,7 +179,7 @@ export class LodowiskoPage {
     const miejsca: Miejsce[] =[
       { odleglosc: this.LodowiskoOSiR,
 
-          zdjecie: "../../assets/imgs/Lodowisko (OSiR)/1.jpg",
+          zdjecie: "https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/59051863_428074967773177_7129024985506512896_n.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=f4f296f8963305a40b64cfc5774d4ec0&oe=5D5B6601",
           zdjecie2: "../../assets/imgs/Lodowisko (OSiR)/2.jpg",
           zdjecie3: "../../assets/imgs/Lodowisko (OSiR)/3.jpg",
 
@@ -188,10 +188,8 @@ export class LodowiskoPage {
           Kategoria_Miejsca: "Sztuczne lodowisko zewnętrzne (otwarte sezonowo)",
           Dyscyplina: "Łyżwiarstwo",
           Nawierzchnia: "Lód",
-          Godziny_Otwarcia: `Pn.-Pt.: 8-19
-                                      Sob.-Nd. i święta: 10-20.30`,
-          Koszt: `Bilet ulgowy: 6zł;
-              Bilet normalny: 8zł`,
+          Godziny_Otwarcia: `Pn.-Pt.: 8-19 \n Sob.-Nd. i święta: 10-20.30`,
+          Koszt: `Bilet ulgowy: 6zł \nBilet normalny: 8zł`,
           Strona_Internetowa: "http://osir.com.pl/lodowisko-2/",
           Nawigacja: "https://www.google.com/maps/place/53%C2%B058'12.1%22N+18%C2%B032'07.0%22E/@53.9700201,18.5330843,538m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.970017!4d18.535273"},
         
