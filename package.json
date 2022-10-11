@@ -48,7 +48,7 @@
     "com-sarriaroman-photoviewer": "^1.2.2",
     "cordova-android": "^8.0.0",
     "cordova-android-play-services-gradle-release": "^2.1.0",
-    "cordova-ios": "^4.5.5",
+    "cordova-ios": "^6.2.0",
     "cordova-play-services-version-adapter": "^1.0.2",
     "cordova-plugin-app-update": "^2.0.2",
     "cordova-plugin-appavailability": "0.4.2",
